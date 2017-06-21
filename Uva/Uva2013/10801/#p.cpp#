@@ -1,0 +1,99 @@
+#include<iostream>
+#include<sstream>
+#include<string>
+#include<vector>
+using namespace std;
+#define FMAX 100
+#define TMAX 5
+#define INFTY (1<<21)
+
+struct State{int floor, elevator;};
+
+int n, k, T[TMAX];
+vector<int> stops[TMAX];
+bool isStop[FMAX][TMAX];
+
+int dijkstra(){
+  int D[FMAX][TMAX];
+  bool visited[FMAX][TMAX];
+  State u, v;
+
+  for ( int i = 0; i < FMAX; i++ ){
+    for ( int j = 0; j < n; j++ ) {
+      D[i][j] = INFTY;
+      visited[i][j] = false;
+    }
+  }
+
+  for ( int j = 0; j < n; j++ ) if ( isStop[0][j] ) D[0][j] = 0;
+
+  while(1){
+    int minc = INFTY;
+    for ( int i = 0; i < FMAX; i++ ){
+      for ( int j = 0; j < n; j++ ){
+	if ( !visited[i][j] && D[i][j] < minc ){
+	  minc = D[i][j];
+	  u.floor = i;	  u.elevator = j;
+	}
+      }
+    }
+
+    if ( minc == INFTY ) break;
+    visited[u.floor][u.elevator] = true;
+
+    // move to floors;
+    for ( int i = 0; i < stops[u.elevator].size(); i++ ){
+      int f = stops[u.elevator][i];
+      int mtime = (max(f, u.floor) - min(f, u.floor))*T[u.elevator];
+      D[f][u.elevator] = min( D[f][u.elevator], D[u.floor][u.elevator] + mtime);
+    }
+
+    // move elevators
+    for ( int j = 0; j < n; j++ ){
+      if ( isStop[u.floor][j] ){
+	D[u.floor][j] = min( D[u.floor][j], D[u.floor][u.elevator] + 60 );
+      }
+    }
+  }
+  
+  int minv = INFTY;
+  for ( int j = 0; j < n; j++ ) minv = min( minv, D[k][j] );
+
+  return minv;
+}
+
+void input(){
+  string line;
+  for ( int i = 0; i < n; i++ ) stops[i].clear();
+  getline(cin, line); stringstream sin(line);
+  for ( int i = 0; i < n; i++ ) sin >> T[i];
+
+  for ( int i = 0; i < FMAX; i++ ){
+    for ( int j = 0; j < n; j++ ) isStop[i][j] = false;
+  }
+
+  for ( int j = 0; j < n; j++ ) {
+    getline(cin, line); stringstream stopin(line);
+    int f;
+    while( stopin >> f ) {
+      stops[j].push_back(f);
+      isStop[f][j] = true;
+    }
+  }
+}
+
+main(){
+  string line;
+  while(1){
+    getline( cin, line );
+    if ( cin.eof() ) break;
+    stringstream sin(line);
+    sin >> n >> k;
+    input();
+    int cost = dijkstra();
+    if ( cost == INFTY ) cout << "IMPOSSIBLE" << endl;
+    else cout << cost << endl;
+  }
+}
+
+

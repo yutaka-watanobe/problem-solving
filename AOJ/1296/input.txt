@@ -1,0 +1,427 @@
+2
+a bb
+b aa
+a
+bbbbbbbb
+1
+a aa
+a
+aaaaa
+3
+ab aab
+abc aadc
+ad dee
+abc
+deeeeeeeec
+10
+a abc
+b bai
+c acf
+d bed
+e abh
+f fag
+g abe
+h bag
+i aaj
+j bbb
+a
+abacfaabe
+2
+a aa
+aa aaa
+a
+aaaaaaaaa
+2
+a aa
+aa aaa
+a
+aaaaaaaaaa
+3
+a aa
+aa aaa
+aaa aaaa
+a
+aaaaaaaaaa
+2
+a ab
+b ba
+a
+ababababa
+2
+a ab
+b ba
+a
+ababaababa
+3
+a bc
+b ca
+c ab
+a
+ababaabab
+3
+a bc
+b ca
+c ab
+c
+bbbbabbbbb
+10
+a ab
+b bc
+c cd
+d de
+e ef
+f fg
+g gh
+h hi
+i ij
+j ja
+a
+abcdefghij
+2
+ba bbb
+bb bbb
+ba
+bbbbbbbbb
+9
+ba aaa
+cc cab
+aa bbc
+ab ccc
+bb caa
+bc aac
+ac bbc
+ca bcc
+cb caa
+ba
+caacaacabb
+5
+h cg
+g fh
+a ag
+c gf
+f ag
+a
+agagggaggg
+8
+e dc
+i da
+h aj
+d eb
+a ib
+j jb
+b ah
+g hd
+g
+ibjibibjeb
+8
+cb cba
+ca cbc
+ba abb
+bc cac
+ab bcb
+ac abb
+bb ccc
+cc bcb
+cc
+cbbcbcbbcb
+10
+aab bbca
+ccc bcab
+bbc caba
+caa bbbb
+cab ccca
+cca cacb
+ccb cbba
+bca ccaa
+baa ccac
+aba acac
+bbc
+ccbbcaaa
+10
+ccb deca
+dce accc
+eca deae
+dca dcec
+bdc ecad
+cce ccbd
+cad cecd
+cbd ebdd
+ecb ccec
+cec deee
+ecb
+ccbdcecd
+10
+da dba
+bc dbb
+db adb
+ad abc
+ab bab
+bd dbd
+dc aab
+dd ccc
+ba bcd
+cd dcd
+bd
+dbabdcdbd
+8
+ed aecae
+ca ecbe
+ae eaeee
+db eebbb
+cd decce
+dd dddc
+dc aedb
+da bdeda
+dd
+dddcdcaedb
+10
+ae ceb
+aed eddba
+ca aaa
+cc dcc
+ce cae
+dd ecd
+cae aebba
+bd dda
+edd eaabd
+eb edd
+ae
+ccebecd
+10
+ef ffa
+ac afa
+dd cdf
+af fdf
+cd add
+add efdd
+ea bbb
+ec dde
+fd caf
+ca aca
+cd
+eacacfdf
+3
+cc cbc
+cb bac
+bc cbc
+bc
+cbcbcbcbc
+6
+ab cacbbc
+bc babbba
+cb caacbc
+ac cbcabb
+cc bacaab
+cbc babcaca
+cbc
+babcaca
+9
+aac cbccba
+aca babac
+ac ccca
+cac bbcbbc
+ca cacaab
+aa aac
+acc aacac
+cc aac
+cca caca
+ac
+aaccaccaca
+10
+cac accc
+bbc aacab
+acb aacb
+bca bccc
+bc abbcb
+ac bacac
+bb acbbca
+cc bbc
+cb babac
+cbb caba
+cc
+acbabbcbac
+10
+aab bcacb
+bbc ccabbc
+cacb bbabb
+bbcb acbbb
+bcac bacaaa
+bca aabca
+cbca acccac
+bac bbcaab
+caa bcbca
+bcbc cbacc
+bac
+bbcbcacb
+10
+gc eiba
+cf iideh
+ac bfc
+fg afad
+bde eache
+ch hcaa
+he bff
+cc achhd
+ea cfgc
+cg bde
+cg
+cfeibache
+10
+ca cacab
+ba abca
+bab caca
+acc aacbac
+ac acca
+cac bbbab
+bca bcbcc
+bb baca
+cb bba
+abc acbcbb
+cb
+caccaaccaa
+10
+ic hcf
+ea aai
+ac ihe
+aa cdi
+cd eac
+bfh cdfb
+df afa
+ai cbe
+cf ffb
+fb fhe
+bfh
+eacihcffhe
+10
+bce ecac
+ceb eace
+bb acc
+bdd acda
+dac bdcb
+dd bce
+dda adea
+ce ddb
+bd cce
+db bab
+ce
+accaccecbc
+10
+abb ddde
+bb ebecc
+bbb cebbbb
+ab dedce
+deb dccba
+dd ccbac
+da dab
+dab bddcad
+ddd bdddd
+dde eead
+da
+eeadeadb
+10
+fivf ejjji
+ivfe jvivi
+ifiv ivifj
+vijf eevee
+jeejf eifivf
+eivif iejfii
+ivifj vviiii
+eifi veevv
+eevee jeejfe
+eejfe veievf
+vijf
+evviiiife
+10
+jwwz wizzz
+wzzi jddjw
+didw jwwzz
+wjddj wdwzij
+jwjdd idwwjj
+idwwj dzwjiz
+idwi jizdz
+jidj didwi
+wwzz zwddj
+jddjw wdwiwd
+jidj
+dzwjizjjw
+1
+ii iii
+ii
+iiiiiiiii
+4
+hq qhq
+hh qqh
+qh hhh
+qq hhh
+qh
+qqhqqhqqh
+2
+cx ccx
+cc xcj
+cx
+cccccccccx
+9
+vo ooo
+ll llv
+ol vlv
+vv loo
+lo vlo
+oo ovl
+ov loo
+vl llo
+lv ooo
+vv
+vllvvloolv
+10
+lal awllw
+alw lawlw
+al awl
+la awww
+lw lla
+ala awala
+ww aal
+aa wawl
+lww aawaw
+aal alww
+ww
+alalalalww
+10
+wta hwajj
+aud euaju
+uth wtaud
+wr udxe
+udr jtee
+tau rudd
+thr ahdjr
+ru wdhh
+ud udju
+jj uthr
+jj
+wwdhhdddr
+10
+cc ocp
+ps efc
+pr rsoe
+cis gfsfc
+gfsf ppssc
+fsfc rorgyfi
+pp oce
+ss foc
+sc prs
+sp rge
+cis
+ocergerprs
+10
+xf ryf
+ry rfqyq
+px pvvd
+zpry fqfvd
+iryf zpxfry
+zp pyxpi
+zq ixf
+ix fpip
+pryf qxizvd
+fr rii
+zq
+fqfvdriiy
+0

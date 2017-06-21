@@ -1,0 +1,13 @@
+	Desc.	Pic.	Data	Very Y	Very T	
+A		-	Y	CJ		
+B	Y	-	Y	CJ
+C	Y	-	Y	CJ
+D		-	Y	CJ
+E	Y	-	Y	CJ
+F	Y	-	Y	C
+G		-	Y	CJ
+H	Y	-	Y	CJ
+I	Y	-	Y	Cj
+J	Y	-	Y	C
+K			Y	CJ
+

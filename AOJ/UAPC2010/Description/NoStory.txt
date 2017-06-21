@@ -1,0 +1,24 @@
+
+Problem J: No Story
+
+私は長い問題文を書くのに疲れたので、この問題文をできるだけ短くすることにした。正の整数 L が与えられる。LCM(a, b) = L となるような正の整数 a, b (a <= b) の組み合わせはいくつあるだろうか？ここで LCM(a, b) は a と b の最小公倍数とする。
+
+Input
+各データセットごとに、整数 L (1 <= L <= 10^12) が1行に与えられる。
+L = 0のとき、入力の終了を表す。
+
+Output
+a, b の組み合わせの数を出力せよ。
+
+
+Problem J: No Story (EN)
+
+Since I got tired to write long problem statements, I decided to make this problem statement short. For given positive integer L, how many pairs of positive integers a, b (a <= b) such that LCM(a, b) = L are there? Here, LCM(a, b) stands for the least common multiple of a and b.
+
+Input
+For each dataset, an integer L (1 <= L <= 10^12) is given in a line.
+Input terminates when L = 0.
+
+Output
+Output the number of pairs of a and b.
+

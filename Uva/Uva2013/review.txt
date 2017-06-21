@@ -1,0 +1,22 @@
+10104
+extended euq
+
+x, y
+ax + by = gcd(x, y)
+
+c= gcd(x, y)
+
+A(y%x) + Bx = c
+
+y = (y/x)x+y%x
+y%x = y - (y/x)x
+
+recursive
+
+
+406
+
+
+10626
+
+use 10, 1, 1, 1 = 5

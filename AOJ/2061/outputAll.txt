@@ -1,0 +1,825 @@
+1 2
+English Japanese 
+
+Impossible
+
+Impossible
+
+1 1
+English 
+
+1 1
+Chinese 
+
+Impossible
+
+6 3
+C CommonLisp Python 
+C CommonLisp Ruby 
+C CommonLisp Perl 
+C Fortran Python 
+C Fortran Ruby 
+C Fortran Perl 
+
+16 2
+Jdkjgohz Owwjbocb 
+Jdkjgohz Pgblgjat 
+Flxulshr Jdkjgohz 
+Hhohwsyt Flxulshr 
+Watbaltl Jdkjgohz 
+Watbaltl Hhohwsyt 
+Pasvbmhb Jdkjgohz 
+Gqhgdbil Jdkjgohz 
+Qjaoxkbu Jdkjgohz 
+Bxcvcdek Flxulshr 
+Bxcvcdek Qjaoxkbu 
+Qcfyilvm Jdkjgohz 
+Qcfyilvm Flxulshr 
+Ryxbrojv Jdkjgohz 
+Ryxbrojv Hhohwsyt 
+Ryxbrojv Ofjwvasw 
+
+1 1
+Nhjymfvq 
+
+14 2
+Cmpuachk Sgzasmio 
+Cmpuachk Qyqmwbwy 
+Szcwljyd Cmpuachk 
+Lojdrdmz Cmpuachk 
+Kqhgmisx Cmpuachk 
+Oxjrbzvv Cmpuachk 
+Djlnvcjb Cmpuachk 
+Ycivaupl Bgtvgvxj 
+Ycivaupl Cmpuachk 
+Ycivaupl Oxjrbzvv 
+Uwxglcfs Acidjnrf 
+Uwxglcfs Eovhwcxr 
+Uwxglcfs Oxjrbzvv 
+Uwxglcfs Zffmfcul 
+
+5 2
+Bqkwcflu Iyifpjfq 
+Rlmaggqf Bqkwcflu 
+Xuetmrjz Bqkwcflu 
+Tlxoynru Bqkwcflu 
+Strlnpls Bqkwcflu 
+
+5 2
+Atiyrhrd Pkjqgavm 
+Gfdhynim Owughrbm 
+Gfdhynim Zfqgxqvc 
+Gxhmeiaw Pkjqgavm 
+Gxhmeiaw Nicyzjqk 
+
+14 2
+Imtzftxu Tcmmjmbm 
+Xmkbauoi Imtzftxu 
+Dkfsuvzx Xmkbauoi 
+Otsvhojg Xmkbauoi 
+Eghbwdpm Imtzftxu 
+Eghbwdpm Dkfsuvzx 
+Mzavoljv Toebwhyj 
+Mzavoljv Eghbwdpm 
+Cwgfzvrr Eghbwdpm 
+Ajfsrqai Xdcasjia 
+Ajfsrqai Imtzftxu 
+Ajfsrqai Nxsstsin 
+Ajfsrqai Fgwcdxqj 
+Ajfsrqai Mzavoljv 
+
+9 2
+Qjqxzsuh Xncngobm 
+Qjqxzsuh Spksvhqr 
+Jiaredqu Xncngobm 
+Curwmbke Xncngobm 
+Curwmbke Kvmdkzat 
+Curwmbke Spksvhqr 
+Plplzvgd Qjqxzsuh 
+Xkdrqfsm Xncngobm 
+Xkdrqfsm Spksvhqr 
+
+13 2
+Gnxdyimu Brzjhsvk 
+Vcjhbaab Gnxdyimu 
+Ouyenkis Brzjhsvk 
+Rxhdrcfk Gnxdyimu 
+Oooxfdwq Brzjhsvk 
+Oooxfdwq Gnxdyimu 
+Oooxfdwq Juyaavip 
+Oooxfdwq Juesgzan 
+Cbzkmiok Gnxdyimu 
+Tufejkzq Gnxdyimu 
+Qteatqnk Brzjhsvk 
+Zdachlls Gnxdyimu 
+Oufohssk Gnxdyimu 
+
+14 2
+Diynueho Mdcijhte 
+Sycvgmdv Rprwyjvv 
+Kuilqioj Diynueho 
+Rsopcmte Rprwyjvv 
+Cjpuglia Diynueho 
+Cjpuglia Sycvgmdv 
+Cjpuglia Sobevxci 
+Cjpuglia Rsopcmte 
+Agtwtimo Vkeohgkj 
+Agtwtimo Rprwyjvv 
+Agtwtimo Ikgumcka 
+Agtwtimo Cjpuglia 
+Bokydsqz Rprwyjvv 
+Kzlcezxi Cjpuglia 
+
+11 2
+Jxqlteir Erkudbvt 
+Bltscylc Jxqlteir 
+Bqhxpmzn Jxqlteir 
+Obfzmnfg Erkudbvt 
+Obfzmnfg Ltidcivh 
+Pvcjytqd Jxqlteir 
+Euyteumw Ltidcivh 
+Untvbymb Jxqlteir 
+Xqcxnbah Ccvwemvo 
+Gmikvysv Ltidcivh 
+Gmikvysv Jxqlteir 
+
+1 2
+Lbziyjxs Gmqmgsqc 
+
+101 3
+Ukqlltvp Nlecxwww Ewixypop 
+Frrbbphy Nlecxwww Ewixypop 
+Frrbbphy Ukqlltvp Nlecxwww 
+Jppwpjdc Frrbbphy Ukqlltvp 
+Fbjqybev Nlecxwww Ewixypop 
+Fbjqybev Frrbbphy Nlecxwww 
+Fbjqybev Jppwpjdc Frrbbphy 
+Mkjohasw Ukqlltvp Ewixypop 
+Mkjohasw Frrbbphy Ewixypop 
+Mkjohasw Fbjqybev Ewixypop 
+Mkjohasw Fbjqybev Fatpyzrw 
+Jyswguht Nlecxwww Ewixypop 
+Jyswguht Fatpyzrw Nlecxwww 
+Jyswguht Frrbbphy Nlecxwww 
+Jyswguht Frrbbphy Fatpyzrw 
+Jyswguht Mkjohasw Ewixypop 
+Jyswguht Mkjohasw Fatpyzrw 
+Gyxqfhsx Nlecxwww Ewixypop 
+Gyxqfhsx Frrbbphy Ewixypop 
+Gyxqfhsx Frrbbphy Ukqlltvp 
+Gyxqfhsx Fbjqybev Frrbbphy 
+Gyxqfhsx Mkjohasw Ewixypop 
+Gyxqfhsx Mkjohasw Fbjqybev 
+Gyxqfhsx Jyswguht Nlecxwww 
+Gyxqfhsx Jyswguht Frrbbphy 
+Gyxqfhsx Jyswguht Mkjohasw 
+Iwsgnusg Ewixypop Lewvuzxf 
+Iwsgnusg Nlecxwww Ewixypop 
+Iwsgnusg Vpocmapb Ewixypop 
+Iwsgnusg Ukqlltvp Ewixypop 
+Iwsgnusg Fatpyzrw Ewixypop 
+Iwsgnusg Frrbbphy Lewvuzxf 
+Iwsgnusg Frrbbphy Nlecxwww 
+Iwsgnusg Frrbbphy Vpocmapb 
+Iwsgnusg Frrbbphy Ukqlltvp 
+Iwsgnusg Frrbbphy Fatpyzrw 
+Iwsgnusg Fbjqybev Ewixypop 
+Iwsgnusg Fbjqybev Frrbbphy 
+Iwsgnusg Mkjohasw Ewixypop 
+Iwsgnusg Mkjohasw Frrbbphy 
+Iwsgnusg Jyswguht Fatpyzrw 
+Iwsgnusg Gyxqfhsx Ewixypop 
+Iwsgnusg Gyxqfhsx Frrbbphy 
+Iwsgnusg Gyxqfhsx Jyswguht 
+Rfdbtknh Jyswguht Fatpyzrw 
+Rfdbtknh Gyxqfhsx Ewixypop 
+Rfdbtknh Gyxqfhsx Jyswguht 
+Wmaqhpat Nlecxwww Ewixypop 
+Wmaqhpat Frrbbphy Nlecxwww 
+Wmaqhpat Mkjohasw Ewixypop 
+Wmaqhpat Mkjohasw Jppwpjdc 
+Wmaqhpat Jyswguht Nlecxwww 
+Wmaqhpat Jyswguht Fatpyzrw 
+Wmaqhpat Gyxqfhsx Ewixypop 
+Wmaqhpat Gyxqfhsx Frrbbphy 
+Wmaqhpat Gyxqfhsx Jyswguht 
+Ubgzrlak Frrbbphy Nlecxwww 
+Ubgzrlak Gyxqfhsx Frrbbphy 
+Zwdfzjxb Jyswguht Ewixypop 
+Zwdfzjxb Jyswguht Fatpyzrw 
+Zwdfzjxb Gyxqfhsx Ewixypop 
+Zwdfzjxb Gyxqfhsx Ukqlltvp 
+Zwdfzjxb Gyxqfhsx Jyswguht 
+Zwdfzjxb Iwsgnusg Ewixypop 
+Zwdfzjxb Iwsgnusg Frrbbphy 
+Kxdftxun Nlecxwww Ewixypop 
+Kxdftxun Frrbbphy Ewixypop 
+Kxdftxun Frrbbphy Ukqlltvp 
+Kxdftxun Fbjqybev Frrbbphy 
+Kxdftxun Mkjohasw Ewixypop 
+Kxdftxun Mkjohasw Fbjqybev 
+Kxdftxun Jyswguht Nlecxwww 
+Kxdftxun Jyswguht Frrbbphy 
+Kxdftxun Jyswguht Mkjohasw 
+Kxdftxun Iwsgnusg Ewixypop 
+Kxdftxun Iwsgnusg Frrbbphy 
+Kxdftxun Iwsgnusg Jyswguht 
+Kxdftxun Rfdbtknh Ewixypop 
+Kxdftxun Rfdbtknh Jyswguht 
+Kxdftxun Wmaqhpat Ewixypop 
+Kxdftxun Wmaqhpat Frrbbphy 
+Kxdftxun Wmaqhpat Jyswguht 
+Kxdftxun Ubgzrlak Frrbbphy 
+Kxdftxun Zwdfzjxb Ewixypop 
+Kxdftxun Zwdfzjxb Ukqlltvp 
+Kxdftxun Zwdfzjxb Jyswguht 
+Xpuhdqfu Frrbbphy Nlecxwww 
+Xpuhdqfu Jyswguht Fatpyzrw 
+Xpuhdqfu Gyxqfhsx Ewixypop 
+Xpuhdqfu Gyxqfhsx Frrbbphy 
+Xpuhdqfu Gyxqfhsx Fbjqybev 
+Xpuhdqfu Gyxqfhsx Jyswguht 
+Xpuhdqfu Zwdfzjxb Gyxqfhsx 
+Xpuhdqfu Kxdftxun Ewixypop 
+Xpuhdqfu Kxdftxun Frrbbphy 
+Xpuhdqfu Kxdftxun Fbjqybev 
+Xpuhdqfu Kxdftxun Jyswguht 
+Xpuhdqfu Kxdftxun Zwdfzjxb 
+Vfjjnzfp Nlecxwww Ewixypop 
+Vfjjnzfp Mkjohasw Ewixypop 
+Vfjjnzfp Zwdfzjxb Ewixypop 
+
+2 2
+Edjreizm Webozntf 
+Edjreizm Jkusdqrq 
+
+1 2
+Eukdgavg Penlzlct 
+
+1 2
+Rimdyaty Kwswvjox 
+
+40 3
+Hjaveiqs Dzgoztdo Uyotfnte 
+Qwgfnuit Bjphywpo Azjhjfsf 
+Qwgfnuit Hjaveiqs Azjhjfsf 
+Afqaptch Hjaveiqs Uyotfnte 
+Gxcagbgd Qwgfnuit Azjhjfsf 
+Gxcagbgd Qwgfnuit Dzgoztdo 
+Gxcagbgd Afqaptch Qwgfnuit 
+Ejtfsolg Hjaveiqs Uyotfnte 
+Ejtfsolg Qwgfnuit Bjphywpo 
+Ejtfsolg Qwgfnuit Hjaveiqs 
+Ejtfsolg Gxcagbgd Qwgfnuit 
+Vfgxhhcz Qwgfnuit Azjhjfsf 
+Vfgxhhcz Prtvazfa Afqaptch 
+Vfgxhhcz Ejtfsolg Hjaveiqs 
+Vfgxhhcz Ejtfsolg Qwgfnuit 
+Vfgxhhcz Ejtfsolg Grqpoaed 
+Vfgxhhcz Ejtfsolg Prtvazfa 
+Gikvyepf Gxcagbgd Qwgfnuit 
+Twsoqjqv Uyotfnte Bjphywpo 
+Twsoqjqv Hjaveiqs Uyotfnte 
+Twsoqjqv Gxcagbgd Uyotfnte 
+Twsoqjqv Gxcagbgd Qwgfnuit 
+Twsoqjqv Vfgxhhcz Uyotfnte 
+Twsoqjqv Vfgxhhcz Ejtfsolg 
+Uxtxymzl Vfgxhhcz Azjhjfsf 
+Uxtxymzl Vfgxhhcz Ejtfsolg 
+Vhyodutu Uyotfnte Bjphywpo 
+Vhyodutu Prtvazfa Uyotfnte 
+Vhyodutu Prtvazfa Qwgfnuit 
+Vhyodutu Gxcagbgd Qwgfnuit 
+Vhyodutu Ejtfsolg Uyotfnte 
+Vhyodutu Ejtfsolg Qwgfnuit 
+Vhyodutu Vfgxhhcz Uyotfnte 
+Vhyodutu Vfgxhhcz Ejtfsolg 
+Nnmepepb Hjaveiqs Uyotfnte 
+Nnmepepb Prtvazfa Uyotfnte 
+Nnmepepb Prtvazfa Qwgfnuit 
+Nnmepepb Gxcagbgd Qwgfnuit 
+Nnmepepb Ejtfsolg Qwgfnuit 
+Nnmepepb Twsoqjqv Ejtfsolg 
+
+2 2
+Jonkoaks Wypyjkai 
+Qmmeeqfg Jonkoaks 
+
+43 3
+Cvhysvux Rkmycepl Jcqwovjm 
+Cvhysvux Djmcvqqb Jcqwovjm 
+Cvhysvux Enricoqz Jcqwovjm 
+Sxoollgy Flasmgqv Jcqwovjm 
+Sxoollgy Cvhysvux Jcqwovjm 
+Sxoollgy Cvhysvux Flasmgqv 
+Xpkplkom Djmcvqqb Jcqwovjm 
+Xpkplkom Enricoqz Djmcvqqb 
+Xpkplkom Flasmgqv Djmcvqqb 
+Xpkplkom Sxoollgy Jcqwovjm 
+Xpkplkom Sxoollgy Enricoqz 
+Xpkplkom Sxoollgy Flasmgqv 
+Qqkzuzkz Cvhysvux Jcqwovjm 
+Qqkzuzkz Sxoollgy Jcqwovjm 
+Zhmjkrxv Djmcvqqb Jcqwovjm 
+Zhmjkrxv Cvhysvux Jcqwovjm 
+Zhmjkrxv Sxoollgy Jcqwovjm 
+Zhmjkrxv Sxoollgy Flasmgqv 
+Rsrtguqa Sxoollgy Jcqwovjm 
+Rsrtguqa Xpkplkom Enricoqz 
+Rsrtguqa Zhmjkrxv Jcqwovjm 
+Qfeiqqtj Sxoollgy Jcqwovjm 
+Qfeiqqtj Xpkplkom Rkmycepl 
+Qfeiqqtj Xpkplkom Djmcvqqb 
+Qfeiqqtj Xpkplkom Sxoollgy 
+Qfeiqqtj Zhmjkrxv Jcqwovjm 
+Qfeiqqtj Zhmjkrxv Xpkplkom 
+Dyiclwso Zhmjkrxv Jcqwovjm 
+Jcvjmrmt Xpkplkom Enricoqz 
+Jcvjmrmt Zhmjkrxv Jcqwovjm 
+Jcvjmrmt Zhmjkrxv Flasmgqv 
+Azxnjhyc Sxoollgy Flasmgqv 
+Azxnjhyc Zhmjkrxv Jcqwovjm 
+Azxnjhyc Zhmjkrxv Flasmgqv 
+Zeorfbkt Sxoollgy Jcqwovjm 
+Cyfpajhd Sxoollgy Flasmgqv 
+Cyfpajhd Zhmjkrxv Jcqwovjm 
+Cyfpajhd Zhmjkrxv Flasmgqv 
+Zjsxptvn Cvhysvux Jcqwovjm 
+Zjsxptvn Sxoollgy Flasmgqv 
+Zjsxptvn Qfeiqqtj Sxoollgy 
+Zjsxptvn Qfeiqqtj Xpkplkom 
+Ohwsoqut Sxoollgy Jcqwovjm 
+
+26 3
+Vtogkfmg Esxcydlv Qtbkaeqd 
+Vtogkfmg Fsrsylqr Esxcydlv 
+Vtogkfmg Zytczlcg Esxcydlv 
+Dqqpeqqu Akywwvpz Vtatwqjv 
+Dqqpeqqu Akywwvpz Euksjvnt 
+Dqqpeqqu Alpzqagi Akywwvpz 
+Dqqpeqqu Wbylxxxr Akywwvpz 
+Dqqpeqqu Wbylxxxr Hamwgwqp 
+Dqqpeqqu Mpmzflcu Akywwvpz 
+Dqqpeqqu Mpmzflcu Wbylxxxr 
+Dqqpeqqu Vtogkfmg Esxcydlv 
+Dqqpeqqu Vtogkfmg Zytczlcg 
+Dqqpeqqu Vtogkfmg Akywwvpz 
+Dqqpeqqu Vtogkfmg Wbylxxxr 
+Specvgnv Dqqpeqqu Akywwvpz 
+Pbjvttns Vtatwqjv Esxcydlv 
+Pbjvttns Wbylxxxr Vtatwqjv 
+Pbjvttns Vtogkfmg Esxcydlv 
+Pbjvttns Vtogkfmg Wbylxxxr 
+Pbjvttns Dqqpeqqu Akywwvpz 
+Xctnrgrp Akywwvpz Qtbkaeqd 
+Xctnrgrp Akywwvpz Fsrsylqr 
+Xctnrgrp Akywwvpz Zytczlcg 
+Xctnrgrp Dqqpeqqu Akywwvpz 
+Xctnrgrp Pbjvttns Akywwvpz 
+Esrssqjs Dqqpeqqu Vtogkfmg 
+
+1 2
+Cgolzjpv Evutghlw 
+
+2 2
+Mixiayzt Xoyuavff 
+Imydwaoi Nxcdrsfu 
+
+1 2
+Tniwvdye Eswzidbh 
+
+346 3
+Zqztcdkz Blgkvyin Dsqwignq 
+Zqztcdkz Blgkvyin Dbsjkyht 
+Aeghgsuk Fuowzjxl Dsqwignq 
+Aeghgsuk Zqztcdkz Dbsjkyht 
+Tckxrnjt Dsqwignq Czylxxuf 
+Tckxrnjt Fuowzjxl Dsqwignq 
+Tckxrnjt Blgkvyin Dsqwignq 
+Tckxrnjt Zqztcdkz Dbsjkyht 
+Wmhbqzuo Tckxrnjt Dsqwignq 
+Jrcfwnzo Zqztcdkz Dbsjkyht 
+Fdbcdyha Fuowzjxl Dsqwignq 
+Fdbcdyha Zqztcdkz Dsqwignq 
+Fdbcdyha Zqztcdkz Dbsjkyht 
+Fdbcdyha Tckxrnjt Czylxxuf 
+Fdbcdyha Tckxrnjt Fuowzjxl 
+Fdbcdyha Tckxrnjt Blgkvyin 
+Fdbcdyha Tckxrnjt Zqztcdkz 
+Fdbcdyha Tckxrnjt Pebiipgl 
+Fdbcdyha Wmhbqzuo Zqztcdkz 
+Fdbcdyha Wmhbqzuo Tckxrnjt 
+Fdbcdyha Jrcfwnzo Blgkvyin 
+Fdbcdyha Jrcfwnzo Pebiipgl 
+Mbusrerr Fuowzjxl Dsqwignq 
+Mbusrerr Dbsjkyht Fuowzjxl 
+Mbusrerr Zqztcdkz Dsqwignq 
+Mbusrerr Zqztcdkz Dbsjkyht 
+Mbusrerr Tckxrnjt Czylxxuf 
+Mbusrerr Tckxrnjt Fuowzjxl 
+Madjrmgo Zqztcdkz Czylxxuf 
+Madjrmgo Zqztcdkz Dsqwignq 
+Madjrmgo Zqztcdkz Dbsjkyht 
+Madjrmgo Fdslhees Zqztcdkz 
+Madjrmgo Aeghgsuk Blgkvyin 
+Madjrmgo Aeghgsuk Zqztcdkz 
+Madjrmgo Tckxrnjt Dsqwignq 
+Madjrmgo Wmhbqzuo Zqztcdkz 
+Madjrmgo Fdbcdyha Zqztcdkz 
+Madjrmgo Fdbcdyha Tckxrnjt 
+Madjrmgo Mbusrerr Blgkvyin 
+Madjrmgo Mbusrerr Zqztcdkz 
+Zbvzidkw Zqztcdkz Dbsjkyht 
+Zbvzidkw Wmhbqzuo Dsqwignq 
+Zbvzidkw Madjrmgo Zqztcdkz 
+Qmmyogvc Fuowzjxl Dsqwignq 
+Qmmyogvc Zqztcdkz Czylxxuf 
+Qmmyogvc Zqztcdkz Fuowzjxl 
+Qmmyogvc Zqztcdkz Dbsjkyht 
+Qmmyogvc Aeghgsuk Fuowzjxl 
+Qmmyogvc Tckxrnjt Czylxxuf 
+Qmmyogvc Jrcfwnzo Czylxxuf 
+Qmmyogvc Fdbcdyha Zqztcdkz 
+Qmmyogvc Mbusrerr Fuowzjxl 
+Qmmyogvc Madjrmgo Zqztcdkz 
+Qmmyogvc Madjrmgo Tckxrnjt 
+Qmmyogvc Madjrmgo Jrcfwnzo 
+Rcxuimdu Fdbcdyha Tckxrnjt 
+Lkhfdnzd Dsqwignq Czylxxuf 
+Lkhfdnzd Fuowzjxl Dsqwignq 
+Lkhfdnzd Dbsjkyht Czylxxuf 
+Lkhfdnzd Dbsjkyht Fuowzjxl 
+Lkhfdnzd Blgkvyin Dsqwignq 
+Lkhfdnzd Blgkvyin Dbsjkyht 
+Lkhfdnzd Zqztcdkz Dbsjkyht 
+Lkhfdnzd Pebiipgl Dbsjkyht 
+Lkhfdnzd Tckxrnjt Czylxxuf 
+Lkhfdnzd Wmhbqzuo Czylxxuf 
+Lkhfdnzd Wmhbqzuo Dsqwignq 
+Lkhfdnzd Wmhbqzuo Fuowzjxl 
+Lkhfdnzd Wmhbqzuo Dbsjkyht 
+Lkhfdnzd Jrcfwnzo Czylxxuf 
+Lkhfdnzd Fdbcdyha Wmhbqzuo 
+Lkhfdnzd Madjrmgo Czylxxuf 
+Lkhfdnzd Madjrmgo Dsqwignq 
+Lkhfdnzd Madjrmgo Dbsjkyht 
+Lkhfdnzd Madjrmgo Aeghgsuk 
+Lkhfdnzd Madjrmgo Wmhbqzuo 
+Lkhfdnzd Madjrmgo Fdbcdyha 
+Lkhfdnzd Zbvzidkw Madjrmgo 
+Lkhfdnzd Qmmyogvc Czylxxuf 
+Lkhfdnzd Qmmyogvc Fuowzjxl 
+Lkhfdnzd Qmmyogvc Madjrmgo 
+Lkhfdnzd Rcxuimdu Dbsjkyht 
+Mmmweegp Aeghgsuk Fuowzjxl 
+Mmmweegp Fdbcdyha Zqztcdkz 
+Mmmweegp Mbusrerr Fuowzjxl 
+Mmmweegp Mbusrerr Blgkvyin 
+Mmmweegp Mbusrerr Zqztcdkz 
+Mmmweegp Mbusrerr Pebiipgl 
+Mmmweegp Madjrmgo Aeghgsuk 
+Mmmweegp Qmmyogvc Zqztcdkz 
+Mmmweegp Lkhfdnzd Czylxxuf 
+Mmmweegp Lkhfdnzd Wmhbqzuo 
+Tlrmyhsu Tckxrnjt Czylxxuf 
+Tlrmyhsu Wmhbqzuo Tckxrnjt 
+Tlrmyhsu Madjrmgo Dsqwignq 
+Tlrmyhsu Lkhfdnzd Wmhbqzuo 
+Snvsmaox Zqztcdkz Dbsjkyht 
+Snvsmaox Tckxrnjt Czylxxuf 
+Snvsmaox Wmhbqzuo Zqztcdkz 
+Snvsmaox Wmhbqzuo Tckxrnjt 
+Snvsmaox Qmmyogvc Fuowzjxl 
+Snvsmaox Lkhfdnzd Wmhbqzuo 
+Hsbjqokh Blgkvyin Dsqwignq 
+Hsbjqokh Aeghgsuk Dbsjkyht 
+Hsbjqokh Tckxrnjt Fuowzjxl 
+Hsbjqokh Tckxrnjt Dbsjkyht 
+Hsbjqokh Fdbcdyha Tckxrnjt 
+Hsbjqokh Madjrmgo Zqztcdkz 
+Hsbjqokh Lkhfdnzd Dbsjkyht 
+Mkbnyzav Tckxrnjt Czylxxuf 
+Mkbnyzav Fdbcdyha Zqztcdkz 
+Mkbnyzav Madjrmgo Zqztcdkz 
+Mkbnyzav Madjrmgo Tckxrnjt 
+Mkbnyzav Lkhfdnzd Czylxxuf 
+Mkbnyzav Lkhfdnzd Fuowzjxl 
+Mkbnyzav Lkhfdnzd Madjrmgo 
+Mkbnyzav Snvsmaox Zqztcdkz 
+Jdqidcca Aeghgsuk Dsqwignq 
+Jdqidcca Tckxrnjt Dsqwignq 
+Jdqidcca Fdbcdyha Dsqwignq 
+Jdqidcca Fdbcdyha Tckxrnjt 
+Jdqidcca Mbusrerr Czylxxuf 
+Jdqidcca Mbusrerr Dsqwignq 
+Jdqidcca Mbusrerr Fuowzjxl 
+Jdqidcca Mbusrerr Dbsjkyht 
+Jdqidcca Qmmyogvc Dsqwignq 
+Jdqidcca Lkhfdnzd Czylxxuf 
+Jdqidcca Lkhfdnzd Dsqwignq 
+Jdqidcca Lkhfdnzd Dbsjkyht 
+Jdqidcca Lkhfdnzd Fdbcdyha 
+Jdqidcca Mmmweegp Aeghgsuk 
+Jdqidcca Snvsmaox Wmhbqzuo 
+Jdqidcca Snvsmaox Qmmyogvc 
+Rvkppleo Zqztcdkz Dbsjkyht 
+Rvkppleo Qmmyogvc Fuowzjxl 
+Rvkppleo Mmmweegp Wmhbqzuo 
+Rvkppleo Hsbjqokh Dbsjkyht 
+Rvkppleo Jdqidcca Fdbcdyha 
+Fswznrqt Zqztcdkz Blgkvyin 
+Fswznrqt Tckxrnjt Czylxxuf 
+Fswznrqt Tckxrnjt Dsqwignq 
+Fswznrqt Tckxrnjt Zqztcdkz 
+Fswznrqt Tckxrnjt Aeghgsuk 
+Fswznrqt Wmhbqzuo Tckxrnjt 
+Fswznrqt Fdbcdyha Fuowzjxl 
+Fswznrqt Fdbcdyha Tckxrnjt 
+Fswznrqt Mbusrerr Fuowzjxl 
+Fswznrqt Madjrmgo Czylxxuf 
+Fswznrqt Madjrmgo Dsqwignq 
+Fswznrqt Madjrmgo Dbsjkyht 
+Fswznrqt Madjrmgo Blgkvyin 
+Fswznrqt Madjrmgo Zqztcdkz 
+Fswznrqt Madjrmgo Fdslhees 
+Fswznrqt Madjrmgo Tckxrnjt 
+Fswznrqt Madjrmgo Fdbcdyha 
+Fswznrqt Madjrmgo Mbusrerr 
+Fswznrqt Zbvzidkw Czylxxuf 
+Fswznrqt Zbvzidkw Dsqwignq 
+Fswznrqt Zbvzidkw Dbsjkyht 
+Fswznrqt Zbvzidkw Blgkvyin 
+Fswznrqt Zbvzidkw Fdslhees 
+Fswznrqt Zbvzidkw Tckxrnjt 
+Fswznrqt Qmmyogvc Zqztcdkz 
+Fswznrqt Qmmyogvc Madjrmgo 
+Fswznrqt Qmmyogvc Zbvzidkw 
+Fswznrqt Rcxuimdu Madjrmgo 
+Fswznrqt Rcxuimdu Zbvzidkw 
+Fswznrqt Lkhfdnzd Czylxxuf 
+Fswznrqt Lkhfdnzd Dsqwignq 
+Fswznrqt Lkhfdnzd Fuowzjxl 
+Fswznrqt Lkhfdnzd Dbsjkyht 
+Fswznrqt Lkhfdnzd Blgkvyin 
+Fswznrqt Lkhfdnzd Zqztcdkz 
+Fswznrqt Lkhfdnzd Aeghgsuk 
+Fswznrqt Lkhfdnzd Wmhbqzuo 
+Fswznrqt Lkhfdnzd Jrcfwnzo 
+Fswznrqt Lkhfdnzd Fdbcdyha 
+Fswznrqt Lkhfdnzd Madjrmgo 
+Fswznrqt Lkhfdnzd Zbvzidkw 
+Fswznrqt Lkhfdnzd Qmmyogvc 
+Fswznrqt Mmmweegp Blgkvyin 
+Fswznrqt Mmmweegp Aeghgsuk 
+Fswznrqt Mmmweegp Tckxrnjt 
+Fswznrqt Mmmweegp Fdbcdyha 
+Fswznrqt Mmmweegp Madjrmgo 
+Fswznrqt Mmmweegp Zbvzidkw 
+Fswznrqt Mmmweegp Qmmyogvc 
+Fswznrqt Mmmweegp Lkhfdnzd 
+Fswznrqt Tlrmyhsu Madjrmgo 
+Fswznrqt Snvsmaox Fuowzjxl 
+Fswznrqt Snvsmaox Madjrmgo 
+Fswznrqt Hsbjqokh Blgkvyin 
+Fswznrqt Hsbjqokh Aeghgsuk 
+Fswznrqt Hsbjqokh Fdbcdyha 
+Fswznrqt Hsbjqokh Madjrmgo 
+Fswznrqt Hsbjqokh Zbvzidkw 
+Fswznrqt Hsbjqokh Qmmyogvc 
+Fswznrqt Mkbnyzav Aeghgsuk 
+Fswznrqt Mkbnyzav Fdbcdyha 
+Fswznrqt Mkbnyzav Madjrmgo 
+Fswznrqt Mkbnyzav Zbvzidkw 
+Fswznrqt Jdqidcca Madjrmgo 
+Fswznrqt Rvkppleo Zqztcdkz 
+Fswznrqt Rvkppleo Mmmweegp 
+Yjlsnnus Zqztcdkz Dsqwignq 
+Yjlsnnus Zqztcdkz Dbsjkyht 
+Yjlsnnus Aeghgsuk Dsqwignq 
+Yjlsnnus Tckxrnjt Czylxxuf 
+Yjlsnnus Tckxrnjt Dsqwignq 
+Yjlsnnus Tckxrnjt Dbsjkyht 
+Yjlsnnus Fdbcdyha Dsqwignq 
+Yjlsnnus Fdbcdyha Dbsjkyht 
+Yjlsnnus Fdbcdyha Tckxrnjt 
+Yjlsnnus Fdbcdyha Wmhbqzuo 
+Yjlsnnus Fdbcdyha Jrcfwnzo 
+Yjlsnnus Madjrmgo Fdbcdyha 
+Yjlsnnus Qmmyogvc Dsqwignq 
+Yjlsnnus Qmmyogvc Fuowzjxl 
+Yjlsnnus Qmmyogvc Fdbcdyha 
+Yjlsnnus Lkhfdnzd Dsqwignq 
+Yjlsnnus Lkhfdnzd Dbsjkyht 
+Yjlsnnus Mmmweegp Aeghgsuk 
+Yjlsnnus Mmmweegp Fdbcdyha 
+Yjlsnnus Mmmweegp Qmmyogvc 
+Yjlsnnus Tlrmyhsu Dsqwignq 
+Yjlsnnus Mkbnyzav Fdbcdyha 
+Yjlsnnus Jdqidcca Fdbcdyha 
+Yjlsnnus Fswznrqt Blgkvyin 
+Yjlsnnus Fswznrqt Zqztcdkz 
+Yjlsnnus Fswznrqt Tckxrnjt 
+Yjlsnnus Fswznrqt Fdbcdyha 
+Yjlsnnus Fswznrqt Qmmyogvc 
+Yjlsnnus Fswznrqt Lkhfdnzd 
+Yjlsnnus Fswznrqt Tlrmyhsu 
+Yjlsnnus Fswznrqt Jdqidcca 
+Tqysjceu Zqztcdkz Dsqwignq 
+Tqysjceu Zqztcdkz Dbsjkyht 
+Tqysjceu Tckxrnjt Czylxxuf 
+Tqysjceu Wmhbqzuo Blgkvyin 
+Tqysjceu Wmhbqzuo Zqztcdkz 
+Tqysjceu Wmhbqzuo Tckxrnjt 
+Tqysjceu Qmmyogvc Fuowzjxl 
+Tqysjceu Qmmyogvc Blgkvyin 
+Tqysjceu Qmmyogvc Zqztcdkz 
+Tqysjceu Lkhfdnzd Wmhbqzuo 
+Tqysjceu Hsbjqokh Tckxrnjt 
+Tqysjceu Mkbnyzav Zqztcdkz 
+Tqysjceu Jdqidcca Aeghgsuk 
+Tqysjceu Jdqidcca Wmhbqzuo 
+Tqysjceu Jdqidcca Fdbcdyha 
+Tqysjceu Jdqidcca Mbusrerr 
+Tqysjceu Jdqidcca Qmmyogvc 
+Tqysjceu Jdqidcca Hsbjqokh 
+Tqysjceu Fswznrqt Blgkvyin 
+Tqysjceu Fswznrqt Zqztcdkz 
+Tqysjceu Fswznrqt Tckxrnjt 
+Tqysjceu Fswznrqt Fdbcdyha 
+Tqysjceu Fswznrqt Qmmyogvc 
+Tqysjceu Fswznrqt Lkhfdnzd 
+Tqysjceu Fswznrqt Tlrmyhsu 
+Tqysjceu Fswznrqt Jdqidcca 
+Xydicidx Dsqwignq Czylxxuf 
+Xydicidx Fuowzjxl Dsqwignq 
+Xydicidx Dbsjkyht Dsqwignq 
+Xydicidx Blgkvyin Dsqwignq 
+Xydicidx Zqztcdkz Dsqwignq 
+Xydicidx Zqztcdkz Fuowzjxl 
+Xydicidx Zqztcdkz Dbsjkyht 
+Xydicidx Fdslhees Dsqwignq 
+Xydicidx Tckxrnjt Dsqwignq 
+Xydicidx Jrcfwnzo Dsqwignq 
+Xydicidx Fdbcdyha Czylxxuf 
+Xydicidx Fdbcdyha Fuowzjxl 
+Xydicidx Fdbcdyha Dbsjkyht 
+Xydicidx Fdbcdyha Blgkvyin 
+Xydicidx Fdbcdyha Fdslhees 
+Xydicidx Fdbcdyha Tckxrnjt 
+Xydicidx Mbusrerr Fuowzjxl 
+Xydicidx Mbusrerr Blgkvyin 
+Xydicidx Madjrmgo Blgkvyin 
+Xydicidx Madjrmgo Zqztcdkz 
+Xydicidx Zbvzidkw Dsqwignq 
+Xydicidx Qmmyogvc Zqztcdkz 
+Xydicidx Qmmyogvc Zbvzidkw 
+Xydicidx Rcxuimdu Dsqwignq 
+Xydicidx Rcxuimdu Fdbcdyha 
+Xydicidx Lkhfdnzd Czylxxuf 
+Xydicidx Lkhfdnzd Dsqwignq 
+Xydicidx Lkhfdnzd Fuowzjxl 
+Xydicidx Lkhfdnzd Dbsjkyht 
+Xydicidx Lkhfdnzd Blgkvyin 
+Xydicidx Lkhfdnzd Zqztcdkz 
+Xydicidx Lkhfdnzd Pebiipgl 
+Xydicidx Lkhfdnzd Aeghgsuk 
+Xydicidx Lkhfdnzd Wmhbqzuo 
+Xydicidx Lkhfdnzd Jrcfwnzo 
+Xydicidx Lkhfdnzd Fdbcdyha 
+Xydicidx Lkhfdnzd Zbvzidkw 
+Xydicidx Lkhfdnzd Qmmyogvc 
+Xydicidx Mmmweegp Dsqwignq 
+Xydicidx Mmmweegp Fuowzjxl 
+Xydicidx Mmmweegp Dbsjkyht 
+Xydicidx Mmmweegp Fdbcdyha 
+Xydicidx Mmmweegp Qmmyogvc 
+Xydicidx Tlrmyhsu Dsqwignq 
+Xydicidx Snvsmaox Fuowzjxl 
+Xydicidx Snvsmaox Blgkvyin 
+Xydicidx Hsbjqokh Fuowzjxl 
+Xydicidx Hsbjqokh Dbsjkyht 
+Xydicidx Mkbnyzav Dsqwignq 
+Xydicidx Mkbnyzav Zqztcdkz 
+Xydicidx Mkbnyzav Fdbcdyha 
+Xydicidx Mkbnyzav Zbvzidkw 
+Xydicidx Mkbnyzav Lkhfdnzd 
+Xydicidx Mkbnyzav Mmmweegp 
+Xydicidx Mkbnyzav Hsbjqokh 
+Xydicidx Jdqidcca Dsqwignq 
+Xydicidx Rvkppleo Blgkvyin 
+Xydicidx Rvkppleo Zqztcdkz 
+Xydicidx Fswznrqt Czylxxuf 
+Xydicidx Fswznrqt Dsqwignq 
+Xydicidx Fswznrqt Wmhbqzuo 
+Xydicidx Fswznrqt Madjrmgo 
+Xydicidx Fswznrqt Lkhfdnzd 
+Xydicidx Fswznrqt Mmmweegp 
+Xydicidx Fswznrqt Hsbjqokh 
+Xydicidx Fswznrqt Rvkppleo 
+Xydicidx Yjlsnnus Dsqwignq 
+Xydicidx Yjlsnnus Fuowzjxl 
+Xydicidx Yjlsnnus Blgkvyin 
+Xydicidx Yjlsnnus Zqztcdkz 
+Xydicidx Yjlsnnus Pebiipgl 
+Xydicidx Yjlsnnus Jrcfwnzo 
+Xydicidx Yjlsnnus Fdbcdyha 
+Xydicidx Yjlsnnus Zbvzidkw 
+Xydicidx Yjlsnnus Fswznrqt 
+Xydicidx Tqysjceu Fuowzjxl 
+Xydicidx Tqysjceu Blgkvyin 
+Xydicidx Tqysjceu Zqztcdkz 
+Xydicidx Tqysjceu Tckxrnjt 
+Xydicidx Tqysjceu Jrcfwnzo 
+Xydicidx Tqysjceu Zbvzidkw 
+Xydicidx Tqysjceu Lkhfdnzd 
+Xydicidx Tqysjceu Mmmweegp 
+Xydicidx Tqysjceu Jdqidcca 
+Xydicidx Tqysjceu Fswznrqt 
+
+3 2
+Qghsdoro Olzttzpl 
+Mexgzjaa Niujkeke 
+Fystghbn Niujkeke 
+
+1 2
+Rcwlqfjs Ydlccgsv 
+
+1 2
+Vtwzmjhs Eeedeial 
+
+1 2
+Cxjjdqrt Yjhffbld 
+
+6 2
+Umkfblak Irfqxzlt 
+Rulmesqz Bpjtkkhd 
+Yzpcfuan Rulmesqz 
+Hdegfrzr Irfqxzlt 
+Hdegfrzr Bpjtkkhd 
+Hdegfrzr Rulmesqz 
+
+3 2
+Nkzjzlce Lpufkhid 
+Ddmtiefy Lpufkhid 
+Ocgkfccy Awjlzezm 
+
+2 2
+Pmzgppml Qxctjdfy 
+Rbiwmgsj Qxctjdfy 
+
+1 5
+Yzdybowl Mfaptzte Hfpqtddi Uxxdyuvb Zqbifhkz 
+
+3 5
+Rtidshop Armxdshl Eyankszh Colqclpg Fqxrdhfc 
+Rtidshop Armxdshl Qkwhxdsv Colqclpg Fqxrdhfc 
+Rtidshop Armxdshl Oyshznke Colqclpg Fqxrdhfc 
+
+7 5
+Hhpdputg Zollxbmh Qzoluppl Oxwyqgjg Ubfbjmol 
+Hhpdputg Iddyilbl Zollxbmh Oxwyqgjg Ubfbjmol 
+Egzlwjxa Hhpdputg Zollxbmh Oxwyqgjg Ubfbjmol 
+Gdrvbwhu Hhpdputg Zollxbmh Oxwyqgjg Ubfbjmol 
+Gdrvbwhu Hhpdputg Yhbkyann Zollxbmh Ubfbjmol 
+Gdrvbwhu Hjicufss Hhpdputg Zollxbmh Ubfbjmol 
+Tzojilav Gdrvbwhu Hhpdputg Zollxbmh Ubfbjmol 
+
+Impossible
+
+1 5
+Orfhukkl Mweoxztn Gmyduhah Uxalsdmq Hdsvkmtz 
+
+Impossible
+
+16 5
+Xkeqqziv Lmcwtzpf Tdszoxzu Hinjznbd Ofywxhlw 
+Wrldmohv Xkeqqziv Lmcwtzpf Tdszoxzu Hinjznbd 
+Yfgkmsal Xkeqqziv Lmcwtzpf Tdszoxzu Rtenzvwm 
+Yfgkmsal Xkeqqziv Lmcwtzpf Tdszoxzu Ofywxhlw 
+Yfgkmsal Xkeqqziv Lmcwtzpf Tdszoxzu Hinjznbd 
+Yfgkmsal Xkeqqziv Uhvftcnc Lmcwtzpf Tdszoxzu 
+Yfgkmsal Qeckqnns Xkeqqziv Lmcwtzpf Tdszoxzu 
+Yfgkmsal Bsjayaes Xkeqqziv Lmcwtzpf Tdszoxzu 
+Yfgkmsal Okzzyxad Xkeqqziv Lmcwtzpf Tdszoxzu 
+Yfgkmsal Leiygoin Xkeqqziv Lmcwtzpf Tdszoxzu 
+Lpthscdz Xkeqqziv Lmcwtzpf Tdszoxzu Hinjznbd 
+Jelevhfz Yfgkmsal Xkeqqziv Lmcwtzpf Tdszoxzu 
+Jelevhfz Yfgkmsal Dbqbbrrs Ivzgtzkf Tdszoxzu 
+Jelevhfz Yfgkmsal Mxcsofnk Lmcwtzpf Tdszoxzu 
+Shaztejq Dbqbbrrs Xkeqqziv Hinjznbd Ofywxhlw 
+Shaztejq Yfgkmsal Bsjayaes Xkeqqziv Tdszoxzu 
+
+Impossible
+
+Impossible
+
+9 5
+Rhwlsjyv Lcdrqudo Inkusagm Uebauqhq Ljbpwtch 
+Pmicrkju Lcdrqudo Nqbduyvw Ljbpwtch Rbgbfxcc 
+Pmicrkju Lcdrqudo Kdyfqzck Uebauqhq Ljbpwtch 
+Pmicrkju Lcdrqudo Kdyfqzck Vnumgvki Ljbpwtch 
+Cahvvdzn Wpblpmhq Inkusagm Uebauqhq Ljbpwtch 
+Cahvvdzn Lcdrqudo Inkusagm Uebauqhq Ljbpwtch 
+Cahvvdzn Nqdxrejx Inkusagm Uebauqhq Ljbpwtch 
+Cahvvdzn Bwpjtoat Inkusagm Uebauqhq Ljbpwtch 
+Cahvvdzn Bwpjtoat Vnumgvki Inkusagm Ljbpwtch 

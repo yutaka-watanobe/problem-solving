@@ -1,0 +1,164 @@
+#include<iostream>
+#include<queue>
+using namespace std;
+#define INFTY (1<<21)
+#define MAX 9
+#define EMPTY 0
+#define OBSTACLE 1
+
+class Point{
+    public:
+    int i, j; 
+    Point(){} 
+    Point(int i, int j):i(i), j(j){}
+    bool operator == ( const Point &p ) const{
+	return i == p.i && j == p.j;
+    }
+};
+
+int N, M;
+int G[MAX+2][MAX+2];
+int V[MAX+2][MAX+2]; // visited
+int limit;
+static const int di[4] = {0, -1, 0, 1};
+static const int dj[4] = {1, 0, -1, 0};
+
+Point pair2[2], pair3[2];
+
+int bfs( Point s, Point t ){
+    queue<Point> Q;
+    int D[MAX+2][MAX+2];
+    for ( int i = 1; i <= N; i++ ){
+	for ( int j = 1; j <= M; j++ ) D[i][j] = INFTY;
+    }
+    Q.push(s);
+    D[s.i][s.j] = 0;
+    Point u, v;
+    while(!Q.empty()){
+	u = Q.front(); Q.pop();
+	if ( u.i == t.i && u.j == t.j ) return D[u.i][u.j];
+	int ni, nj;
+	for ( int d = 0; d < 4; d++ ){
+	    ni = u.i + di[d];
+	    nj = u.j + dj[d];
+	    if ( D[ni][nj] == INFTY && V[ni][nj] == 0){
+		D[ni][nj] = D[u.i][u.j] + 1;
+		Q.push(Point(ni, nj));
+	    }
+	}
+    }
+    return INFTY;
+}
+
+int getMD( Point pos2, Point pos3 ){
+    return bfs(pos2, pair2[1] ) + bfs(pos3, pair3[1]);
+    int d2 = max(pos2.i, pair2[1].i ) - min(pos2.i, pair2[1].i ) +
+	max(pos2.j, pair2[1].j ) - min(pos2.j, pair2[1].j );
+    int d3 = max(pos3.i, pair3[1].i ) - min(pos3.i, pair3[1].i ) +
+	max(pos3.j, pair3[1].j ) - min(pos3.j, pair3[1].j );
+    return d2 + d3;
+}
+
+bool check( int ci, int cj, int ni, int nj, int num ){
+    if ( V[ni][nj] != 0 ) return false;
+    int ii, jj;
+    for ( int d = 0; d < 4; d++ ){
+	ii = ni + di[d];
+	jj = nj + dj[d];
+	if ( ii == ci && jj == cj ) continue;
+
+	if ( V[ii][jj] == num ) return false;
+    }
+
+    return true;
+}
+
+void print(){
+    for ( int i = 1; i <= N; i++ ){
+	for ( int j = 1; j <= M; j++ ){
+	    cout << V[i][j];
+	}
+	cout << endl;
+    }
+	cout << endl;
+}
+
+bool recursive(Point pos2, Point pos3, bool con2, bool con3, int depth){
+    //    print();
+    if ( pos2 == pair2[1] ) con2 = true;
+    if ( pos3 == pair3[1] ) con3 = true;
+    if ( con2 && con3 ) return true;
+    if ( depth + getMD(pos2, pos3) > limit ) return false;
+
+    int ni, nj;
+    if ( !con2 ){
+	for ( int d = 0; d < 4; d++ ){
+	    ni = pos2.i + di[d];
+	    nj = pos2.j + dj[d];
+	    if ( check(pos2.i, pos2.j, ni, nj, 2) && ( G[ni][nj] == 0 || G[ni][nj] == 2 ) ){
+		V[ni][nj] = 2;
+		if (recursive( Point(ni, nj), pos3, con2, con3, depth+1 ) ) return true;
+		V[ni][nj] = 0;
+	    }
+	}
+    }
+    if ( !con3 ){
+	for ( int d = 0; d < 4; d++ ){
+	    ni = pos3.i + di[d];
+	    nj = pos3.j + dj[d];
+	    if ( check(pos3.i, pos3.j, ni, nj, 3) && ( G[ni][nj] == 0 || G[ni][nj] == 3 ) ){
+		V[ni][nj] = 3;
+		if (recursive( pos2, Point(ni, nj), con2, con3, depth+1 ) ) return true;
+		V[ni][nj] = 0;
+	    }
+	}
+    }
+
+    return false;
+}
+
+void init(){
+    for ( int i = 1; i <= N; i++ ){
+	for ( int j = 1; j <= M; j++ ) V[i][j] = 0;
+    }
+}
+
+void compute(){
+    limit = 0;
+    while(1){
+	init();
+	V[pair2[0].i][pair2[0].j] = 2;
+	V[pair3[0].i][pair3[0].j] = 3;
+	if ( recursive(pair2[0], pair3[0], false, false, 0) ){
+	    cout << "and" << limit << endl;
+	    return;
+	}
+	if ( limit > 60 ) {
+	    cout << "X" << endl;
+	    return;
+	}
+	cout << limit << endl;
+	limit++;
+    }
+}
+
+bool input(){
+    cin >> N >> M;
+    if ( N == 0 ) return false;
+    for ( int i = 0; i < N+2; i++ ) G[i][0] = G[i][M+1] = OBSTACLE;
+    for ( int j = 0; j < M+2; j++ ) G[0][j] = G[N+1][j] = OBSTACLE;
+    int p2, p3;
+    p2 = p3 = 0;
+    for ( int i = 1; i <= N; i++ ){
+	for ( int j = 1; j <= M; j++ ){
+	    cin >> G[i][j];
+	    if ( G[i][j] == 2 ) pair2[p2++] = Point(i, j);
+	    if ( G[i][j] == 3 ) pair3[p3++] = Point(i, j);
+	}
+    }
+    return true;
+}
+
+main(){
+    while(input()) compute();
+}

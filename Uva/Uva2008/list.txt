@@ -1,0 +1,114 @@
+103:Stacking Boxes:2.5: LIS
+123:Searching Quickly:1,2: String, Sort
+145:Gondwanaland Telecom:1.5: Calcu
+159:Word Crosses:2: Simple Calcu
+213:Message Decoding:2: String, Bit
+216:Getting in Line:1.5: Permutation (BF)
+271:Simply Syntax:1.5: Parse
+294:Divisor:2: Number Theory, Count the number of divisor
+311:Packets:2.5: Greedy, Packing into 2D Grid
+406: Prime Cut:1,1.5: Eratos
+435:Block Voting:2: Backtracking (Exhoustive)
+516:Prime Land:1.5: Factorize
+571:Jugs:2.5: BFS or DFS (state trans.)
+591:Box of Bricks:1: simple calc
+608:Counterfeit Dollar:1.5: Check, BF
+784:Maze Exploration:1.5: DFS on grid
+810:A Dicey Problem:3: DFS on grid, Dice
+833:Water Falls:2,3: Geometry, intersect, crossPoint, distance
+837:Light and Transparencies:2: Geometry, Segments
+866:Intersecting Line Segments:2: Geometry, intersect
+897:Anagrammatic Primes:2: Prime Number, Making Table
+903:Spiral of Numbers:2: Coordinate conversion, upper bound
+907:Winterim Backpacking Trip:3: Partition Problem
+908:Re-connecting Computer Sites:3: MST, Kruskal (is better than Prim)
+910:TV game:2.5: DP - count
+920:Sunny Mountains:2,3: Geometry, intersect, crossPoint, distance
+926:Walking Around Wisely:2: DP in Grid
+962:Taxicab Numbers:2: Number, BF
+967:Circular:2: Number + Eratos
+974:Kaprekar Numbers:2: Number Theory, Ad hoc
+989:Su Doku:3: Backgracking
+991:Safe Salutations:2: Number theory, Catalan Number
+993:Product of digits:2: Number theory + Greedy
+10047:The Monocycle:3: State BFS in Grid 
+10116:Robot Motion:1.5: Simulation on Grid
+10168:Summation of Four Primes:3,2.5: Eratos, Number, Goldbach's Conjecture
+10310:Dog and Gopher:1: Geom, calc distance between two points
+10336:Rank the Languages:2: DFS and sort
+10338:Mischievous Children:1.5: The number of way, Permutation
+10346:Peter's Smokes:1: Simulation, div and mod
+10664:Luggage:2: Backgracking
+10700:1.5:Simple parse + greedy
+10717:Mint:2: Number LCM + Set
+10903:1:Basic
+10908:1.5:Largest Square, BF
+10910:2:DP Combinatorics (count)
+10918:2.5:DP Combinatorics (count)
+10937:Blackbeard the Pirate:3: TSP on Grid
+10943:How do you add?:2:DP Combinatorics (count)
+10947:Bear with me, again..:2:Geometry, BFS(DFS)
+10948:The primary problem:1:Prime numbers
+10976:1.5: Number, BF
+11094:Continents:1.5: DFS in Grid(loop in horizontal)
+11100:2: The Trip, 2007:Greedy, multiset
+11103:1.5: WFF'N PROOF:Greedy, string
+11105:1.5:Semi-prime H-numbers:Number, Thieve
+11108:2:Tautology:Parse
+11111:2.5:Generalized Matrioshkas: Stack
+11121:Base-2:2.5: Base convertion - Base (-2)
+11124:Troubles for Modern Days Problemsetters:2: String parse, sstream
+11127:Triple-Free Binary Strings:2.5: Backtracking
+11138:Nuts and Bolts:3: Matching, Maximum flow
+11148:2:Simple Parse + Arithmetic
+11150:1:Basic
+11151:2:String reverse + LCS
+11152:1.5: Math, Trigonometric Function
+11185:1: Base convertion
+11192:1: String, group reverse
+11218:1: Optimal, BF
+11233:1.5: String, map
+11254:1.5:Math
+11278:1:basic
+11279:1.5: basic
+11280:2.5: DP or Dijkstra (DAG)
+11285:2:DP
+11286:2:set
+11287:2:math
+11310:2:DP (count)
+11321:1.5: Sort, Operator
+11340:1:Basic
+11351:1:joseph
+11385:2:Fibonacchi, map, string
+11401:1.5:Math + DP
+
+
+11455:Behold My Quadrangle:1:Geom
+11461:Square Numbers:1: basic
+11462:Age Sort:1: Bucket sort
+11463:Commandos:2.5: BFS + BFS
+11470:Square Sums:1: basic
+11474:Dying Tree:2: DFS
+11475:Extend to Palindrome:2:String, Parimdolom, KMP
+11479:Is this the easiest problem?:1: Triangle judge
+
+11482:Building a Triangular Museum:2: print pattern
+11483:Code Creator:1: escape " and \
+11489:Integer Game:2: Number
+11492:Babel:2,3: Dijkstra 
+11493:The Club Ballroon:2.5: Greedy
+11495:Bubbles and Buckets:2.5: Merge Sort
+11496:Musical Loop:1: Ad-hoc, 
+11498:Division of Nlogonia:1: Simple Judge
+
+11541:Decoding:1: String
+11547:AUTOMATIC ANSWER:1: Simple Calc
+11548:BLACKBOARD NONANZA:2: Brute Force String Pattern Search
+11549:CALCULATOR CONUNDRUM:2: Loop, Log10, map
+11550:DEMANDING DILEMMA:2: Simple Judge (is it simple graph?)
+11554:HAPLESS HEDONISM:2: DP, Sequence 
+
+
+
+
+

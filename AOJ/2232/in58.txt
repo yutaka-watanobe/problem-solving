@@ -1,0 +1,11 @@
+10 3 2
+..U
+..Q
+..U
+T.B
+Q.M
+B.T
+T.D
+D.C
+C.E
+OEO

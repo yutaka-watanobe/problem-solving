@@ -1,0 +1,33 @@
+
+Problem F: Ben Toh (tentative)
+
+午後8時のスーパーマーケットには、今日も狼と呼ばれる者共が集っていた。彼らの求めるものはただ一つ、半額のラベルが貼られた弁当である。数少ないそれを奪い合って、彼らは毎日激しい戦いを繰り広げるのだ。そして最も腹の虫の加護を受けた者共は見事半額の弁当を手に入れ、そうでない者は泣く泣くどん兵衛でもすすることになるのである。
+
+とある高校生・佐藤も、そんな狼の一人である。彼の住んでいる高校の寮では、夕食は支給されない。加えて両親からの仕送りも少ないので、彼は何としても半額弁当を手に入れて、小遣いを浮かせなければならない。そうでなければ、漫画やゲームの類を諦めるか、アルバイトを始めなければならなくなってしまうのだ。
+佐藤は優秀な狼なので、最初の日は100%の確率で半額弁当を手に入れることができる。しかしその翌日は、他の多くの狼たちが結託して佐藤の邪魔をしようとするので、半額弁当の入手確率は50%に低下する。それでも手に入れることができたならば、その翌日はさらに激しい妨害を受け、入手確率は25%になる。以降も同様に、半額弁当を手に入れると、翌日の入手確率はその日の半分になっていく。一度半額弁当の入手に失敗すると、その翌日の入手確率はまた100%に戻る。
+
+佐藤は n 日の間スーパーマーケットに通いつづけ、半額弁当を得ようとしている。消費計画を立てたい佐藤のために、彼が何回半額弁当を得られる回数の期待値を求めるプログラムを作成してほしい。
+
+Input
+1つのデータセットに対する入力は、1つの整数 n (1 <= n <= 100,000) で与えられる。
+
+Output
+各データセットごとに、期待値を含む1行を出力せよ。小数点以下何桁でも表示して構わない。表示する答えは、 1.0e-5 未満の誤差を含んでいてもよい。
+
+
+Problem F: Ben Toh (EN)
+
+As usual, those who called wolves get together on 8 p.m. at the supermarket. The thing they want is only one, a box lunch that is labeled half price. Scrambling for a few discounted box lunch, they fiercely fight every day. And those who are blessed by hunger and appetite the best can acquire the box lunch, while others have to have cup ramen or something with tear in their eyes.
+
+A senior high school student, Sato, is one of wolves. A dormitry he lives doesn't serve a dinner, and his parents don't send so much money. Therefore he absolutely acquire the half-priced box lunch and save his money. Otherwise he have to give up comic books and video games, or begin part-time job.
+Since Sato is an excellent wolf, he can acquire the discounted box lunch in 100% probability on the first day. But on the next day, many other wolves cooperate to block him and the probability to get a box lunch will be 50%. Even though he can get, the probability to get will be 25% on the next day of the day. Likewise, 
+if he gets a box lunch on a certain day, the probability to get on the next day will be half. Once he failed to get a box lunch, probability to get would be back to 100%.
+
+He continue to go to supermaket and try to get the discounted box lunch for n days. Please write a program to computes the expected value of the number of the discounted box lunches he can acquire.
+
+Input
+Input for a single dataset is given as a single integer n (1 <= n <= 100,000).
+Input terminates with a dataset where n = 0.
+
+Output
+For each dataset, write a line that contains an expected value. You may any number of digits after the decimal point. Answers that have an error less than 1.0e-5 will be accepted.

@@ -1,0 +1,28 @@
+Problem I  A Piece of Cake
+
+
+In the city, there are two pastry shops.  One shop was very popular because its cakes are pretty tasty.  
+However, there was a man who is displeased at the shop.  He was an owner of another shop.  Although cause of his shop's unpopularity is incrediblly awful taste of its cakes, he never improved it.  He was just growing hate, ill, envy, and jealousy.
+
+Finally, he decided to vandalize the rival.
+
+His vandalize is to mess up sales record of cakes.  The rival pestry sells K kinds of cakes and sales quantity is recorded for each kind.  He breaks into the shop and see sales record.  Then for each pair of cakes, write down sum of sales quantities of these two cakes.  Finally he makes K * (K - 1) / 2 cards, shuffles  them carefully, and takes original sales record away and leaves the cards instead.
+
+An owner of the rival shop is bothered.  Could you write, at least, a program that finds total sales quantity of all cakes for the pitiful owner?
+
+Input
+Input file contains several data sets.
+A single data set has following format:
+
+K
+c1, c2, ..., c(K*(K-1)/2)
+
+K is an integer that denotes how many kinds of cakes are sold.  c(i) is integer that denotes written on cards.
+
+The end of input is denoted by a case where K = 0.  You should output nothing for this case.
+
+Output
+For each data set, output total sales quantity in one line.
+
+
+

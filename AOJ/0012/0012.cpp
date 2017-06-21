@@ -1,0 +1,84 @@
+#include<iostream>
+#include<cfloat>
+#include<cassert>
+#include<cmath>
+#include<vector>
+
+using namespace std;
+
+#define EPS (1e-10)
+#define equals(a, b) (fabs((a) - (b)) < EPS )
+#define dle(a, b) (equals(a, b) || a < b )
+static const double PI = acos(-1);
+
+class Point{
+    public:
+    double x, y;
+    
+    Point ( double x = 0, double y = 0): x(x), y(y){}
+    
+    Point operator + ( Point p ){ return Point(x + p.x, y + p.y); }
+    Point operator - ( Point p ){ return Point(x - p.x, y - p.y); }
+    Point operator * ( double a ){ return Point(x*a, y*a); }
+
+    double abs() { return sqrt(norm());}
+    double norm() { return x*x + y*y; }
+
+    bool operator < ( const Point &p ) const {
+	return x != p.x ? x < p.x : y < p.y;
+    }
+
+    bool operator == ( const Point &p ) const {
+	return fabs(x-p.x) < EPS && fabs(y-p.y) < EPS;
+    }
+};
+
+typedef Point Vector;
+
+class Segment{
+    public:
+    Point p1, p2;
+    Segment(Point s = Point(), Point t = Point()): p1(s), p2(t){}
+};
+
+typedef Segment Line;
+
+double norm( Vector a ){ return a.x*a.x + a.y*a.y; }
+double abs( Vector a ){ return sqrt(norm(a)); }
+double getDistance( Vector a, Vector b ){ return abs(a - b); }
+double dot( Vector a, Vector b ){ return a.x*b.x + a.y*b.y; }
+double cross( Vector a, Vector b ){ return a.x*b.y - a.y*b.x; }
+
+static const int COUNTER_CLOCKWISE = 1;
+static const int CLOCKWISE = -1;
+static const int ONLINE_BACK = 2;
+static const int ONLINE_FRONT = -2;
+static const int ON_SEGMENT = 0;
+
+int ccw( Point p0, Point p1, Point p2 ){
+    Vector a = p1 - p0;
+    Vector b = p2 - p0;
+    if ( cross(a, b) > EPS ) return COUNTER_CLOCKWISE;
+    if ( cross(a, b) < -EPS ) return CLOCKWISE;
+    if ( dot(a, b) < -EPS ) return ONLINE_BACK;
+    if ( norm(a) < norm(b) ) return ONLINE_FRONT;
+    return ON_SEGMENT;
+}
+
+int main(){
+    double x1, y1, x2, y2, x3, y3, x, y;
+    Segment S[3];
+
+    while ( cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3 >> x >> y ){
+
+	int ccw1 = ccw( Point(x1, y1), Point(x2, y2),  Point(x, y) );
+	int ccw2 = ccw( Point(x2, y2), Point(x3, y3),  Point(x, y) );
+	int ccw3 = ccw( Point(x3, y3), Point(x1, y1),  Point(x, y) );
+	if ( ccw1 == ON_SEGMENT ||
+	     ccw2 == ON_SEGMENT ||
+	     ccw3 == ON_SEGMENT ) cout << "????????" << endl;
+	if ( ccw1 == ccw2 && ccw2 == ccw3 ) cout << "YES" << endl;
+	else cout << "NO" << endl;
+    }
+    return 0;
+}

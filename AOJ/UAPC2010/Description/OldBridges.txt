@@ -1,0 +1,37 @@
+
+Problem B: Old Bridges
+
+むかしむかしあるところに、一人の泥棒がおりました。彼は財宝を追い求めて、世界中を駆け回っているのでありました。ある日彼は、世界の端に莫大な財宝が眠る島々があるという噂を聞き付けたので、そこに向かうことにしたのでした。
+
+彼が向かった先には、財宝の眠る n 個の島と、何もない1つの島がありました。ほとんどの島には浜辺がなく、彼が唯一上陸できたのは何もない島でした。彼は島中を歩き回ったところ、この島から他の n 個の島に向かって1本ずつ、古いつり橋がかかっているのを見付けたのでした。
+
+彼は財宝の眠る島々を一つずつ巡り、そこにある財宝を全て回収することにしました。盗まれるのが怖いので、彼は既に回収した全ての財宝を持ったまま島々を回ります。彼はとっても力持ちなので全ての財宝を一度に運ぶことができますが、しかし古いつり橋は、一定量以上の財宝を持った状態で渡ると崩れてしまいます。
+
+島を巡る順番を適切に選ぶことで、彼が全ての財宝を回収して、上陸した島に戻ってこられるかどうかを判定するプログラムを書いてください。
+
+Input
+各データセットの最初の行には、整数 n (1 <= n <= 1,000) が与えられます。
+続く n 行には島の情報が与えられます。各行は2つの整数を含み、それぞれその島にある財宝の量と、その島にかかっているつり橋を渡るときに所持できる最大の財宝の量を表します。
+入力の最後は n = 0 のケースによって示されます。
+
+Output
+全ての財宝を回収して戻ってこられるならば "yes" と、そうでなければ "no" と出力してください.
+
+
+Problem B: Old Bridges
+
+Long long ago, there was a thief. Looking for treasures, he was running about all over the world. One day, he heard a rumor that there were islands that had large amount of treasures, so he decided to head for there.
+
+Finally he found n islands that had treasures and one island that had nothing. Most of islands had seashore and he can land only on an island which had nothing. He walked around the island and found that there was an old bridge between this island and each of all other n islands.
+
+He tries to visit all islands one by one and pick all the treasures up. Since he is afraid to be stolen, he visit with bringing all treasures that he have picked up. He is a strong man and can bring all the treasures at a time, but the old bridges will break if he cross it with taking certain or more amount of treasures.
+
+Please write a program that judges if he can collect all the treasures and can be back to the island where he land on by properly selecting an order of his visit.
+
+Input
+The first line of each dataset contains an integer n (1 <= n <= 1,000).
+Next n lines represents information of the islands. Each line has two integers, which means the amount of treasures of the island and the maximal amount that he can take when he crosses the bridge to the islands, respectively.
+The end of input is represented by a case with n = 0.
+
+Output
+If he can collect all the treasures and can be back, print "yes." Otherwise print "no."

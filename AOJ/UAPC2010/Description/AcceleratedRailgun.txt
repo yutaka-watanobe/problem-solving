@@ -1,0 +1,43 @@
+
+Problem C: Accelerated Railgun
+
+宙に舞うコインは放物線を描き、彼女はそれを紫電を纏った彼女の指先で受け止めた。彼女は超能力者である。それも、その都市にいる100万人を越える超能力者たちの中でも三本の指に入る電撃使いだ。親指に弾かれたコインは電磁力によって加速され、フレミングの左手の法則に従い射出される。その初速は、彼女が手加減した上でさえ音速の三倍を越える。そのような高速で射出されると、コインは空気摩擦と断熱圧縮によって加熱され、溶けてオレンジ色に輝くのだ。これが彼女の得意技、超電磁砲 (レールガン) である。その威力はコンクリートの壁に直径2メートルの穴を開けるほどである。
+
+彼女はその能力を使って、しばしばこの都市にはびこる悪、郵便局強盗や銀行強盗などを退治してきていた。そして今日は、非人道的な人体実験を行う研究所があると聞き付けたので、彼女はそれを破壊することにした。彼女の超電磁砲だけがそれを撃ち抜くことができるのである。
+
+コインを使った超電磁砲では威力が足りず、その研究所の建物を破壊することができない。彼女は近くに手頃な鎧が落ちているのを見つけたので、それをプロジェクタイルとして使うことにした。しかしながら、鎧はコインに比べてずっと大きく重いので、簡単に狙いを定めて打つことができない。彼女にできるのは、鎧を今ある場所から決められた速度ベクトルで射出することのみである。研究所の位置によっては、超電磁砲は直撃せずにただの花火になってしまう。
+
+そこで彼女は、その都市の最も強力な超能力者に協力してもらうことにした。彼はその超能力の数限りない応用の一つとして、運動する物体の向きを変えることができる。ここで、研究所を原点とした2次元平面を考えよう。彼女はプロジェクタイルを P = (px, py) から速度ベクトル V = (vx, vy) で発射する。彼の超能力は、原点を中心とする半径 R の円周状の仮想的な壁を作る。その壁に触れたプロジェクタイルは (入射角) = (反射角) となるように跳ね返るのである。
+
+空気抵抗によって速度が落ちたり、熱によってプロジェクタイルが完全に溶けたりするために、超電磁砲の射程距離は D に限られている。この条件のもとで、超電磁砲が命中するかどうかを判定するプログラムを書いてほしい。研究所と鎧の大きさは無視できるほど小さく、発射された超電磁砲が再度 P を通過しても構わないものとする。
+
+Input
+各データセットは、5つの実数を含む1行からなる。これらはそれぞれ、px, py, vx, vy, D を表す。
+
+Output
+超電磁砲が命中するならば、命中するまでに進んだ距離を出力せよ。そうでなければ、'impossible' と出力せよ。
+小数点以下何桁でも出力してよく、1.0e-6未満の誤差を含んでいてもよい。
+ジャッジデータには、答えが (D - 1.0e-3) 以上となるような入力は無いことが保証されている。
+
+
+Problem C: Accelerated Railgun
+
+She catched the thrown coin that draws parabolic curve with her sparkling fingers. She is an ESPer. Yes, she is an electro-master who has the third strongest power among more than one million ESPers in the city. Being flicked by her thumb, the coin is accelerated by electromagnetic force and is shot as Fleming's right-hand rule. Even if she holds back the initial velocity of the coin exceeds three times of the speed of sound. The coin that is shot in such velocity is heated because of air friction and adiabatic compression. As a result coin melts and shines in orange. This is her special ability, called railgun. The strength of railgun can make a hole of two meters in diameter on a concrete wall.
+
+She had defeated criminals such as post office robberies and bank robberies in the city with her ability. And today, she decided to destroy a laboratory that is suspected to making some inhumane experiments on human body. Only her railgun can shoot it.
+
+The railgun with a coin cannot destroy the laboratory because of lack of power. Since she have found a powered-suit nearby, so she decided to use it as a projectile. However, in this case it is difficult to take sight properly because the suit is much bigger and heavier than coins. Therefore she only can shoot the suit with certain velocity vector from her current position. Depending on the position of the laboratory, her railgun may not hit it and become a firework.
+
+Therefore she asked cooperation to the strongest ESPer in the city. He can change direction of a moving object as one of uncountable application of his ESP. Let's consider a 2-dimensional plane where the laboratory is on origin. She shoots a projectile from P = (px, py) with velocity vector V = (vx, vy). His ESP makes a virtual wall of radius R. When projectile collides with the wall, it is reflected so that incident angle will be equal to reflection angle.
+
+Range of railgun is limited to D, because air friction decreases velocity of projectile and heat may melts projectile completely. Under these conditions, please write a program that judges if the railgun hits the laboratory. Size of the laboratory and the suit is ignorablly small. After the railgun is shot, it is allowed to pass through P again.
+
+Input
+Each dataset consists of a line that contains 5 real numbers, which means px, py, vx, vy, D respectively.
+
+Output
+If the railgun hits, output the distance it moved until hits. Otherwise output 'impossible' (without quotes).
+You can any number of digits and answer with an error less than 1.0e-6 will be accepted.
+Judge data never include dataset where the answer is (D - 1.0e-3) or bigger. 
+
+

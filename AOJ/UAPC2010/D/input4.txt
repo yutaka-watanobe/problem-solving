@@ -1,0 +1,74 @@
+4
+1000 800
+s1061159 2
+500 100 800 300 m5061126
+100 400 300 600 d8061103
+m5061126 2
+600 200 900 400 yutaka
+100 500 500 700 s1061159
+d8061103 2
+300 200 700 400 s1061159
+600 500 900 700 yutaka
+yutaka 1
+100 200 400 400 d8061103
+59
+click 600 200
+show
+back
+show
+back
+show
+forward
+forward
+forward
+show
+click 700 300
+show
+forward
+show
+back
+back
+back
+back
+back
+forward
+forward
+forward
+forward
+forward
+show
+click 200 300
+click 500 300
+show
+back
+back
+back
+back
+show
+forward
+show
+back
+show
+forward
+show
+click 700 300
+click 300 300
+forward
+show
+back
+show
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+click 20 20
+show
+click 600 200
+show
+0

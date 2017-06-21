@@ -1,0 +1,550 @@
+2
+red green blue yellow magenta cyan
+red green blue yellow magenta cyan
+2
+red green blue yellow magenta cyan
+cyan magenta yellow blue green red
+2
+red green blue yellow magenta cyan
+red green blue cyan yellow magenta
+3
+red green blue yellow magenta cyan
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+red blue magenta green yellow cyan
+2
+red green blue yellow magenta cyan
+cyan yellow green magenta blue red
+2
+red green blue yellow magenta cyan
+red blue yellow green cyan magenta
+3
+red blue magenta green yellow cyan
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+red yellow green magenta blue cyan
+2
+red green blue yellow magenta cyan
+cyan blue magenta green yellow red
+2
+red green blue yellow magenta cyan
+red cyan green yellow blue magenta
+3
+red yellow green magenta blue cyan
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+red magenta yellow blue green cyan
+2
+red green blue yellow magenta cyan
+cyan green blue yellow magenta red
+2
+red green blue yellow magenta cyan
+red yellow cyan blue green magenta
+3
+red magenta yellow blue green cyan
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+green red yellow blue cyan magenta
+2
+red green blue yellow magenta cyan
+magenta cyan blue yellow red green
+2
+red green blue yellow magenta cyan
+green red cyan blue magenta yellow
+3
+green red yellow blue cyan magenta
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+green blue red cyan yellow magenta
+2
+red green blue yellow magenta cyan
+magenta yellow cyan red blue green
+2
+red green blue yellow magenta cyan
+green blue red magenta cyan yellow
+3
+green blue red cyan yellow magenta
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+green yellow cyan red blue magenta
+2
+red green blue yellow magenta cyan
+magenta blue red cyan yellow green
+2
+red green blue yellow magenta cyan
+green cyan magenta red blue yellow
+3
+green yellow cyan red blue magenta
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+green cyan blue yellow red magenta
+2
+red green blue yellow magenta cyan
+magenta red yellow blue cyan green
+2
+red green blue yellow magenta cyan
+green magenta blue cyan red yellow
+3
+green cyan blue yellow red magenta
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+blue red green magenta cyan yellow
+2
+red green blue yellow magenta cyan
+yellow cyan magenta green red blue
+2
+red green blue yellow magenta cyan
+blue red green yellow magenta cyan
+3
+blue red green magenta cyan yellow
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+blue green cyan red magenta yellow
+2
+red green blue yellow magenta cyan
+yellow magenta red cyan green blue
+2
+red green blue yellow magenta cyan
+blue green magenta red yellow cyan
+3
+blue green cyan red magenta yellow
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+blue magenta red cyan green yellow
+2
+red green blue yellow magenta cyan
+yellow green cyan red magenta blue
+2
+red green blue yellow magenta cyan
+blue yellow red magenta green cyan
+3
+blue magenta red cyan green yellow
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+blue cyan magenta green red yellow
+2
+red green blue yellow magenta cyan
+yellow red green magenta cyan blue
+2
+red green blue yellow magenta cyan
+blue magenta yellow green red cyan
+3
+blue cyan magenta green red yellow
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+yellow red magenta green cyan blue
+2
+red green blue yellow magenta cyan
+blue cyan green magenta red yellow
+2
+red green blue yellow magenta cyan
+cyan red yellow green magenta blue
+3
+yellow red magenta green cyan blue
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+yellow green red cyan magenta blue
+2
+red green blue yellow magenta cyan
+blue magenta cyan red green yellow
+2
+red green blue yellow magenta cyan
+cyan green red magenta yellow blue
+3
+yellow green red cyan magenta blue
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+yellow magenta cyan red green blue
+2
+red green blue yellow magenta cyan
+blue green red cyan magenta yellow
+2
+red green blue yellow magenta cyan
+cyan yellow magenta red green blue
+3
+yellow magenta cyan red green blue
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+yellow cyan green magenta red blue
+2
+red green blue yellow magenta cyan
+blue red magenta green cyan yellow
+2
+red green blue yellow magenta cyan
+cyan magenta green yellow red blue
+3
+yellow cyan green magenta red blue
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+magenta red blue yellow cyan green
+2
+red green blue yellow magenta cyan
+green cyan yellow blue red magenta
+2
+red green blue yellow magenta cyan
+yellow red blue cyan magenta green
+3
+magenta red blue yellow cyan green
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+magenta blue cyan red yellow green
+2
+red green blue yellow magenta cyan
+green yellow red cyan blue magenta
+2
+red green blue yellow magenta cyan
+yellow blue magenta red cyan green
+3
+magenta blue cyan red yellow green
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+magenta yellow red cyan blue green
+2
+red green blue yellow magenta cyan
+green blue cyan red yellow magenta
+2
+red green blue yellow magenta cyan
+yellow cyan red magenta blue green
+3
+magenta yellow red cyan blue green
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+magenta cyan yellow blue red green
+2
+red green blue yellow magenta cyan
+green red blue yellow cyan magenta
+2
+red green blue yellow magenta cyan
+yellow magenta cyan blue red green
+3
+magenta cyan yellow blue red green
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+cyan green yellow blue magenta red
+2
+red green blue yellow magenta cyan
+red magenta blue yellow green cyan
+2
+red green blue yellow magenta cyan
+magenta green cyan blue yellow red
+3
+cyan green yellow blue magenta red
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+cyan blue green magenta yellow red
+2
+red green blue yellow magenta cyan
+red yellow magenta green blue cyan
+2
+red green blue yellow magenta cyan
+magenta blue green yellow cyan red
+3
+cyan blue green magenta yellow red
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+cyan yellow magenta green blue red
+2
+red green blue yellow magenta cyan
+red blue green magenta yellow cyan
+2
+red green blue yellow magenta cyan
+magenta cyan yellow green blue red
+3
+cyan yellow magenta green blue red
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+2
+red green blue yellow magenta cyan
+cyan magenta blue yellow green red
+2
+red green blue yellow magenta cyan
+red green yellow blue magenta cyan
+2
+red green blue yellow magenta cyan
+magenta yellow blue cyan green red
+3
+cyan magenta blue yellow green red
+cyan magenta yellow blue green red
+red green blue cyan yellow magenta
+3
+blue green cyan red magenta yellow
+dark-sky-blue blue sky-blue dark-blue light-sky-blue light-blue
+light-red light-yellow light-green light-magenta light-blue light-cyan
+2
+indigo-blue indigo-blue indigo-blue indigo-blue indigo-blue indigo-blue
+indigo-blue indigo-blue indigo-blue indigo-blue indigo-blue indigo-blue
+3
+purple purple purple purple purple purple
+purple purple purple purple purple purple
+purple purple purple purple purple purple
+4
+blue blue blue blue blue blue
+blue blue blue blue blue blue
+blue blue blue blue blue blue
+blue blue blue blue blue blue
+2
+yellow green red cyan magenta blue
+light-blue light-sky-blue sky-blue dark-blue blue dark-sky-blue
+3
+light-sky-blue sky-blue light-blue dark-sky-blue dark-blue blue
+seashell snow ivory lavender misty-rose mint-cream
+vermilion salmon red brown scarlet pink
+4
+green blue red cyan yellow magenta
+light-cyan light-magenta light-blue light-yellow light-green light-red
+dark-yellow dark-green dark-red dark-cyan dark-magenta dark-blue
+snow mint-cream ivory lavender seashell misty-rose
+4
+magenta blue cyan red yellow green
+red scarlet vermilion pink salmon brown
+dark-yellow dark-red dark-magenta dark-green dark-cyan dark-blue
+seashell lavender snow misty-rose ivory mint-cream
+3
+yellow magenta cyan red green blue
+magenta magenta blue yellow green red
+yellow red magenta green red blue
+4
+green blue red cyan yellow magenta
+red blue red blue red blue
+red red red cyan cyan cyan
+blue red green green red blue
+4
+red red red white white white
+pink white white pink pink white
+white pink pink white white pink
+white white white pink pink pink
+4
+blue blue black blue black black
+black black sky-blue black sky-blue sky-blue
+black blue black blue black blue
+black black black sky-blue sky-blue sky-blue
+4
+green yellow yellow green green yellow
+green lemon green lemon green lemon
+green green yellow green yellow yellow
+green khaki khaki green green khaki
+2
+light-blue light-sky-blue sky-blue dark-blue blue dark-sky-blue
+red pink scarlet salmon vermilion brown
+3
+dark-blue light-blue blue light-sky-blue dark-sky-blue sky-blue
+light-blue light-red light-green light-magenta light-cyan light-yellow
+dark-blue dark-red dark-green dark-magenta dark-cyan dark-yellow
+1
+red red red red red red
+2
+red red red red red red
+red red red red red red
+3
+red red red red red red
+red red red red red red
+red red red red red red
+4
+red red red red red red
+red red red red red red
+red red red red red red
+red red red red red red
+1
+red red red red red red
+2
+red red red red red red
+vermilion vermilion vermilion vermilion vermilion vermilion
+3
+red red red red red red
+vermilion vermilion vermilion vermilion vermilion vermilion
+salmon salmon salmon salmon salmon salmon
+4
+red red red red red red
+vermilion vermilion vermilion vermilion vermilion vermilion
+salmon salmon salmon salmon salmon salmon
+scarlet scarlet scarlet scarlet scarlet scarlet
+1
+cyan blue yellow black white green
+2
+black yellow white black yellow yellow
+green red white white yellow blue
+3
+red black red green blue magenta
+white green green yellow black yellow
+magenta yellow cyan red blue cyan
+4
+green red red red black yellow
+yellow white yellow blue white white
+magenta white cyan magenta red red
+red white green blue yellow white
+1
+cyan white yellow yellow white cyan
+2
+red red cyan red green magenta
+magenta magenta yellow white white blue
+3
+black yellow green magenta red blue
+magenta red green cyan blue magenta
+cyan red magenta red yellow yellow
+4
+cyan yellow magenta blue yellow cyan
+black white green blue white red
+magenta cyan magenta black green magenta
+red cyan magenta green yellow white
+1
+black red white blue red blue
+2
+cyan cyan cyan green white red
+black black red red red white
+3
+red magenta magenta magenta blue black
+red blue yellow cyan magenta black
+magenta blue black yellow magenta black
+4
+cyan green yellow blue yellow yellow
+blue green green blue green green
+green blue cyan black black red
+magenta white blue white magenta black
+1
+black red red magenta yellow magenta
+2
+yellow red black black blue green
+green magenta blue blue white magenta
+3
+yellow red black green black magenta
+green blue yellow yellow blue white
+blue red white blue magenta blue
+4
+white white blue cyan black magenta
+black white green red blue red
+magenta cyan red blue black white
+white white green blue yellow yellow
+1
+blue cyan yellow green white red
+2
+magenta black white black yellow cyan
+yellow green cyan magenta blue white
+3
+magenta black magenta magenta green yellow
+yellow red blue cyan blue cyan
+red magenta blue magenta black blue
+4
+magenta blue red yellow red magenta
+green yellow cyan black white white
+cyan yellow black green red white
+magenta yellow white white red green
+1
+magenta green black white cyan magenta
+2
+green green black green magenta black
+cyan cyan blue yellow yellow green
+3
+blue red cyan red blue cyan
+white black red black cyan green
+red blue blue black green white
+4
+blue blue red red yellow magenta
+black green blue red magenta cyan
+blue black black white white red
+magenta black black magenta cyan magenta
+1
+cyan cyan black white yellow white
+2
+black cyan green black cyan magenta
+yellow yellow cyan cyan magenta green
+3
+blue black red red cyan white
+red green cyan white cyan blue
+yellow yellow white green blue blue
+4
+red green white green white magenta
+cyan blue red yellow white magenta
+magenta blue blue magenta blue white
+yellow yellow red green blue cyan
+1
+yellow cyan red yellow black yellow
+2
+cyan black magenta cyan white yellow
+green magenta black green white cyan
+3
+cyan magenta white white red blue
+black magenta cyan black cyan white
+magenta red magenta magenta yellow blue
+4
+white green red yellow black white
+white white yellow cyan green yellow
+blue black white blue black white
+magenta magenta yellow green yellow red
+1
+red white green magenta yellow magenta
+2
+black yellow cyan black black yellow
+cyan cyan yellow red blue magenta
+3
+yellow cyan blue blue white red
+blue yellow cyan cyan magenta red
+black magenta white white red blue
+4
+yellow black cyan green magenta magenta
+magenta green green white green magenta
+yellow cyan green black white red
+black green yellow yellow white white
+1
+yellow cyan yellow blue magenta yellow
+2
+cyan white green blue red cyan
+black cyan black red magenta white
+3
+magenta red magenta cyan black magenta
+cyan magenta cyan red red magenta
+white yellow green blue black cyan
+4
+cyan yellow cyan black cyan cyan
+yellow magenta blue green magenta white
+red red white cyan cyan cyan
+green blue green black blue green
+4
+very-long-color-name-abc very-long-color-name-ijk very-long-color-name-pqr very-long-color-name-fgh very-long-color-name-lmn very-long-color-name-xyz
+very-long-color-name-def very-long-color-name-ijk very-long-color-name-abc very-long-color-name-xyz very-long-color-name-lmn very-long-color-name-rst
+very-long-color-name-hkl very-long-color-name-xyz very-long-color-name-uvw very-long-color-name-lmn very-long-color-name-abc very-long-color-name-pqr
+very-long-color-name-xyz very-long-color-name-abc very-long-color-name-abc very-long-color-name-xyz very-long-color-name-xyz very-long-color-name-abc
+0

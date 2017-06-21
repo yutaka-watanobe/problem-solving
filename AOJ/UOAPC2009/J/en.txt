@@ -1,0 +1,22 @@
+Problem J  ICPC: Ideal Coin Payment and Change
+
+You want to pay P yen using coins that you have.  Minimize total number of coins that are paid and are returned as change.
+
+There are 6 kinds of coins, 500 yen, 100 yen, 50 yen, 10 yen, 5 yen, and 1 yen.
+You may assume that total value of coins you have is at least P yen.
+Arbitally number of coins can be returned as change.
+
+Input
+Input file contains several data sets.
+One data set has following format:
+
+P N1 N5 N10 N50 N100 N500
+
+Ni is integer and is the number of coins of i yen that you have.
+
+The end of input is denoted by a case where P = 0.  You should output nothing for this data set.
+
+Output
+Output total number of coins that are paid and are returned.
+
+

@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+
+<head>
+<link rel="STYLESHEET" 
+      href=icpc.css
+      type="text/css">
+
+<meta http-equiv="Content-Type" 
+      content="text/html; charset=euc-jp">
+
+<title>Problem D</title>
+</head>
+
+<body>
+
+<table class="main">
+<!-- ------------ 1st row ---------------- -->
+<!-- |        ACM Inter Collegiate Programming Contest       | -->
+<tr>
+ <td colspan=2 align=center>
+  
+<h1><img src=IMAGES/icpc_logo.png 
+alt="acm International Collegiate Programming Contest"/></h1>
+<div class=banner align=right><font size=-1>
+<i>2007/7/6 Tokyo</i></font></div> </td>
+</tr>
+
+<!-- ------------ 2nd row ---------------- -->
+<!-- menu in the 1st column. empty in the 2nd. -->
+<tr>
+ <td class=menu rowspan=4 valign=top nowrap>
+  </td>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 3rd row ---------------- -->
+<!-- no 1st column. empty in the 2nd. -->
+<tr>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 4th row ------------ -->
+<!-- nothing in the 1st column. everything else in the 2nd -->
+<tr>
+ <td class="main">
+
+</div>
+<a name=section_D><h2>Problem D</h2>
+
+<!-- begin ja only -->
+<h3><U>崖登り</U></h3>
+<!-- end ja only -->
+
+<div>   <!-- please enclose each h3 level section with div -->
+
+<!-- begin ja only -->
+<p>
+17:00, 特別捜査官 Jack が敵のキャンプから脱出を開始した．
+最寄りの安全地帯に逃れるには，途中にある崖を登る必要がある．
+その急な崖はブロックで覆われており，
+Jack はブロックに足を置きながら崖を登ることになる．
+表面が滑りやすいブロックに進むには時間をかける必要があり，
+もろいブロックは体重で崩れてしまうので避ける必要がある．
+あなたの使命は，崖を登りきるために必要な最短の時間を求めるプログラムを作成することである．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+図 D-1 は，あなたが受け取るであろう崖に関する地形データの例を図示したものである．
+崖は，正方形のブロックで覆われており，
+Jack の崖登りは，
+崖下の地面から，
+一番下の段の 'S' とマークされたブロックに片足を置くことで開始される．
+最初のステップは，左右のどちらの足であっても良い．
+ブロックにマークされた数字は，そのブロックの「滑りやすさ」を意味する．
+<i>t</i> (1 &le; <i>t</i> &le; 9) とマークされたブロックに足を安全に置くには，
+<i>t</i> 単位時間が必要となる．
+'X' でマークされたブロックには Jack は足を置くことはできない．
+どちらかの足が，最上段の 'T' とマークされたブロックに到着した時点で崖登り完了で
+ある．
+</p>
+<!-- end ja only -->
+
+<center>
+<img class="center" src="IMAGES/D-1.png" border="1"><br>
+<!-- begin ja only -->
+図 D-1:  崖に関するデータの例
+<!-- end ja only -->
+</center>
+
+<!-- begin ja only -->
+<p>
+Jack は，崖登りにおいて以下の制約をうける．
+左足を動かした次は右足を，右足を動かした次は左足を動かすこと．
+左足の座標  (<i>lx</i>, <i>ly</i>)と
+右足の座標  (<i>rx</i>, <i>ry</i>) に関し，
+<i>lx</i> &lt; <i>rx</i></li> 及び
+| <i>lx</i> - <i>rx</i> | + | <i>ly</i> - <i>ry</i> | &le; 3</li>
+が成り立つこと．
+つまり，左足が図 D-2 (a) の位置にある場合は，
+青色で示された9つの位置にしか右足を置くことができない．
+同様に，右足が図 D-2 (b) の位置にある場合も，
+青色で示された9つの位置にしか左足を置くことができない．
+</p>
+<!-- end ja only -->
+
+<center>
+<img class="center" src="IMAGES/D-2.png" border="1"><br>
+<!-- begin ja only -->
+図 D-2:  可能な足の配置
+<!-- end ja only -->
+</center>
+
+
+</div>
+
+<h3>Input</h3>
+
+<div>
+<!-- begin ja only -->
+<p>
+入力は，複数のデータセットからなり，
+入力の終わりはスペースで区切られたゼロ二つからなる行である．
+各データセットは，次の形式をしている．
+</p>
+<!-- end ja only -->
+
+<p>
+<blockquote>
+<i>w h</i><br>
+<i>s(1,1)</i>  ... <i>s(1,w)</i><br>
+<i>s(2,1)</i>  ... <i>s(2,w)</i><br>
+...                                    <br>
+<i>s(h,1)</i>  ... <i>s(h,w)</i><br>
+</blockquote>
+</p>
+
+<!-- begin ja only -->
+<p>
+<i>w</i> と <i>h</i> は，それぞれ崖を表現する行列データの幅と高さを示す整数であり，
+それぞれ2 &le; <i>w</i> &le; 30, 5 &le; <i>h</i> &le; 60 と仮定して良い．
+続く <i>h</i> 行はそれぞれ，スペースで区切られた <i>w</i> 個の文字から構成されており，
+文字<i>s(y,x)</i> は，座標 (<i>x</i>, <i>y</i>)のブロックの状態を示す．
+その意味は，以下の通り：
+<ul>
+<li> 'S': Jack が崖登りを開始可能なブロック． </li>
+<li> 'T': Jack が崖登りを終了可能なブロック． </li>
+<li> 'X': Jack が足を置くことができないブロック． </li>
+<li> '1'-'9' (= <i>t</i>): Jack がどちらかの足を置く際に，
+<i>t</i> 単位時間を必要とするブロック． </li>
+</ul>
+</p>
+<p>
+'S' や 'T' でマークされたブロックに足を置くための時間は，0 と考えてよい．
+</p>
+
+
+<!-- end ja only -->
+</div>
+
+<h3>Output</h3>
+<div>
+<!-- begin ja only -->
+<p>
+各データセットについて，崖登りに必要な最小時間を求め，
+十進の整数値として，それぞれ1行に出力しなさい．
+崖登りを完了できない場合は，代わりに -1 のみを含む行を出力しなさい．
+各出力行はこれらの数値以外の文字を含んではならない．
+</p>
+<!-- end ja only -->
+</div>
+
+<h3>Sample Input</h3>
+<div>
+<pre>
+6 6
+4 4 X X T T
+4 7 8 2 X 7
+3 X X X 1 8
+1 2 X X X 6
+1 1 2 4 4 7
+S S 2 3 X X
+2 10
+T 1
+1 X
+1 X
+1 X
+1 1
+1 X
+1 X
+1 1
+1 X
+S S
+2 10
+T X
+1 X
+1 X
+1 X
+1 1
+1 X
+1 X
+1 1
+1 X
+S S
+10 10
+T T T T T T T T T T
+X 2 X X X X X 3 4 X
+9 8 9 X X X 2 9 X 9
+7 7 X 7 3 X X 8 9 X
+8 9 9 9 6 3 X 5 X 5
+8 9 9 9 6 X X 5 X 5
+8 6 5 4 6 8 X 5 X 5
+8 9 3 9 6 8 X 5 X 5
+8 3 9 9 6 X X X 5 X
+S S S S S S S S S S
+10 7
+2 3 2 3 2 3 2 3 T T
+1 2 3 2 3 2 3 2 3 2
+3 2 3 2 3 2 3 2 3 4
+3 2 3 2 3 2 3 2 3 5
+3 2 3 1 3 2 3 2 3 5
+2 2 3 2 4 2 3 2 3 5
+S S 2 3 2 1 2 3 2 3
+0 0
+</pre>
+</div>
+
+<h3>Output for the Sample Input</h3>
+<div>
+<pre>
+12
+5
+-1
+22
+12
+</pre>
+</div>
+
+
+ </td>                     
+</tr>                      
+</table>                   
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,46 @@
+
+Problem H: Winter Bells
+
+世界で一番とびっきりの夜がやってきた。12月24日午後8時。そう、クリスマスイブの夜である。寝静まった街に、鈴の音を鳴らしながらサンタクロースはやってくる。トナカイのソリに引かれて、北風を追い越し、子供たちの眠る窓辺に吊るされた靴下にプレゼントを撃ち込むのだ。
+
+サンタクロースの乗るソリは、街の外れにある大きなクリスマスツリーから出発する。このクリスマスツリーが生み出す奇跡の力は街の上空に網目のように広がり、ソリが通れるような道を作るのだ。奇跡の力が濃い所ほど通りやすいので、これらの道は重み付き無向グラフとして表すことができる。
+
+サンタクロースにとってプレゼントの配達は、極めて厳しい時間との戦いである。夜明けが近づいてくると奇跡の力は急激に弱まり、サンタクロースは配達を続けられなくなってしまう。そんなことはサンタクロースのプライドが許さないので、何としてもそれまでに配達を住ませなければならないのだ。
+
+トナカイの引くソリは、クリスマスツリー (0番目の頂点に対応する) を出発し、街の反対側 (n-1番目の頂点にに対応する) まで最短経路を通って滑空する。サンタクロースはトナカイが全力で引くソリの上から、奇跡の力をプレゼントに変えて撃ち込むのだ。もし2つ以上の最短経路があった場合、トナカイは全ての最短経路の中から等確率で一つを選び、それに沿ってソリを走らせる。
+
+さて、この街には p 人の子供たちがいて、サンタクロースを一目見たいと思いながら、自分の部屋の窓から夜空を見上げている。i 番目の子供の家の上空には、グラフの c[i] 番目の頂点に対応するような奇跡の力の交差点があり、その子供はその頂点をサンタクロースが通過した場合 (また、その場合に限って) サンタクロースを見ることができる。
+
+それぞれの子供がサンタクロースを見られる確率はいくらだろうか？
+
+Input
+各データセットの最初の行には3つの整数 n, m, p が与えられる。これらはそれぞれ、グラフの頂点の数、辺の数、そして子供の数を表す。各頂点には 0 から n-1 の番号が付けられている。
+続く m 行には辺の情報が与えられる。各行には3つの整数が与えられ、最初の2つの数字はその辺の両端の頂点を、3つ目の数字はその辺の重みを表す。
+その次の行には p 個の整数が与えられ、それぞれ c[i] を表す。
+
+Output
+確率を表す p 個の実数値を、入力と同じ順番で出力せよ。その後に1行の空行を出力せよ。
+小数点以下何桁でも出力してよく、出力される数は1.0e-6以下 (?) の誤差を含んでいても構わない。
+
+Problem H: Winter Bells (EN)
+
+The best night ever in the world has come! It's 8 p.m. of December 24th, yes, the night of Cristmas Eve. Santa Clause comes to a silent city with ringing bells. Overtaking north wind, from a sleigh a reindeer pulls she shoot presents to soxes hanged near windows for children.
+
+The sleigh she is on departs from a big christmas tree on the fringe of the city. Miracle power that the christmas tree spread over the *** like a web and form a paths that the sleigh can go on. Since the paths with thicker miracle power is easier to go, these paths can be expressed as undirected weighted graph.
+
+Derivering the present is very strict about time. When it begins dawning the miracle power rapidly weakens and Santa Clause can not continue derivering any more. Her pride as a Santa Clause never excuses such a thing, so she have to finish derivering before dawning.
+
+The sleigh a reindeer pulls departs from christmas tree (which corresponds to 0th node), and go across the city to the opposite fringe along the shortest path. Santa Clause create presents from the miracle power and shoot them from the sleigh the reindeer pulls at his full power. If there are two or more shortest paths, the reindeer selects one of all shortest paths with equal probability and go along it.
+
+By the way, in this city there are p children that wish to see Santa Clause and are looking up the starlit sky from their home. Above the i-th child's home there is a cross point of the miracle power that corresponds to c[i]-th node of the graph. The child can see Santa Clause if (and only if) Santa Clause go through the node.
+
+Please find the probability that each child can see Santa Clause.
+
+Input
+The first line of each dataset contains three integers n, m, p, which means the number of nodes and edges of the graph, and the number of the children. Each node are numbered 0 to n-1.
+Following m lines contains information about edges. Each line has three integers. The first two integers means nodes on two endpoints of the edge. The third one is weight of the edge.
+Next line contains p integers, which represents c[i].
+
+Output
+Output p decimal values in same order as input. Write a blank line after that.
+You may output any number of digit and may contain an error less than 1.0e-6.

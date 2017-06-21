@@ -1,0 +1,185 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+
+<head>
+<link rel="STYLESHEET" 
+      href=icpc.css
+      type="text/css">
+
+<meta http-equiv="Content-Type" 
+      content="text/html; charset=euc-jp">
+
+<title>Problem A</title>
+</head>
+
+<body>
+
+<table class="main">
+<!-- ------------ 1st row ---------------- -->
+<!-- |        ACM Inter Collegiate Programming Contest       | -->
+<tr>
+ <td colspan=2 align=center>
+  
+<h1><img src=IMAGES/icpc_logo.png 
+alt="acm International Collegiate Programming Contest"/></h1>
+<div class=banner align=right><font size=-1>
+<i>2007/7/6 Tokyo</i></font></div> </td>
+</tr>
+
+<!-- ------------ 2nd row ---------------- -->
+<!-- menu in the 1st column. empty in the 2nd. -->
+<tr>
+ <td class=menu rowspan=4 valign=top nowrap>
+  </td>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 3rd row ---------------- -->
+<!-- no 1st column. empty in the 2nd. -->
+<tr>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 4th row ------------ -->
+<!-- nothing in the 1st column. everything else in the 2nd -->
+<tr>
+ <td class="main">
+</div>
+<a name=section_A><h2>Problem A</h2>
+
+<!-- begin ja only -->
+<h3><U>ICPC 得点集計ソフトウェア</U></h3>
+<!-- end ja only -->
+
+<div>   <!-- please enclose each h3 level section with div -->
+
+<img src="IMAGES/A-1.png" width=300 align=left>
+
+<!-- begin ja only -->
+<p>
+世界道化コンテスト (International Clown and Pierrot Competition; ICPC)
+は興行界で権威も人気も最高の行事である．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+このコンテストの特色のひとつは，採点に当たる審判員の数が多いことで，と
+きには百人にも上る．審判の数は競技者ごとに異なる．というのは，採点対象
+の競技者と少しでも関係のある審判は，その競技者の演技の採点から一時的に
+外れるからである．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+基本としては，ひとりの競技者の演技についての審判の点数の平均がその競技
+者の点数になる．常軌を逸した視点から採点する審判が点数に大きな影響を与
+えないよう，最高点と最低点は除外する．もし最高点をつけた審判が複数いた
+ら，そのうちのひとつだけを無視する．最低点についても同様である．平均点
+には端数があるかもしれないが，それは切り捨てて最終的な点数は整数値とす
+る．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+この行事をテレビ中継向けにスピードアップするため，ある演技の点数を審判
+全員の採点から計算するプログラムを書くことを，あなたは頼まれた．
+</p>
+<!-- end ja only -->
+
+</div>
+
+
+<h3>Input</h3>
+
+<div>
+<!-- begin ja only -->
+<p>
+入力はそれぞれが競技者の演技ひとつに対応するいくつかのデータセットからなる．
+入力のデータセット数は20以下である．
+</p>
+<!-- end ja only -->
+<!-- begin ja only -->
+<p>
+データセットの最初の行はある演技の採点に当たった審判の数 <i>n</i> (3
+&le; <i>n</i> &le; 100) である．引き続く <i>n</i> 行には各審判のつけた
+点数 <i>s</i> (0 &le; <i>s</i> &le; 1000) がひとつずつ入っている．
+<i>n</i> も各 <i>s</i>も整数である．入力中にはこれらの数を表すための数
+字以外の文字はない．審判名は秘匿されている．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+入力の終わりはゼロひとつの行で示される．
+</p>
+<!-- end ja only -->
+</div>
+
+<h3>Output</h3>
+<div>
+<!-- begin ja only -->
+<p>
+出力は，入力データセットごとにそのデータセットに対応する演技の点数を十
+進整数で記した一行である．出力行には他の文字があってはならない．
+</p>
+<!-- end ja only -->
+</div>
+
+<h3>Sample Input</h3>
+<div>
+<pre>
+3
+1000
+342
+0
+5
+2
+2
+9
+11
+932
+5
+300
+1000
+0
+200
+400
+8
+353
+242
+402
+274
+283
+132
+402
+523
+0
+</pre>
+</div>
+
+<h3>Output for the Sample Input</h3>
+<div>
+<pre>
+342
+7
+300
+326
+</pre>
+</div>
+
+ </td>                     
+</tr>                      
+</table>                   
+
+</body>
+</html>
+
+
+
+

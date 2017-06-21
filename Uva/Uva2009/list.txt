@@ -1,0 +1,23 @@
+743: MTM Machine:2: Simulation, Recursive
+957:Popes:2: Ad hoc, shakutori method
+962:Taxicab Numbers:2: Number, BF
+989:Su Doku:3: Backgracking
+11565:Simple Equations:1.0: Ad hoc, BF
+11567:Moliu Number Generator:2.0: Greedy
+11608:No Problem:1.0: Ad hoc
+11609:Teams:2.0: Power, Combinatorial
+11614:Etruscan Warriors Never Play Chess:1.5: Math
+11631:Dark roads:3: MST
+11634:Generate random numbers:1.5: Simulation
+11636:Hello World:1.0: Simple
+11646:Athletics Track:1.5: Math
+11648:Divide the Land:1.5: Math
+11650:Mirror Clock:1.0: Simple
+11654:Arithmetic Subsequence:3: DP
+11655:Waterland:3: DP
+11660:Look-and-Say sequences:1.5: String Convert Simulation
+
+11661:Burger Time? :1.0: Simple
+
+
+11677:Alarm Clock:1.0: Simple

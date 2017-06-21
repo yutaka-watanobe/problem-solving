@@ -1,0 +1,225 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+
+<head>
+<link rel="STYLESHEET" 
+      href=icpc.css
+      type="text/css">
+
+<meta http-equiv="Content-Type" 
+      content="text/html; charset=euc-jp">
+
+<title>Problem C</title>
+</head>
+
+<body>
+
+<table class="main">
+<!-- ------------ 1st row ---------------- -->
+<!-- |        ACM Inter Collegiate Programming Contest       | -->
+<tr>
+ <td colspan=2 align=center>
+  
+<h1><img src=IMAGES/icpc_logo.png 
+alt="acm International Collegiate Programming Contest"/></h1>
+<div class=banner align=right><font size=-1>
+<i>2007/7/6 Tokyo</i></font></div> </td>
+</tr>
+
+<!-- ------------ 2nd row ---------------- -->
+<!-- menu in the 1st column. empty in the 2nd. -->
+<tr>
+ <td class=menu rowspan=4 valign=top nowrap>
+  </td>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 3rd row ---------------- -->
+<!-- no 1st column. empty in the 2nd. -->
+<tr>
+ <td>
+  </td>
+</tr>
+
+<!-- ------------ 4th row ------------ -->
+<!-- nothing in the 1st column. everything else in the 2nd -->
+<tr>
+ <td class="main">
+
+</div>
+<a name=section_C><h2>Problem C</h2>
+
+<!-- begin ja only -->
+<h3><U>ケーキカット</U></h3>
+<!-- end ja only -->
+
+
+<div>   <!-- please enclose each h3 level section with div -->
+<!-- begin ja only -->
+<p>
+本日，世界有数のケーキ職人として知られる Bon Vivant 氏が誕生日を迎える．
+誕生日パーティには世界中から美食家達が招かれ，みんなが Vivant 氏の独創性あふれるケーキを待ちわびている．
+ちょうど今，パーティ会場に大きな四角いケーキが運び込まれてきた．
+美しいデコレーションもなく素朴に見えるが，想像を絶するくらいおいしいに違いない．
+このケーキを，ナイフで複数のピースにカットし，パーティの参加者にふるまいたい．
+</p>
+<!-- end ja only -->
+
+
+
+<!-- begin ja only -->
+<p>
+ケーキを真上から見ると長方形に見える(図 C-1)．
+図 C-2 に例示したように，十分な数のピースが得られるまで，ケーキのカットが繰り返し行われる．
+1回のカットでは，ちょうど一つのピースを二つのより小さなピースに切り分ける．
+ナイフの切り口は，必ず，底面とは垂直，側面とは水平または垂直になるようにする．
+したがって，すべてのピースは上から見ると長方形で，側面は垂直になる．
+</p>
+<!-- end ja only -->
+
+<center>
+<img src="IMAGES/C-1.png"><br><br>
+<!-- begin ja only -->
+図 C-1: 真上から見たケーキ
+<!-- end ja only -->
+</center>
+
+<center>
+<br>
+<img src="IMAGES/C-2.png"><br><br>
+<!-- begin ja only -->
+図 C-2: ケーキの切り分け
+<!-- end ja only -->
+</center>
+
+<!-- begin ja only -->
+<p>
+図 C-2 では，ピースのサイズがまちまちで不公平に見えるかもしれないが，気にすることはない．
+なるべく多くの種類のケーキを食べたい招待客は，小さなピースを好むことが多い．
+もちろん，大きなピースを好む者もいる．
+</p>
+<!-- end ja only -->
+<!-- begin ja only -->
+<p>
+この問題では，ケーキをカットする過程をシミュレートし，各ピースのサイズを出力するプログラムを作って欲しい．
+</p>
+<!-- end ja only -->
+
+</div>
+
+<h3>Input</h3>
+
+<div>
+<!-- begin ja only -->
+<p>
+入力はデータセットの列であり，各データセットは次のような形式である．
+</p>
+<!-- end ja only -->
+
+<blockquote>
+<i>n</i>&nbsp;&nbsp;<i>w</i>&nbsp;&nbsp;<i>d</i><br>
+<i>p</i><sub>1</sub>&nbsp;&nbsp;<i>s</i><sub>1</sub><br>
+...<br>
+<i>p<sub>n</sub></i>&nbsp;&nbsp;<i>s<sub>n</sub></i><br>
+</blockquote>
+
+<!-- begin ja only -->
+<p>
+最初の行の <i>n</i> は，0 以上 100 以下の整数であり，カットの回数を表す．
+同じ行の <i>w</i> と <i>d</i> は，1 以上 100 以下の整数であり，それぞれケーキの幅と奥行きを表す．
+以下では，東西方向の長さが <i>w</i>，南北方向の長さが <i>d</i> となるようにケーキが置かれているものとする．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+続く <i>n</i> 行でカットの方法を指定する．
+1回のカットでは，ちょうど1個のピースのみを2分割する．
+<i>p<sub>i</sub></i> は <i>i</i> 回目にカットするピースの識別番号で，1
+以上 <i>i</i> 以下の整数である．
+<i>i</i> 回目のカットを行う直前には，ちょうど <i>i</i> 個のピースが存在し，
+それぞれに 1, 2, ..., <i>i</i> の識別番号が，以下の条件を満たすように与えられる．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<ul>
+<li>
+先に生まれたピースほど識別番号が小さい．
+<li>
+1回のカットで生まれる二つのピースについては，（上から見た）面積の小さい方が識別番号も小さい．
+二つのピースの面積が同じになる場合には，どちらの識別番号が小さいと考えても構わない（どちらにしても最終的な答えには影響しない）．
+</ul>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+なお，この識別番号は，1回カットが行われるたびに付け替えられる．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+<i>s<sub>i</sub></i> は，1 以上 1000 以下の整数で，<i>i</i> 回目のカットの起点を表す．
+カットすべきピースの周囲を，北西の角から時計回りに <i>s<sub>i</sub></i> 進んだ地点がカットの起点になる．
+なお，こうやって決められた起点が，ピースの四隅の角のうちのどこかと一致することはない．
+この起点から，（この起点を含む）側面と垂直にピースのカットは行われる．
+</p>
+<!-- end ja only -->
+
+<!-- begin ja only -->
+<p>
+入力の終わりは，三つのゼロを含む行で示される．
+</p>
+<!-- end ja only -->
+</div>
+
+
+<h3>Output</h3>
+<div>
+<!-- begin ja only -->
+<p>
+各データセットに対し，指定された <i>n</i> 回のカットがすべて終了した段階で存在する全ピースの上から見た面積を小さい方から順番に列挙し，空白文字１個のみを区切り記号として１行に出力せよ．
+同じ面積のピースが複数存在する場合には，ピースの個数分だけ重複して面積の出力を行うこと．
+</p>
+<!-- end ja only -->
+</div>
+
+<h3>Sample Input</h3>
+<div>
+<pre>
+3 5 6
+1 18
+2 19
+1 2
+3 4 1
+1 1
+2 1
+3 1
+0 2 5
+0 0 0
+</pre>
+</div>
+
+<h3>Output for the Sample Input</h3>
+<div>
+<pre>
+4 4 6 16
+1 1 1 1
+10
+</pre>
+</div>
+
+
+ </td>                     
+</tr>                      
+</table>                   
+
+</body>
+</html>
+
+
+
+

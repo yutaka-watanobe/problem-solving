@@ -1,0 +1,107 @@
+383980
+1
+1335018857325
+jag_staff
+2396
+
+5
+C++
+#include <cstdio>
+#include <vector>
+#include <queue>
+#include <cstring>
+
+using namespace std;
+
+const int maxN = 100;
+const double EPS = 1e-12;
+const double INF = 1e12;
+
+double cap[maxN+2][maxN+2];
+
+double search(int n, const vector<int>& level, vector<int>& itr, int cur, int t, double f){
+	if(cur == t) return f;
+	for(int i=itr[cur];i<n;i++){
+		if(cap[cur][i] > 0 && level[cur] < level[i]){
+			double d = search(n, level, itr, i, t, min(cap[cur][i], f));
+			if(d > 0){
+				itr[cur] = i;
+				cap[cur][i] -= d;
+				cap[i][cur] += d;
+				return d;
+			}
+		}
+	}
+	itr[cur] = n;
+	return 0;
+}
+
+double maximumFlow(int n, int s, int t){
+	double res = 0;
+	while(true){
+		queue<int> qu; qu.push(s);
+		vector<int> level(n, -1); level[s] = 0;
+		vector<int> itr(n, 0);
+		while(!qu.empty()){
+			int cur = qu.front(); qu.pop();
+			for(int i=0;i<n;i++){
+				if(cap[cur][i] > 0 && level[i] == -1){
+					level[i] = level[cur]+1;
+					qu.push(i);
+				}
+			}
+		}
+		if(level[t] == -1) break;
+		for(double f;(f=search(n, level, itr, s, t, INF))>0;res+=f);
+	}
+	return res;
+}
+
+int main(){
+	int n, H, test = 1;
+	int b[maxN];
+	int c[maxN][maxN];
+	bool visit[maxN+2];
+
+	while(~scanf("%d %d", &n, &H) && n){
+		for(int i=0;i<n;i++) scanf("%d", &b[i]);
+		for(int i=0;i<n;i++)
+			for(int j=0;j<n;j++)
+				scanf("%d", &c[i][j]);
+		double L = 0, R = 1e9;
+		for(int cnt=0;cnt<100;cnt++){
+			double mid = 0.5*(L+R);
+			for(int i=0;i<n+2;i++)
+				for(int j=0;j<n+2;j++)
+					cap[i][j] = 0.0;
+			for(int i=0;i<n;i++){
+				cap[0][i+2] = mid/H;
+				cap[i+2][1] = b[i];
+			}
+			for(int i=0;i<n;i++)
+				for(int j=0;j<n;j++)
+					cap[i+2][j+2] = c[i][j];
+			double cut = maximumFlow(n+2, 0, 1);
+			if(cut < n*mid/H*(1-EPS)) R = mid;
+			else                      L = mid;
+		}
+		memset(visit, false, sizeof(visit));
+		queue<int> qu; qu.push(1);
+		int size = n+1;
+		while(!qu.empty()){
+			int p = qu.front(); qu.pop();
+			if(visit[p]) continue;
+			visit[p] = true;
+			size--;
+			for(int i=0;i<n+2;i++)
+				if(cap[i][p] > 0.0) qu.push(i);
+		}
+		//fprintf(stderr, "Total Cost = %.15lf\n", 0.5*(L+R));
+		printf("Case %d:\n", test++);
+		for(int i=0;i<n;i++){
+			printf("%.12lf%c", visit[i+2] ? 0.0 : (double)H/size, i==n-1 ? '\n' : ' ');
+		}
+	}
+}
+
+

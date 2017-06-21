@@ -1,0 +1,146 @@
+<center>
+<table class="noborder">
+<tr class="head">
+<td>ID</td>
+<td>問題</td>
+<td>難易度</td>
+<td>考察</td>
+</tr>
+
+<tr class="odd">
+<td>A</td>
+<td>The Balance</td>
+<td>★☆</td>
+<td>-</td>
+</tr>
+
+<tr class="even">
+<td>B</td>
+<td>Make a Sequence</td>
+<td>★★</td>
+<td>-</td>
+</tr>
+
+<tr class="odd">
+<td>C</td>
+<td>Leaky Cryptography</td>
+<td>★★☆</td>
+<td>-</td>
+</tr>
+
+<tr class="even">
+<td>D</td>
+<td>Pathological Paths</td>
+<td>★★★☆</td>
+<td>-</td>
+</tr>
+
+<tr class="odd">
+<td>E</td>
+<td>Confusing Login Names</td>
+<td>★★★？</td>
+<td>-</td>
+</tr>
+
+<tr class="even">
+<td>F</td>
+<td>Dice Puzzle</td>
+<td>★★★☆</td>
+<td>-</td>
+</tr>
+
+<tr class="odd">
+<td>G</td>
+<td>Color the Map</td>
+<td>★★★</td>
+<td>-</td>
+</tr>
+
+<tr class="even">
+<td>H</td>
+<td>Inherit the Sphere</td>
+<td>★★★★</td>
+<td>-</td>
+</tr>
+
+<tr class="odd">
+<td>I</td>
+<td>Crossing Prisms</td>
+<td>★★★★★</td>
+<td>grave</td>
+</tr>
+</table>
+</center>
+
+
+<b>問題</b> ACM/ICPC 2004 Ehime: Problem A<br>
+<br>
+<b>概要</b><br>
+
+ a グラムと b グラムの２種類の重りと天秤を使い、d グラムを計るとき、以下の条件を満たすように <br>
+x (a グラムの重りの数)と y (b グラムの重りの数)を求めよ。<br>
+<br>
+1. a グラムの重りを x 個、b グラムの重りを y 個使って、d グラムを計ることができる<br>
+2. 1 の条件を満たす (x, y) が複数ある場合は、(x + y) が最小のものとする<br>
+3. 1, 2 の条件を満たす (x, y) が複数ある場合は、(a*x + b*y) が最小のものとする<br>
+<br>
+
+<b>解法</b><br>
+<br>
+天秤の状態を式で表すと、(a グラムの重りを a と表現します)<br>
+<br>
+a*x = b*y + d, （左に x 個の a、右に y 個の b と d）<br>
+a*x + d = b*y, （左の x 個の a と d、右に y 個の b）<br>
+a*x + b*y = d, （左り x 個の a と y 個の b、右に d）<br>
+<br>
+の３つの状態が考えられます。これらを変形すると<br>
+<br>
+y = (a*x - d)/b ((a*x - d) が b で割りきれるとき)<br>
+y = (a*x + d)/b ((a*x + d) が b で割りきれるとき)<br>
+y = (d - a*x)/b ((d - a*x) が b で割りきれるとき)<br>
+<br>
+x を 0 から d の上限である 50000 までについて、y を求め<br>
+(x + y) または (a*x + b*y) の最小値を更新していきます。<br>
+（無駄がありそうですが、、）<br>
+<br>
+上限を（a + d）としても良さそうですが確信がありません。<br>
+<br>
+もちろん効率化の余地はありますし、整数論的に解けるのかもしれません。<br>
+ICPCで Accept されるには十分だと思います。<br>
+<br>
+<b>サンプルプログラム</b><br>
+<br>
+
+
+<b>問題</b> ACM/ICPC Asia Regional 2004 Ehime: Problem B<br>
+<br>
+<b>概要</b><br>
+<br>
+３次元の○×ゲーム（ｎ目並べ）をシミュレーションし、<br>
+勝者と勝負がつくまでの手数を求めよ。<br>
+<br>
+<b>解説</b><br>
+<br>
+原点から１３方向分の単位ベクトルを表す配列を用意すると実装が楽になります。<br>
+<br>
+<b>サンプルプログラム</b><br>
+<br>
+
+
+<b>問題</b> ACM/ICPC Asia Regional 2004 Ehime: Problem F<br>
+<br>
+<b>概要</b><br>
+<br>
+側面に数字（１から６）が書かれたサイコロ２７個を使い、<br>
+３×３×３×のキューブを完成させる。<br>
+入力としてキューブの上面と前面の状態が与えられるので、これを満たさなければならない。<br>
+また、隣り合うサイコロにおいて、接している側面に書かれている数字の和が７でなければならない。<br>
+求めるものは、キューブ右面に見える数字の合計。<br>
+<br>
+<b>解説</b><br>
+<br>
+バックトラックで総当り探索。<br>
+<br>
+<b>サンプルプログラム</b><br>
+<br>
+

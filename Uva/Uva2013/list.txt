@@ -1,0 +1,5 @@
+10801:2.5:Dijkstra
+10851:1:Simple encoding
+10140:2:Segmented Eratostenes
+11200:2:DFS in Slash Grid
+11417:1:GCD

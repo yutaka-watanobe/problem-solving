@@ -1,0 +1,22 @@
+会津大学ICPCプログラミング部主催のプログラミングコンテストが開催されます。
+奮って御参加下さい。オンラインでどなたでも参加することができます。
+
+日時:   2010年5月29日(土) 13:00 - 18:00 (JST)　
+場所:   オンライン
+        http://rose.u-aizu.ac.jp/onlinejudge/contest.jsp
+詳細:   http://rose.u-aizu.ac.jp/onlinejudge/uapc2010.html
+審判:   会津大学ICPC Programming Club
+
+
+University of Aizu ICPC Programming Club will hold a programming contest.
+We look forward to your participation in the event.
+The contest is open to anyone on the Internet.
+
+Time:   May 29th (Sat), 2010. 13:00 - 18:00 (JST)
+Place: 	Online
+        http://rose.u-aizu.ac.jp/onlinejudge/contest.jsp
+Detail: http://rose.u-aizu.ac.jp/onlinejudge/uapc2010.html
+Judge:  Univ. of Aizu ICPC Programming Club
+
+
+

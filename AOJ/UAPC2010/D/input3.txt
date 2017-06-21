@@ -1,0 +1,251 @@
+26
+1000 1000
+a 3
+300 100 400 900 z
+500 100 600 200 b
+700 450 900 550 b
+b 3
+300 100 400 900 a
+500 100 600 200 c
+700 450 900 550 c
+c 3
+300 100 400 900 b
+500 100 600 200 d
+700 450 900 550 d
+d 3
+300 100 400 900 c
+500 100 600 200 e
+700 450 900 550 e
+e 3
+300 100 400 900 d
+500 100 600 200 f
+700 450 900 550 f
+f 3
+300 100 400 900 e
+500 100 600 200 g
+700 450 900 550 g
+g 3
+300 100 400 900 f
+500 100 600 200 h
+700 450 900 550 h
+h 3
+300 100 400 900 g
+500 100 600 200 i
+700 450 900 550 i
+i 3
+300 100 400 900 h
+500 100 600 200 j
+700 450 900 550 j
+j 3
+300 100 400 900 i
+500 100 600 200 k
+700 450 900 550 k
+k 3
+300 100 400 900 j
+500 100 600 200 l
+700 450 900 550 l
+l 3
+300 100 400 900 k
+500 100 600 200 m
+700 450 900 550 m
+m 3
+300 100 400 900 l
+500 100 600 200 n
+700 450 900 550 n
+n 3
+300 100 400 900 m
+500 100 600 200 o
+700 450 900 550 o
+o 3
+300 100 400 900 n
+500 100 600 200 p
+700 450 900 550 p
+p 3
+300 100 400 900 o
+500 100 600 200 q
+700 450 900 550 q
+q 3
+300 100 400 900 p
+500 100 600 200 r
+700 450 900 550 r
+r 3
+300 100 400 900 q
+500 100 600 200 s
+700 450 900 550 s
+s 3
+300 100 400 900 r
+500 100 600 200 t
+700 450 900 550 t
+t 3
+300 100 400 900 s
+500 100 600 200 u
+700 450 900 550 u
+u 3
+300 100 400 900 t
+500 100 600 200 v
+700 450 900 550 v
+v 3
+300 100 400 900 u
+500 100 600 200 w
+700 450 900 550 w
+w 3
+300 100 400 900 v
+500 100 600 200 x
+700 450 900 550 x
+x 3
+300 100 400 900 w
+500 100 600 200 y
+700 450 900 550 y
+y 3
+300 100 400 900 x
+500 100 600 200 z
+700 450 900 550 z
+z 3
+300 100 400 900 y
+500 100 600 200 a
+700 450 900 550 a
+130
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 800 500
+show
+click 550 150
+show
+click 550 150
+show
+click 800 500
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 550 150
+show
+click 350 500
+show
+click 350 500
+show
+click 350 500
+show
+back
+show
+back
+show
+back
+show
+back
+show
+back
+show
+back
+show
+forward
+show
+forward
+show
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+back
+show
+click 200 434
+click 201 333
+click 200 523
+click 203 4
+click 200 124
+click 200 44
+click 700 834
+click 701 933
+click 700 923
+click 703 994
+click 700 924
+click 700 884
+show
+click 800 500
+show
+0
+
+
+
+
+
+
+
+
+
+
+
+
+

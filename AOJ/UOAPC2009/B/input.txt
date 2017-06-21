@@ -1,0 +1,183 @@
+1
+E A C
+1
+E B C
+1
+E A B
+1
+E G B
+1
+B A C
+1
+B E C
+1
+B D C
+1
+B G C
+1
+B H C
+1 
+B H E
+1
+A E C
+1
+A I B
+1
+A I C
+1
+A I F
+2
+E A C
+2
+E B C
+2
+E A B
+2
+E G B
+2
+B A C
+2
+B E C
+2
+B D C
+2
+B G C
+2
+B H C
+2 
+B H E
+2
+A E C
+2
+A I B
+2
+A I C
+2
+A I F
+3
+E A C
+3
+E B C
+3
+E A B
+3
+E G B
+3
+B A C
+3
+B E C
+3
+B D C
+3
+B G C
+3
+B H C
+3 
+B H E
+3
+A E C
+3
+A I B
+3
+A I C
+3
+A I F
+4
+E A C
+4
+E B C
+4
+E A B
+4
+E G B
+4
+B A C
+4
+B E C
+4
+B D C
+4
+B G C
+4
+B H C
+4 
+B H E
+4
+A E C
+4
+A I B
+4
+A I C
+4
+A I F
+5
+E A C
+5
+E B C
+5
+E A B
+5
+E G B
+5
+B A C
+5
+B E C
+5
+B D C
+5
+B G C
+5
+B H C
+5 
+B H E
+5
+A E C
+5
+A I B
+5
+A I C
+5
+A I F
+10
+A F C
+10
+A H C
+10
+A G D
+10
+A G E
+10
+C G E
+10
+C G I
+10
+C G B
+12
+A B C
+12
+A C B
+12
+A E F
+12
+A F E
+13
+H E F
+13
+G E F
+13
+G F E
+15
+E F B
+15
+B H F
+15
+A I F
+15
+G H I
+15
+G I H
+15 
+G B I
+15
+G I C
+0

@@ -1,0 +1,45 @@
+BODY {
+	FONT-FAMILY: sans-serif
+}
+TABLE.main {
+	BORDER-RIGHT: #66f 1pt solid; BORDER-TOP: #66f 1pt solid; BORDER-LEFT: #66f 1pt solid; BORDER-BOTTOM: #66f 1pt solid
+}
+TD.main {
+	BACKGROUND-COLOR: #fff
+}
+TD.menu {
+	BACKGROUND-COLOR: #fff
+}
+H1 {
+	BORDER-RIGHT: #78c 1px solid; BORDER-TOP: #78c 1px solid; MARGIN: 5px 0px 0px; BORDER-LEFT: #78c 1px solid; BORDER-BOTTOM: #78c 1px solid
+}
+H2 {
+	BORDER-RIGHT: #33f 1px double; PADDING-RIGHT: 5px; BORDER-TOP: #33f 1px double; PADDING-LEFT: 5px; FONT-SIZE: medium; PADDING-BOTTOM: 5px; MARGIN: 5px 0px 0px; BORDER-LEFT: #33f 1px double; COLOR: #fff; PADDING-TOP: 5px; BORDER-BOTTOM: #33f 1px double; BACKGROUND-COLOR: #33f
+}
+H2.result {
+	BORDER-RIGHT: #f00 1px double; PADDING-RIGHT: 5px; BORDER-TOP: #f00 1px double; PADDING-LEFT: 5px; FONT-SIZE: medium; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: #f00 1px double; COLOR: #fff; PADDING-TOP: 5px; BORDER-BOTTOM: #f00 1px double; BACKGROUND-COLOR: #f00
+}
+H3 {
+	BORDER-RIGHT: #78c 1px double; PADDING-RIGHT: 10px; BORDER-TOP: #78c 1px double; PADDING-LEFT: 10px; FONT-SIZE: medium; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #78c 1px double; COLOR: #fff; PADDING-TOP: 0px; BORDER-BOTTOM: #78c 1px double; BACKGROUND-COLOR: #78c
+}
+DIV {
+	BORDER-RIGHT: #78c 1px double; PADDING-RIGHT: 10px; BORDER-TOP: #78c 1px double; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: #78c 1px double; PADDING-TOP: 5px; BORDER-BOTTOM: #78c 1px double
+}
+DIV.banner {
+	BORDER-RIGHT: #78c 1px; PADDING-RIGHT: 10px; BORDER-TOP: #78c 1px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: #78c 1px; PADDING-TOP: 5px; BORDER-BOTTOM: #78c 1px
+}
+DIV.result {
+	BORDER-RIGHT: #f00 1px double; PADDING-RIGHT: 10px; BORDER-TOP: #f00 1px double; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: #f00 1px double; PADDING-TOP: 5px; BORDER-BOTTOM: #f00 1px double
+}
+P.result {
+	COLOR: #f00
+}
+UL.menu {
+	PADDING-RIGHT: 2pt; PADDING-LEFT: 2pt; PADDING-BOTTOM: 2pt; MARGIN: 2pt; PADDING-TOP: 2pt; LIST-STYLE-TYPE: none
+}
+A:link {
+	COLOR: #d60
+}
+A:visited {
+	COLOR: #f00
+}

@@ -1,0 +1,165 @@
+10
+8 10
+A 3
+4 2 7 4 B
+4 5 7 7 E
+1 7 3 9 D
+B 4
+2 1 4 3 A
+5 1 7 3 C
+2 4 4 6 E
+5 4 7 6 F
+C 2
+4 7 7 9 F
+1 4 7 6 B
+D 4
+1 1 3 5 B
+4 1 7 3 E
+4 4 7 6 E
+4 7 7 9 G
+E 3
+3 2 6 4 F
+2 5 4 7 H
+5 7 7 9 I
+F 0
+G 3
+1 2 3 4 A
+4 2 7 4 H
+4 5 7 7 J
+H 1
+1 1 7 8 I
+I 3
+4 1 7 3 F
+1 5 4 7 H
+5 5 7 7 C
+J 2
+4 1 7 3 H
+4 4 7 6 I
+60
+click 5 3
+click 4 8
+show
+click 3 5
+show
+click 1 1
+click 6 8
+show
+show
+click 2 6
+show
+click 5 5
+show
+click 6 6
+show
+click 5 5
+click 3 2
+click 2 8
+show
+click 5 8
+show
+click 6 6
+show
+show
+show
+show
+show
+back
+back
+back
+show
+forward
+show
+forward
+show
+forward
+show
+forward
+show
+back
+back
+back
+back
+back
+back
+show
+click 5 2
+show
+forward
+back
+show
+back
+back
+back
+show
+back
+back
+back
+back
+show
+6
+4 4
+a 1
+1 1 3 3 b
+b 1
+1 1 3 3 c
+c 1
+1 1 3 3 d
+d 1
+1 1 3 3 e
+e 1
+1 1 3 3 f
+f 1
+1 1 3 3 a
+50
+show
+show
+click 2 2
+show
+click 2 2
+click 2 2
+show
+back
+forward
+show
+back
+back
+click 2 2
+forward
+show
+back
+show
+forward
+show
+click 2 2
+click 2 2
+click 2 2
+click 2 2
+show
+click 2 2
+show
+back
+back
+show
+forward
+forward
+forward
+show
+back
+back
+back
+back
+back
+show
+forward
+show
+back
+back
+back
+back
+show
+forward
+forward
+forward
+show
+0
+

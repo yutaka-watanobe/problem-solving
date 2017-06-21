@@ -1,0 +1,6 @@
+5 10 3
+FF........
+DE...I....
+DEB..HII..
+BBA.IGHH..
+DEF.AAGG..
