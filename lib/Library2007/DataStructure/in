@@ -1,0 +1,25 @@
+insert 8
+insert 10
+insert 11
+insert 12
+insert 13
+insert 14
+insert 15
+get
+get
+get
+insert 20
+insert 22
+insert 22
+insert 22
+get
+get
+get
+insert 31
+insert 0
+insert 0
+insert 81
+get
+get
+get
+end

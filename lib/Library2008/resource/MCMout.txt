@@ -1,0 +1,2 @@
+minimum cost = 36000
+((M1(M2M3))((M4M5)M6))

@@ -1,0 +1,542 @@
+
+
+目次
+
+計算幾何学
+
+ベクトル
+	ベクトルの基礎
+		大きさ
+		距離
+	ベクトルの演算 + -
+	ベクトルの演算 内積
+		内積の定義
+		内積の意味
+	ベクトルの演算 外積
+		外積の定義
+		外積の意味
+ccw
+
+
+[[[計算幾何学]]]
+
+
+計算幾何学は、幾何学的な問題をコンピュータで解くための効率的なアルゴリズムとデータ構造を研究するための学問です。計算幾何学は、コンピュータグラフィックスや地理情報システムなど、多くの応用分野を持ったコンピュータサイエンスに欠かせない学問です。
+
+[[幾何学的オブジェクトの基本要素と表現]]
+
+整数や文字列と違い、コンピュータ（プログラム）で幾何学的なオブジェクトを処理することは簡単ではありません。幾何学のアルゴリズムを実装するためには、数学の知識が不可欠となります。特に平面幾何における問題をプログラミングで解くためには、図形、ベクトル、三角関数等の高校数学の知識が重要になります。大きな問題を解くための効率的なアルゴリズムを実装するためには、幾何学的なオブジェクト（点や線等）に対する基本的な操作を行うための細かい部品を集めた、いわゆるライブラリを用意する必要があります。まずは、ライブラリを作ることから始めましょう。
+
+[ベクトル]
+
+幾何学的なオブジェクトをプログラムのデータ構造としてどう表すかを考えましょう。
+その１つの方法がベクトルという量を使うことです。
+
+大きさと同時に向きをもつ量を「ベクトル」といいます。これに対して大きさのみをもつ量をスカラーといいます。詳しくは高校数学の教科書（数学B）等を参考にして下さい。ベクトルをプログラムのデータ構造として表すために、Fig. 1 のように、１つのベクトルは原点 O(0, 0) から対象となる点 P(x, y) への有向線分と考えます。
+
+Fig. 1
+
+平面幾何の最も基本的な要素である点(x, y)は構造体あるいはクラスとして
+
+struct Point { double x, y; };
+
+のように表すことができます。ベクトルもただ１つの点のみで定義することができるので、以下のように、点と同じデータ構造で表すことにします。
+
+typedef Point Vector;
+
+Point と Vector が全く同じデータ構造を示しますが、関数や変数の意味など状況に応じて使い分けることにします。
+
+Fig. 1 において、ベクトルが平面上の線分を表しているように見えますが、１つのベクトルは大きさと向きを持つだけであり、線分 (segment)を表すためには別に始点を持つ必要があることに注意して下さい。
+
+線分は始点 p1 と終点 p2 の２つの点をもった構造体あるいはクラスとして表すことにします。
+
+struct Segment{
+  Point p1, p2;
+};
+
+また、線分と直線の区別をしておかなければなりません。Fig. 2 のように、線分 (segment) とは２つの端点とそれらの距離で定義された長さを持つ線であり、直線 (line) は２点を通る長さが定義されていない直線です。
+
+Fig. 2 
+
+[ベクトルの基本演算: 和、差、スカラー倍]
+
+ベクトルに対するいくつかの演算を確認しましょう。
+
+２つのベクトルの和 c = a + b、２つのベクトルの差 c = a - b、 ベクトルのスカラー倍（実数倍）ka は Fig. 3 のように定義されています。
+
+ベクトル a と同じ向きで大きさの比率が k であるようなベクトルを ka と表し、これをベクトル a のスカラー倍といいます。
+
+これらのベクトルの演算は関数として定義するよりも、以下のように、点クラスのオペレータとして定義しておくと、点オブジェクトに対する操作を直感的に書くことができます。
+
+Point operator + ( Point &p ){
+    return Point(x + p.x, y + p.y);
+}
+
+Point operator - ( Point &p ){
+    return Point(x - p.x, y - p.y);
+}
+
+Point operator * ( double k ){
+    return Point(x*k, y*k);
+}
+
+[ベクトルの大きさ absolute]
+
+ベクトル a = (ax, ay) の大きさ |a| (a の絶対値:absolute)は、原点からベクトルを表す点までの距離として定義されます。さらに、大きさの２乗を表すノルムを定義しておきます。関数またはクラスのメソッドとして、それぞれabs(), norm()と定義します。
+
+double norm(){
+    return x*x + y*y;
+}
+
+double abs(){
+    return sqrt(norm());
+}
+
+[ベクトルの基礎：実装]
+
+上記の演算子、関数を含めて Point クラス（Vectorクラス）を作ります。
+さらに、点の大小関係や等価を調べるために、関係演算子 <, == も定義しておきます。
+
+class Point {
+.
+.
+.
+};
+
+等価演算に EPS を用いる、なぜ？
+
+typedef complex<double> Point;
+
+のように、ベクトル演算子が予め定義されているcomplex型（複素平面）を使うことによって簡略化することができますが、こちらについては後ほど実装してみることにします。
+
+
+[[ベクトルの内積と外積]]
+
+ベクトルの内積・外積の幾何学的な性質を用いることによって、幾何学問題を解くための多くの部品（プログラム）を簡潔に作ることができるようになります。
+
+[ベクトルの内積 Dot Product]
+
+３次元空間において、ベクトル a, b の内積(dot product) a・b は
+a, b がなす角をθ(0 <= θ <= 180)とすると、
+
+a・b = |a||b|cosθ
+
+と定義されています。
+
+Fig. 4
+
+また、２つのベクトルを a = (ax, ay, az), b = (bx, by, bz) のように成分表示し、
+余弦定理を用いると
+
+cosθ = (|a|^2 + |b|^2 - |b-a|^2) / 2|a||b| より
+
+a・b = ax bx + ay by + az bz
+
+とも定義することができます。さらに z 軸の値に 0 を代入すると
+２次元平面上の内積は
+
+a・b = |a||b|cosθ = axbx + ayby
+
+と表すことができます。
+
+double dot( Vector a, Vector b ){
+    return a.x*b.x + a.y*b.y;
+}
+
+
+
+[ベクトルの外積 Cross Product]
+
+３次元空間において、ベクトル a, b の外積(cross product) a×b は
+a, b がなす角をθとすると、
+
+a×b = |a||b|sinθ
+
+と定義されています。
+
+Fig 5
+
+また、２つのベクトルを a = (ax, ay, az), b = (bx, by, bz) のように成分表示し、
+a b がなす三角形の面積 S が
+
+S = (|a||b| sinθ)/2, cosθ = a・b / |a||b| であることを用いると、
+
+a×b = (ay bz - az by, az bx - ax bz, ax by - ay bx) 
+
+とも定義することができます。
+（行列式を用いれば、さらに簡単に導き出すことができます。）
+さらに z 軸の値に 0 を代入すると、２次元平面上の外積は
+
+a×b = |a||b|sinθ = axby - aybx
+
+と表すことができます。
+
+double cross(Vector a, Vector b){
+    return a.x*b.y - a.y*b.x;
+}
+
+[[ベクトルの内積と外積の応用]]
+
+[線分の直交判定]
+
+ベクトルの内積の幾何学的な意味を確認します。
+cosθはθが90度または-90度のときに 0 となることから、
+
+２つのベクトル a, b が直交している <＝> ベクトル a, b の内積が 0 である
+
+とうことが判ります。つまり、内積は２つのベクトルの直交判定に応用することができます。
+
+// ベクトル a, bの直交判定
+bool isOrthogonal( Vector a, Vector b ){
+     return equals( dot(a, b), 0.0 );
+}
+
+さらに、２直線の直交判定を考えてみましょう。
+書き方はいろいろありますが、４点で与えられた線分a1a2と線分b1b2の直交判定は以下のようになります。
+
+bool isOrthogonal( Point a1, Point a2, Point b1, Point b2 ){
+    return isOrthogonal( a1 - a2, b1 - b2 );
+}
+
+また、線分を引数にとれば、以下のようになります。
+
+bool isOrthogonal( Segment s1, Segment s2 ){
+    return equals( dot(s1.p2 - s1.p1, s2.p2 - s2.p1), 0.0 );
+}
+
+[線分の平行判定]
+
+２つのベクトル a, b の外積は、大きさと向きを持つベクトルになります。Fig. 5 に示すように、外積の向きは a, b を含む平面に垂直で a をその始点の周りにθ だけ 回転させて b に重ねたときの、右ねじが進む向きになります。また、外積の大きさは、２つのベクトルが作る平行四辺形の面積となります。
+
+ベクトルの外積の幾何学的な意味を確認します。
+sinθはθが0度または180度のときに 0 となることから、
+
+２つのベクトル a, b が平行 <＝> ベクトル a, b の外積が 0 である
+
+とうことが判ります。つまり外積は２つのベクトルの平行判定に応用することができます。
+
+bool isParallel( Vector a, Vector b ){
+    return equals( cross(a, b), 0.0 );
+}
+
+
+さらに、２直線の平行判定を考えてみましょう。４点で与えられた線分a1a2と線分b1b2の平行判定は以下のようになります。
+
+bool isParallel( Point a1, Point a2, Point b1, Point b2){
+    return isParallel( a1 - a2, b1 - b2 );
+}
+
+また、線分を引数にとれば、以下のようになります。
+
+bool isParallel( Segment s1, Segment s2 ){
+    return equals( cross(s1.p2 - s1.p1, s2.p2 - s2.p1), 0.0 );
+}
+
+[射影 projection]
+
+点 p から線分(または直線)s = p1p2に垂線を引いたときの交点 x を求めます。
+
+Fig. 6
+
+Fig. 6 のように、ベクトルs.p2 - s.p1 をbaseとし、 s.p1と点xの距離をtとすると、内積の式a・b = |a||b|cosθ を用いて
+
+t = dot(p - s.p1, base) / |base|
+
+となります。t を |base|に対する比率とし、
+
+x は s.p1 + base*t/|base| となりますが、平方根の計算を避けるため、上の式の|base|を norm(base) とし
+
+x = s.p1 + base*t;
+
+と導くことができます。線分（直線） s に対する点pの射影を求めるプログラムは以下のようになります。
+
+Point project( Segment s, Point p ){
+    Vector base = s.p2 - s.p1;
+    double t = dot(p - s.p1, base)/norm(base);
+    return s.p1 + base*t;
+}
+
+[反射 reflect]
+
+線分（または直線）s = p1p2を対称軸として点pと線対称の位置にある点 x を求めます。
+
+Fig. 7
+
+点pから線分p1p2へ射影した点p'へのベクトルをスカラー2倍します。さらに始点が p となるので p との和をとる必要があります。
+
+Point reflect( Segment s, Point p ){
+    return p + (project(s, p) - p)*2.0;
+}
+
+[線分と点の位置関係を調べる ccw (counter clockwise)]
+
+外積の向きが a, b を含む平面に垂直で a をその始点の周りにθだけ回転させて b に重ねたときの、右ねじが進む方向になることを利用し、ベクトル a, bの位置関係を調べることができます。a, b を始点 p0 が共通であるベクトルp0p1 とベクトルp0p2とみなし、線分p0p1に対して点p2がどの位置にあるかを以下のように判定することができます。 
+
+位置関係のTable
+
+(1) p0 -> p1 半時計回りの方向に p2
+(2) p0 -> p1 時計回りの方向に p2
+(3) p2 -> p0 -> p1 の順で直線上に p2
+(4) p0 -> p1 -> p2 の順で直線上に p2
+(5) p0 -> p2 -> p1 の順で線分p0p1上に p2
+
+
+Fig A のように、p0p1 をベクトル a, p0p2をベクトルbとすると、
+それぞれの判定方法は以下のようになります：
+
+(1) 外積 cross(a, b)の値が正のとき、b は a から半時計回りの位置にあることを利用する。
+(2) 外積 cross(a, b)の値が負のとき、b は a から時計回りの位置にあることを利用する。
+(3)(1)(2)に該当しない場合、p2は直線p0p1上（線分p0p1上とは限らない）にあります。Fig B に示すように、cosθ は θ が -90から90度のとき正、90から270度のとき負となります。従って、a と b の内積 dot(a, b) が負のとき、 p2 は線分 p0p1 の後ろ側、p2 -> p0 -> p1 の位置にあると判定できます。
+(4)(3)に該当しない場合は、p2 は p0 -> p1 -> p2 または p0 -> p2 -> p1 の位置にあります。従って、b の大きさが a の大きさより大きいときに p0 -> p1 -> p2 の位置にあることが判ります。
+(5)(4)に該当しない場合はp2 は線分 p0p1 上にあることが判ります。
+
+上記の判定をプログラムで書くと以下のようになります：
+
+static const int COUNTER_CLOCKWISE = 1;
+static const int CLOCKWISE = -1;
+static const int ONLINE_BACK = 2;
+static const int ONLINE_FRONT = -2;
+static const int ON_SEGMENT = 0;
+
+int ccw( Point p0, Point p1, Point p2 ){
+    Vector a = p1 - p0;
+    Vector b = p2 - p0;
+    if ( cross(a, b) > EPS ) return COUNTER_CLOCKWISE;
+    if ( cross(a, b) < -EPS ) return CLOCKWISE;
+    if ( dot(a, b) < -EPS ) return ONLINE_BACK;
+    if ( a.norm() < b.norm() ) return ONLINE_FRONT;
+    return ON_SEGMENT;
+}
+
+各判定に EPS を用いていますが、精度が甘い問題に対しては 0 と比較することができます。
+
+[線分の交差判定]
+
+点と線分の位置関係を調べる ccw を用いて、２つの線分の交差判定を簡単に行うことができます。
+
+Fig IT
+
+Fig IT (a)(b)(c)(d)は２線分が交差している例を示し、一方の線分の端点が他方の線分上にある場合(b)、２線分の端点が１点で交わる場合(c)、線分が平行に重なる場合(d)、も交差していると見なします。（(c)(d)については要チェック）
+Fig IT (e)(f)は２線分が交差しない例を示しています。
+
+２つの線分それぞれについて、他方の線分の端点がそれぞれ半時計回りの位置と時計回りの位置にあれば、２つの線分が交差していると判定することができます。例えば、Fig IT2 に示すように、線分p1p2 と線分p3p4が交差するためには、線分p1p2に対してp3, p4 が異なる側にあり、線分p3p4に対してp1,p2 が異なる側にある必要があります。
+
+この判定をプログラムにすると以下のようになります。
+
+bool isIntersect(Point p1, Point p2, Point p3, Point p4){
+    return ( ccw(p1, p2, p3) * ccw(p1, p2, p4) <= 0 &&
+	     ccw(p3, p4, p1) * ccw(p3, p4, p2) <= 0 );
+}
+
+ccw(p1, p2, p3) * ccw(p1, p2, p4) で線分p1p2に対して点p3, p4がそれぞれどちら側にあるか調べ、結果の積を求めます。ccwの戻り値は
+
+COUNTER_CLOCKWISE = 1;
+CLOCKWISE = -1;
+ON_SEGMENT = 0;
+
+と定義されているので、
+ccw(p1, p2, p3) * ccw(p1, p2, p4) の値は、p3とp4が異なる側にある場合は-1, p3またはp4が線分p1p2上にある場合は0となります。線分p3p4に対する点p1, p2についても同様に計算します。そして、これらの線分p1p2、線分p3p4に対する判定が共に0以下の場合、線分p1p2と線分p3p4が交差していると判定されます。
+
+また、線分を引数にする場合は以下のように書くことができます。
+
+bool isIntersect(Segment s1, Segment s2){
+    return isIntersect(s1.p1, s1.p2, s2.p2, s2.p2);
+}
+
+[線分の交点]
+
+外積を利用して２つの線分s1, s2の交点を求めることができます。
+
+Fig CP.
+
+まず、線分s2をベクトルとしてbaseと表します。
+次に、線分s1のそれぞれの端点からbaseに重なる直線への距離、d1, d2 を求めます。
+
+d1 = base×(s1.p1 - s2.p1)/|base|
+d2 = base×(s1.p2 - s2.p1)/|base|
+
+さらに、線分s1の距離に対する点s1.p1から求めたい交点xまでの距離の割合をtとすると、
+d1 : d2 = t : (1 - t)
+
+より
+
+t = d1/(d1 + d2)
+
+となります。これらの式をプログラムにすると以下のようになります。ここで、d1, d2 の計算における |base| は t の計算における約分により消されています。
+
+Point getCrossPoint(Segment s1, Segment s2){
+    assert( isIntersect(s1, s2) );
+    Vector base = s2.p2 - s2.p1;
+    double d1 = abs(cross(base, s1.p1 - s2.p1));
+    double d2 = abs(cross(base, s1.p2 - s2.p1));
+    double t = d1/(d1 + d2);
+    return s1.p1 + (s1.p2 - s1.p1)*t;
+}
+
+[[点・線分・直線における距離の計算]]
+
+[２点間の距離 distance]
+
+点 a と点 b 間の距離はベクトル a - b または b - a の絶対値になります。
+
+double getDistance( Point a, Point b ){
+    return abs(a - b);
+}
+
+[点と直線の距離]
+
+点pと直線p1p2の距離dは、直線p1p2上のベクトルを a = p2 - p1、p と p1 が成すベクトルを b = p - p1 とすると、
+
+d = |b|sinθ = a × b / |a|
+
+となるので、
+
+d = (p2 - p1)×(p - p1)/|p2 - p1|
+
+となります。
+
+double getDistanceLP(Segment s, Point p){
+    return abs(cross(s.p2 - s.p1, p - s.p1)/abs(s.p2 - s.p1));
+}
+
+[点と線分の距離]
+
+点pと線分p1p2の距離d求めるために、以下のような場合分けを行います：
+(1) ベクトル(p2 - p1)とベクトル(p - p1)が成す角θが90度より大きい場合、d は点pと点p1の距離となる
+(2) ベクトル(p1 - p2)とベクトル(p - p2)が成す角θが90度より大きい場合、d は点pと点p2の距離となる
+(3) それ以外の位置にある場合、 d は点pと直線p1p2との距離となる
+
+θが90度より大きいときに cosθ < 0 となることから、(1),(2)の判定には、２つのベクトルの内積が負であるかどうかを調べます。
+
+double getDistanceSP(Segment s, Point p){
+    if ( dot(s.p2 - s.p1, p - s.p1) < 0.0 ) return abs(p - s.p1);
+    if ( dot(s.p1 - s.p2, p - s.p2) < 0.0 ) return abs(p - s.p2);
+    return getDistanceLP(s, p);
+}
+
+[線分と線分の距離]
+
+線分s1と線分s2の距離は、以下の４つの距離で最短のものになります：
+
+(1) 線分s1と線分s2の端点s2.p1の距離
+(2) 線分s1と線分s2の端点s2.p2の距離
+(3) 線分s2と線分s1の端点s1.p1の距離
+(4) 線分s2と線分s1の端点s1.p2の距離
+
+ただし、２つの線分が交差する場合、距離は 0 となります。
+
+double getDistance(Segment s1, Segment s2){
+    if ( isIntersect(s1, s2) ) return 0.0;
+    return min( min(getDistance(s1, s2.p1), getDistance(s1, s2.p2)),
+		min(getDistance(s2, s1.p1), getDistance(s2, s1.p2)));
+}
+
+[[complex 型の導入]]
+
+[Pointクラスとの比較]
+
+xy平面上の点を complexクラスで表す。
+
+typedef complex<double> Point;
+
+complexクラスは複素数の演算を行うSTLのテンプレートプログラム
+
+復習
+複素数とは実数部分と虚数単位の２つの部分を持つ数値
+虚数は２乗すると負の数値なるとう属性を持つ
+（複素数の虚数単位はiが-1の平方根であるiという因数）
+// 加減算やスカラー倍が定義されていたほうが扱いやすい [maehara]
+// 足し算，引き算，スカラー倍は定義済み．
+// operator < は入っていないので自分で namespace std に突っ込む．
+
+なぜ complex か
+
+演算子が定義されている
+polar(r, th)
+conj(c)
+=
++
+-
+*
+/
+
+複素数平面の実軸をx軸、虚軸をy軸とし、２次元の平面上の点（x, y）を
+ベクトルとして表す
+
+コンストラクタ
+Point p1(1.0, 1.4); // 実数が1.0、虚数単位が1.4の複素数を生成、つまり
+                    // x が 1.0、y が 1.4 の点を生成
+
+複素数の実数と虚数単位はそれぞれ real() と imag() でアクセスできるので、
+
+Point p; において、
+x 座標は p.real() または real(p)
+y 座標は p.imag() または imag(p)
+でアクセス
+
+例
+double x = p.real();
+double y = p.imag();
+p.real() = 8.6;
+cin >> p.real() >> p1.imag();
+
+abc(a)
+ a の絶対値を返す（a.real()*a.real() + a.imag()*a.imag()の平方根）
+つまり、ベクトル a の大きさ
+始点を原点、終点をaとしたベクトルとする
+
+２点 a, b の距離はベクトル a - b の絶対値
+double distance = abs(a - b);
+
+
+
+
+
+複素数の掛け算
+a = ax + ayi
+b = bx + byi
+a*b = (ax + ayi)(bx + byi)
+    = axbx + axbyi + aybxi + aybyi2
+    = (axbx - ayby) + (axby + aybx)i
+
+内積の実装
+conj(a)*b = (ax - ayi)(bx + byi)
+          =  axbx + axbyi - aybxi - aybyi2
+          = (axbx + ayby) + (axby - aybx)i
+real(conj(a)*b) = axbx + ayby
+
+外積の実装
+imag(conj(a)*b) = axby - aybx
+
+直線 Line
+
+
+線分 Line Segment
+
+
+多角形 Polygon
+
+
+内積 Dot Product
+
+定義
+a・b = |a||b|cosθ = axbx + ayby
+意味
+
+実装
+conj(a)*b = (ax - ayi)(bx + byi)
+          =  axbx + axbyi - aybxi - aybyi2
+          = (axbx + ayby) + (axby - aybx)i
+
+real(conj(a)*b) = axbx + ayby
+
+外積 Cross Product
+定義
+a×b = |a||b|sinθ = axby - aybx
+意味
+
+実装
+imag(conj(a)*b) = axby - aybx
+
+
+

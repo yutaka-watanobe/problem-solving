@@ -1,0 +1,15 @@
+"A" by a
+"B" by a
+"C" by d
+"D" by d
+END
+BORROW "A"
+BORROW "B"
+BORROW "D"
+RETURN "A"
+RETURN "B"
+SHELVE
+RETURN "D"
+SHELVE
+END
+

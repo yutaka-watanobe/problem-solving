@@ -1,0 +1,1011 @@
+insert 0
+insert 33
+insert 43
+insert 62
+insert 29
+insert 0
+insert 8
+insert 52
+insert 56
+insert 56
+insert 11
+insert 43
+get
+insert 93
+get
+insert 69
+insert 17
+insert 72
+insert 80
+insert 49
+insert 64
+insert 51
+insert 90
+insert 35
+get
+insert 10
+insert 84
+insert 1
+get
+insert 76
+insert 29
+insert 75
+insert 90
+insert 34
+get
+insert 30
+insert 26
+insert 34
+insert 60
+insert 20
+insert 32
+insert 13
+get
+insert 19
+get
+get
+insert 27
+insert 97
+insert 96
+insert 56
+insert 93
+get
+insert 6
+insert 54
+insert 65
+insert 38
+insert 90
+get
+insert 95
+insert 63
+insert 27
+insert 6
+insert 12
+insert 10
+get
+insert 71
+insert 14
+insert 64
+insert 25
+insert 31
+insert 87
+insert 87
+insert 79
+get
+get
+get
+insert 62
+insert 73
+insert 21
+get
+get
+insert 78
+insert 3
+insert 8
+insert 88
+insert 85
+insert 88
+get
+insert 46
+insert 10
+insert 87
+insert 3
+insert 0
+insert 5
+insert 52
+get
+insert 2
+get
+get
+get
+get
+insert 42
+get
+get
+insert 24
+insert 58
+insert 19
+get
+get
+get
+insert 74
+insert 6
+insert 68
+get
+get
+insert 23
+insert 6
+insert 30
+get
+insert 93
+insert 95
+get
+insert 55
+get
+get
+get
+get
+insert 48
+insert 53
+insert 60
+insert 56
+insert 43
+get
+insert 79
+get
+insert 29
+get
+insert 17
+get
+insert 73
+insert 45
+insert 72
+get
+insert 53
+insert 17
+get
+insert 76
+insert 76
+insert 54
+insert 2
+insert 55
+get
+insert 94
+insert 30
+get
+insert 86
+insert 7
+insert 79
+insert 65
+insert 32
+insert 32
+insert 17
+insert 83
+get
+insert 16
+insert 19
+insert 71
+insert 56
+get
+insert 28
+insert 30
+insert 48
+get
+insert 14
+get
+insert 25
+insert 31
+insert 9
+insert 22
+insert 52
+insert 95
+insert 53
+get
+insert 16
+insert 97
+insert 32
+insert 4
+insert 95
+insert 7
+insert 2
+insert 45
+insert 40
+insert 96
+insert 7
+insert 97
+insert 50
+insert 30
+get
+insert 61
+insert 9
+insert 98
+get
+insert 43
+insert 88
+insert 92
+insert 74
+insert 93
+get
+insert 65
+insert 58
+insert 48
+insert 29
+get
+insert 9
+insert 54
+insert 1
+insert 16
+insert 77
+insert 5
+insert 12
+insert 92
+insert 1
+insert 4
+insert 2
+insert 63
+insert 73
+get
+insert 59
+insert 96
+insert 63
+insert 77
+insert 47
+insert 48
+get
+insert 94
+insert 30
+insert 83
+insert 47
+insert 47
+insert 49
+insert 88
+insert 33
+insert 42
+insert 67
+insert 6
+insert 0
+insert 18
+insert 18
+insert 75
+insert 19
+insert 96
+insert 16
+insert 40
+insert 30
+insert 55
+insert 11
+insert 96
+get
+insert 3
+insert 55
+insert 81
+get
+insert 37
+insert 86
+insert 77
+insert 54
+insert 57
+insert 80
+insert 66
+insert 33
+get
+get
+insert 32
+insert 14
+get
+insert 27
+get
+insert 83
+get
+insert 74
+insert 71
+insert 5
+get
+insert 79
+insert 81
+get
+insert 75
+get
+insert 32
+insert 58
+insert 78
+insert 68
+insert 3
+insert 22
+insert 93
+insert 57
+insert 19
+insert 92
+insert 20
+insert 38
+insert 52
+insert 28
+insert 52
+insert 23
+insert 4
+insert 50
+get
+get
+insert 64
+insert 65
+get
+insert 64
+insert 58
+insert 21
+insert 77
+insert 26
+insert 51
+insert 38
+get
+insert 19
+get
+insert 97
+get
+insert 66
+insert 55
+insert 28
+insert 76
+insert 82
+insert 61
+insert 91
+insert 74
+insert 42
+insert 33
+get
+insert 75
+insert 20
+insert 39
+insert 71
+insert 56
+insert 64
+get
+insert 67
+insert 11
+insert 46
+insert 70
+get
+insert 42
+insert 8
+insert 68
+insert 7
+insert 48
+insert 57
+insert 54
+get
+insert 39
+insert 84
+insert 74
+insert 36
+insert 85
+insert 67
+insert 31
+insert 39
+insert 83
+insert 15
+insert 88
+insert 51
+insert 13
+insert 25
+get
+insert 76
+get
+insert 40
+insert 88
+insert 79
+insert 40
+insert 46
+get
+insert 22
+insert 45
+insert 57
+insert 85
+insert 17
+insert 32
+insert 31
+get
+insert 86
+get
+insert 4
+get
+insert 87
+get
+insert 78
+insert 87
+insert 15
+insert 57
+insert 53
+insert 83
+get
+get
+insert 9
+insert 95
+insert 69
+get
+insert 38
+insert 83
+insert 91
+get
+insert 53
+get
+insert 89
+get
+insert 90
+insert 69
+insert 60
+insert 0
+insert 25
+insert 78
+get
+insert 94
+get
+insert 56
+insert 20
+get
+insert 48
+insert 8
+insert 45
+insert 34
+insert 36
+get
+insert 43
+get
+get
+insert 59
+insert 79
+insert 7
+insert 56
+insert 18
+get
+insert 53
+insert 69
+insert 85
+get
+insert 14
+get
+get
+insert 62
+get
+insert 14
+insert 63
+insert 43
+get
+insert 57
+insert 18
+insert 72
+insert 66
+insert 39
+insert 10
+insert 22
+get
+insert 36
+insert 47
+insert 78
+insert 9
+insert 37
+insert 13
+get
+insert 69
+insert 91
+insert 55
+get
+insert 68
+insert 52
+insert 50
+get
+get
+insert 90
+insert 64
+insert 58
+insert 16
+insert 83
+insert 7
+insert 94
+insert 63
+get
+insert 95
+insert 6
+insert 23
+insert 53
+insert 39
+insert 2
+insert 43
+insert 59
+insert 69
+insert 52
+insert 4
+insert 89
+get
+get
+insert 97
+insert 22
+insert 28
+get
+get
+get
+insert 49
+insert 26
+insert 78
+insert 83
+insert 48
+insert 6
+insert 92
+insert 19
+get
+insert 48
+insert 17
+insert 41
+insert 98
+insert 22
+insert 25
+insert 24
+insert 83
+insert 47
+get
+insert 64
+get
+insert 77
+insert 32
+get
+get
+get
+get
+insert 71
+insert 53
+get
+insert 44
+insert 5
+insert 77
+get
+get
+insert 58
+get
+insert 51
+insert 66
+insert 73
+insert 52
+insert 81
+insert 98
+insert 39
+insert 11
+insert 73
+insert 16
+insert 78
+insert 37
+insert 15
+insert 67
+insert 35
+get
+insert 48
+insert 91
+insert 78
+insert 55
+insert 73
+get
+insert 26
+get
+insert 99
+insert 16
+insert 10
+insert 23
+insert 53
+insert 55
+insert 6
+insert 57
+insert 82
+insert 87
+get
+insert 70
+insert 86
+insert 48
+insert 75
+insert 18
+get
+insert 15
+insert 54
+insert 55
+get
+insert 22
+insert 1
+insert 78
+get
+get
+insert 67
+insert 90
+insert 75
+insert 92
+insert 42
+insert 62
+insert 16
+get
+insert 84
+insert 79
+insert 7
+insert 66
+insert 77
+insert 74
+insert 86
+insert 92
+insert 48
+insert 53
+get
+insert 20
+insert 5
+get
+insert 78
+insert 17
+get
+get
+get
+get
+insert 54
+insert 39
+insert 31
+insert 34
+insert 35
+insert 45
+get
+insert 76
+insert 0
+insert 2
+insert 51
+get
+get
+insert 47
+insert 18
+insert 83
+insert 30
+get
+get
+insert 41
+get
+insert 43
+insert 57
+get
+insert 16
+insert 87
+insert 1
+insert 43
+insert 78
+insert 46
+get
+insert 47
+insert 9
+get
+insert 2
+insert 13
+get
+insert 36
+insert 86
+insert 51
+get
+insert 31
+insert 17
+get
+insert 18
+insert 29
+get
+insert 71
+insert 54
+get
+insert 32
+insert 39
+insert 10
+get
+insert 62
+insert 54
+insert 17
+insert 17
+insert 36
+get
+insert 8
+insert 65
+insert 40
+get
+get
+get
+insert 35
+get
+insert 30
+insert 79
+insert 92
+insert 83
+insert 88
+insert 75
+insert 66
+insert 4
+insert 35
+insert 58
+insert 63
+insert 9
+get
+insert 49
+insert 7
+insert 67
+insert 89
+insert 46
+insert 86
+get
+insert 34
+get
+get
+get
+get
+insert 95
+insert 26
+get
+insert 66
+get
+get
+insert 98
+insert 79
+get
+insert 81
+insert 27
+insert 42
+insert 92
+insert 77
+insert 41
+insert 10
+insert 40
+insert 99
+insert 19
+get
+insert 56
+insert 87
+insert 68
+insert 32
+insert 12
+insert 23
+insert 78
+get
+insert 55
+insert 93
+insert 65
+insert 1
+insert 6
+insert 52
+get
+insert 63
+insert 34
+insert 78
+get
+get
+get
+insert 26
+insert 21
+insert 69
+insert 99
+insert 94
+insert 60
+get
+insert 89
+insert 43
+insert 7
+insert 5
+get
+insert 90
+insert 44
+get
+insert 16
+get
+insert 49
+insert 0
+get
+insert 1
+get
+insert 1
+insert 11
+insert 52
+insert 16
+get
+insert 11
+insert 5
+insert 44
+insert 87
+insert 91
+insert 14
+insert 77
+get
+insert 0
+insert 14
+insert 22
+insert 69
+insert 50
+insert 45
+insert 94
+insert 31
+get
+insert 4
+insert 67
+insert 30
+insert 76
+insert 25
+get
+insert 86
+insert 43
+insert 94
+insert 48
+get
+get
+insert 10
+insert 32
+insert 47
+insert 9
+insert 82
+insert 25
+get
+insert 28
+insert 70
+insert 61
+insert 54
+insert 51
+insert 55
+get
+insert 23
+insert 94
+insert 67
+insert 83
+get
+insert 13
+get
+insert 65
+get
+insert 80
+insert 72
+insert 34
+insert 8
+insert 72
+insert 11
+insert 84
+insert 46
+insert 90
+insert 39
+insert 91
+insert 69
+insert 47
+insert 0
+insert 89
+insert 27
+insert 46
+insert 30
+insert 13
+insert 41
+insert 46
+insert 41
+insert 33
+insert 33
+get
+insert 30
+insert 78
+get
+insert 73
+insert 28
+get
+insert 26
+insert 38
+insert 78
+insert 39
+get
+insert 11
+insert 23
+insert 40
+insert 64
+insert 47
+get
+insert 87
+insert 12
+get
+insert 30
+insert 21
+insert 3
+insert 79
+insert 31
+insert 98
+insert 20
+insert 89
+insert 49
+insert 95
+insert 77
+insert 39
+insert 25
+insert 16
+get
+get
+insert 58
+insert 1
+insert 16
+get
+insert 24
+insert 82
+get
+insert 65
+insert 46
+insert 66
+insert 88
+get
+insert 99
+insert 91
+insert 62
+insert 19
+get
+insert 85
+insert 31
+get
+insert 1
+insert 18
+insert 69
+insert 81
+get
+insert 34
+insert 60
+insert 84
+insert 93
+insert 87
+insert 65
+insert 63
+insert 21
+insert 20
+insert 16
+insert 1
+insert 97
+get
+insert 94
+insert 91
+insert 72
+insert 44
+insert 59
+insert 47
+insert 87
+insert 93
+insert 67
+insert 57
+get
+insert 56
+insert 9
+insert 51
+insert 93
+insert 81
+insert 49
+insert 41
+get
+insert 66
+insert 42
+insert 66
+insert 90
+insert 70
+insert 16
+insert 11
+insert 7
+insert 41
+insert 4
+get
+insert 4
+insert 30
+insert 13
+insert 43
+insert 17
+insert 62
+get
+insert 56
+get
+insert 11
+insert 18
+insert 39
+insert 70
+get
+get
+insert 96
+insert 63
+get
+get
+insert 49
+insert 4
+get
+insert 20
+insert 73
+get
+insert 11
+get
+insert 5
+get
+get
+insert 8
+insert 1
+insert 29
+get
+get
+get
+insert 70
+get
+insert 0
+insert 86
+insert 64
+insert 7
+insert 34
+insert 47
+insert 54
+insert 69
+insert 61
+get
+get
+end

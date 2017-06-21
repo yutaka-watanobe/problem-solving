@@ -1,0 +1,36 @@
+3
+5 6
+AB
+AC
+BC
+CD
+CE
+ED
+5
+ABCD
+ACB
+ABCED
+ACD
+ACED
+5 7
+AB
+AC
+BC
+CD
+CE
+ED
+BD
+8
+ABCD
+ACD
+CD
+A
+B
+C
+D
+E
+2 2
+AB
+AB
+1
+AB

@@ -1,0 +1,34 @@
+START
+      O O O
+      O O O
+      O G W
+W W W Y B G R B B G G G
+B Y W Y B G R G G W W R
+B Y Y B O O B W W Y Y R
+      R Y Y
+      B R R
+      G R R
+front right
+top right
+left left
+bottom right
+END
+START
+      Y B B
+      O G B
+      G R B
+W W B R Y Y R G G O O O
+R O O G B R G R O Y W W
+Y G Y O R G W B G O Y W
+      B B R
+      W Y Y
+      R W W
+back left
+top right
+left right
+right right
+front left
+bottom right
+right left
+END
+ENDOFINPUT

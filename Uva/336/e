@@ -1,0 +1,12 @@
+f.c:35: parse error before `++'
+f.c:53: `ii' undeclared (first use this function)
+f.c:53: (Each undeclared identifier is reported only once
+f.c:53: for each function it appears in.)
+f.c:53: `jj' undeclared (first use this function)
+f.c:57: `edge' undeclared (first use this function)
+f.c:58: `ver' undeclared (first use this function)
+f.c:65: `g' undeclared (first use this function)
+f.c:88: implicit declaration of function `int bfs(...)'
+f.c: At top level:
+f.c:100: parse error at end of saved function text
+f.c:100: confused by earlier errors, bailing out

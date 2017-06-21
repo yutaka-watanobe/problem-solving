@@ -1,0 +1,215 @@
+// @JUDGE_ID:  17051CA  753  C++
+// @begin_of_source_code
+/* Network - Matching + BFS */
+#include<stdio.h>
+#include<iostream>
+#include<string>
+#include<slist>
+#include<queue>
+#include<stl.h>
+
+class edge {
+ public:
+  int v, f, c;
+  slist<edge>::iterator r;
+  
+  edge(){}
+  edge(int v, int c): v(v), c(c), f(0){}
+  edge(const edge &e): v(e.v), c(e.c), f(e.f){}
+  bool operator!=(int j){ return v!=j; }
+  int cf(){ return c-f; }
+};
+
+edge null(-1, -1);
+
+class network {
+ public:
+  vector<slist<edge> > adj;
+  vector<slist<edge>::iterator> pos;
+
+  network(int n=0){ resize(n); }
+  void resize(int n){
+    adj.resize(n), pos.resize(n);
+
+    for(int i=0; i<n; i++) adj[i].clear();
+  }
+  int size(){ return adj.size(); }
+  void insert(int i, int j, int c){
+    slist<edge>::iterator it;
+
+    if((it=find(adj[i].begin(), adj[i].end(), j))!=adj[i].end()){
+      it->c = c;
+    }
+    else {
+      adj[i].push_front(edge(j, c));
+      adj[j].push_front(edge(i, 0));
+      adj[i].front().r = adj[j].begin();
+      adj[j].front().r = adj[i].begin();
+    }
+  }
+  edge &next(int i){
+    if(pos[i]==adj[i].end()) return null;
+    return *pos[i]++;
+  }
+  void reset(int i){ pos[i] = adj[i].begin(); }
+  void reset(){ for(int i=0; i<size(); i++) reset(i); }
+};
+
+int bfs(network &g, vector<edge> &pi, int s, int t){
+  queue<int> q;
+  bit_vector d(g.size());
+  int u;
+  edge e;
+
+  pi.resize(g.size());
+
+  q.push(s);
+  d[s] = 1;
+  g.reset();
+  while(!q.empty()){
+    u = q.front(), q.pop();
+    if(u==t) return 1;
+
+    while((e=g.next(u))!=-1){
+      if(!d[e.v] && e.cf()){
+	pi[e.v] = *(e.r);
+	d[e.v] = 1;
+	q.push(e.v);
+      }
+    }
+  }
+  return 0;
+}
+
+int edmonds_karp(network &g, int s, int t){
+  int f;
+  vector<edge> pi;
+  edge e;
+
+  while(bfs(g, pi, s, t)){
+    f = INT_MAX;
+    for(int i=t; i!=s; i=pi[i].v) f = min(f, pi[i].r->cf());
+    for(int i=t; i!=s; i=pi[i].v){
+      pi[i].r->f += f;
+      pi[i].r->r->f -= f;
+    }
+  }
+
+  g.reset(s);
+  for(f=0; (e=g.next(s))!=-1; f+=e.f);
+
+  return f;
+}
+
+network g;
+vector<string> plug, device;
+set<string> device_set;
+multimap<string, string> M;
+map< pair<string, string>, bool > C; /* connectable */
+
+void read(){
+  plug.clear();
+  device.clear();
+  device_set.clear();
+  M = multimap<string, string>();
+  C = map<pair<string, string>, bool>();
+
+  string name, type;
+
+  int k;
+
+  cin >> k;
+  for ( int i = 0; i < k; i++ ){
+    cin >> type;
+    plug.push_back( type );
+  }
+
+  cin >> k;
+  for ( int i = 0; i < k; i++ ){
+    cin >> name >> type;
+    device.push_back( type );
+    device_set.insert( type );
+  }
+  
+  g = network( device.size() + plug.size() + 2 );
+
+  cin >> k;
+  string source, target;
+  for ( int i = 0; i < k ; i++ ){
+    cin >> source >> target;
+    M.insert( make_pair(source, target) );
+  }
+
+}
+
+void createNetwork(){
+  /* source to device */
+  for ( int i = 0; i < device.size(); i++ ){
+    g.insert( 0, i+1, 1 );
+  }
+
+  /* device to plug */
+  string source, target;
+  for ( int i = 0; i < device.size(); i++ ){
+    for ( int j = 0; j < plug.size(); j++ ){
+      source = device[i];
+      target = plug[j];
+      if ( source == target || C[ make_pair(source, target) ] ){
+	g.insert( i+1, j + device.size() + 1, 1 );
+      }
+    }
+  }
+
+  /* plug to sink */
+  for ( int i = 0; i < plug.size(); i++ ){
+    g.insert( i + device.size() + 1, g.size() - 1, 1 );
+  }
+} 
+
+void BFS( string source ){
+  queue<string> q;
+  map<string, bool> U;
+
+  q.push( source );
+  U[ source ] = true;
+
+  string u, v;
+  
+  multimap<string, string>::iterator pos;
+
+  while ( !q.empty() ){
+    u = q.front(), q.pop();
+
+    for ( pos = M.lower_bound( u ); pos != M.upper_bound( u ); pos++ ){
+      v = (*pos).second;
+      if ( !U[ v ] ){
+	U[ v ] = true;
+	C[ make_pair( source, v ) ] = true;
+	q.push( v );
+      }
+    }
+  }
+}
+
+void work(){
+
+  set<string>::iterator pos;
+  for ( pos = device_set.begin(); pos != device_set.end(); pos++ ){
+    BFS( *pos );
+  }
+
+  createNetwork();
+  cout << device.size() - edmonds_karp(g, 0, g.size()-1) << endl;
+
+}
+
+main(){
+  int t;
+  cin >> t;
+  for ( int i = 0; i < t; i++ ){
+    if ( i ) cout << endl;
+    read();
+    work();
+  }
+}
+// @end_of_source_code

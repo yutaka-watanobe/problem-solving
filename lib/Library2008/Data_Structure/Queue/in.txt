@@ -1,0 +1,11 @@
+enqueue 3
+enqueue 7
+enqueue 1
+dequeue
+dequeue
+enqueue 8
+enqueue 9
+dequeue
+dequeue
+dequeue
+end

@@ -1,0 +1,73 @@
+// 10102  C++
+// @begin_of_source_code
+#include<stdio.h>
+#include<iostream.h>
+#include<string>
+#include<math.h>
+
+#define MAX 512
+
+int M;
+unsigned char grid[MAX][MAX];
+int min;
+
+int read();
+void init();
+void work();
+int search(int, int);
+
+void init(){
+
+}
+
+int read(){
+  if( scanf("%d", &M) == EOF ){
+    return 0;
+  }
+  string line;
+  for(int i=0; i<M; i++){
+    cin >>line; 
+    for(int j=0; j<M; j++){
+      grid[i][j] = line[j];
+    }
+  }
+  return 1;
+}
+
+void work(){
+  int max = 0;
+  int step = 0;
+  for(int i=0; i<M; i++){
+    for(int j=0; j<M; j++){
+      if( grid[i][j] == '1' ){
+	step = search(i, j);
+	if( step > max ) max = step;
+      }
+    }
+  }
+  cout << max << endl;
+}
+
+int search(int a, int b){
+  int min = 1000;
+  int distance;
+  for(int i=0; i<M; i++){
+    for(int j=0; j<M; j++){
+      if( grid[i][j] == '3' ){
+	distance = abs(i-a) + abs(j-b);
+	if( distance < min ) min = distance;
+      }
+    }
+  }
+  return min;
+}
+
+
+
+main(){
+  while( read() ){
+    work();
+  }
+  
+}
+// @end_of_source_code

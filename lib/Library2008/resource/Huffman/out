@@ -1,0 +1,18 @@
+A : 5 times
+H : 1 times
+I : 1 times
+R : 3 times
+S : 2 times
+left  son of  259 is    A
+right son of  259 is  258
+left  son of  258 is    R
+right son of  258 is  257
+left  son of  257 is    S
+right son of  257 is  256
+left  son of  256 is    H
+right son of  256 is    I
+A  0
+R  10
+S  110
+H  1110
+I  1111
