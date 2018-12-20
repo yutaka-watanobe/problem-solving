@@ -4,6 +4,9 @@
 #include<string>
 #include<bitset>
 #include<cassert>
+#include<string>
+#include<cstring>
+#include<cstdlib>
 
 using namespace std;
 
@@ -211,7 +214,9 @@ main(){
   a = BigInteger(100);
   b = BigInteger("12345678900000000000000");
 
-  a *= b;
+  b /= a;
+  cout << b.toString() << endl;
 
-  cout << a.toString() << endl;
+
+  
 }
