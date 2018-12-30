@@ -1,0 +1,6 @@
+i = 1
+while True:
+    x = int(input())
+    print(f"Case {i}: {x}")
+    i += 1
+    
