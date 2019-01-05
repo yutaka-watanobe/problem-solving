@@ -1,8 +1,0 @@
-n,c = map(int, input().split())
-v = 0
-for i in range(0, c):
-    p = int(input())
-    v += p
-ans = v//(n+1)
-if v % (n+1) > 0: ans += 1
-print(ans)
