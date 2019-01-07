@@ -1,0 +1,10 @@
+import java.util.*;
+
+class Main{
+    void solve(){
+	Scanner sc = new Scanner(System.in);
+	int F = sc.nextInt();
+	System.out.println((30-F)/2);
+    }
+    public static void main(String[] args){ new Main().solve(); }
+}
