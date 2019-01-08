@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-main(){
+int main(){
   int st = 0;
   int b;
   for ( int i = 0; i < 3; i++ ){
@@ -10,4 +10,5 @@ main(){
   }
   if ( st >= 3 ) cout << "Open" << endl;
   else cout << "Close" << endl;
+  return 0;
 }
