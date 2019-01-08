@@ -89,34 +89,3 @@ main(){
 }
 
 
-bool solve(){
-  for ( int i = 0; i < N; i++ ){ // origin
-    int k = 0;
-    int v = 0;
-    for ( int j = i+1; j < N; j++ ){
-      if ( P[i].x == P[j].x ){
-	v++;
-      } else {
-	T[k] = P[j];
-	T[k].x -= P[i].x;
-	T[k].y -= P[i].y;
-	k++;
-      }
-    }
-    if ( 1 + v >= K ) return true;
-    if ( 1 + check(i, k) >= K ) return true;
-  }
-
-  return false;
-}
-
-main(){
-  cin >> N >> K;
-  for ( int i = 0; i < N; i++ ) cin >> P[i].x >> P[i].y;
-  sort(P, P + N, compX);
-
-  cout << solve() << endl;
-
-  return 0;
-}
-
