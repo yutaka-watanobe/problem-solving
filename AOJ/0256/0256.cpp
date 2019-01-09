@@ -1,10 +1,13 @@
 #include<iostream>
 using namespace std;
-main(){
-  int x, sum = 0;
-  for ( int i = 0; i < 10; i++ ){
-    cin >> x;
-    sum += x;
+
+int main(){
+  int i = 0, s, total = 0;
+  while ( i < 10 ) {
+    cin >> s;
+    total += s;
+    i++;
   }
-  cout << sum << endl;
+  cout << total << endl;
+  return 0;
 }
