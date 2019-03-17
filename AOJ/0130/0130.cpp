@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 
-void compute(string line){
+void solve(string line){
     char buffer[2100];
     int p = 1025;
     int l = p, r = p;
@@ -21,5 +21,5 @@ void compute(string line){
 main(){
     int tcase; cin >> tcase;
     string line;
-    for ( int i = 0; i < tcase; i++ ) { cin >> line; compute(line); }
+    for ( int i = 0; i < tcase; i++ ) { cin >> line; solve(line); }
 }
