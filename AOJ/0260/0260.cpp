@@ -7,11 +7,9 @@ typedef long long llong;
 main(){
   llong n, totalp, totalj;
   llong P[MAX], J[MAX];
-  int tcase = 0;
   while(1){
     cin >> n;
     if ( n == 0 ) break;
-    tcase++;
     totalp = 0;
     for ( int i = 0; i < n; i++ ) {
       cin >> P[i];
