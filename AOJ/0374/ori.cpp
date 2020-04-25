@@ -5,16 +5,31 @@ using namespace std;
 int val(char ch){ return ch-'0';}
 
 int sub(string maxs, string mins){
-  for ( int i = 0; i < maxs.size(); i++ ){
-    if ( maxs[i] != mins[i] ) {
-      if ( i == maxs.size()-1 )
-	return val(maxs[i]) - val(mins[i]);
-      if ( i == maxs.size()-2 )
-	return (10*val(maxs[i])+val(maxs[i+1])) - (10*val(mins[i])+val(mins[i+1]));
-      return 10;
-    }
+  int k = mins.size();
+  int carry = 0;
+  int ans;
+  if ( val(maxs[k-1]) < val(mins[k-1]) ){
+    ans = 10 + val(maxs[k-1]) - val(mins[k-1]);
+    carry = -1;
+  } else {
+    ans = val(maxs[k-1]) - val(mins[k-1]);
+    carry = 0;
   }
-  return 0;
+  
+  for ( int i = k-2; i >= 0; i-- ){
+    int u = carry + val(maxs[i]);
+    int d = val(mins[i]);
+    int a;
+    if ( u < d ){
+      carry = -1;
+      a = 10 + u - d;
+    } else {
+      carry = 0;
+      a = u - d;
+    }
+    if ( a > 0 ) return 10;
+  }
+  return ans;
 }
 
 int checkEqual(string S){
@@ -35,12 +50,16 @@ int checkEqual(string S){
 int check12(string S){
   int maxv = 0;
   int minv = 10;
-  for( int p = 0; p < S.size(); p++){
-    int v = val(S[p]);
-    if ( S[p] == '1' && p+1 < S.size()) {
+  int p = 0, v;
+  while(p<S.size()){
+    v = val(S[p]);
+    if ( S[p] == '1' ){
+      if ( p+1<S.size()) {
 	v = 10 + val(S[p+1]);
 	p++;
+      }
     }
+    p++;
     maxv = max(maxv, v);
     minv = min(minv, v);
   }
@@ -50,5 +69,8 @@ int check12(string S){
 main(){
   string S;
   cin >> S;
-  cout << min(checkEqual(S), check12(S)) << endl;
+  int ans = 8;
+  ans = min(ans, checkEqual(S));
+  ans = min(ans, check12(S));
+  cout << ans << endl;
 }
