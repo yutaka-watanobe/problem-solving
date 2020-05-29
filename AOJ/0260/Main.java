@@ -1,18 +1,17 @@
 import java.util.*;
 
 class Main{
-    static final int MAX = 65000;
-
     void solve (){
-	long n, totalp, totalj;
-	long[] P = new long[MAX];
-	long[] J = new long[MAX];
-	int tcase = 0;
+	int n;
+	long totalp, totalj;
+	long[] P;
+	long[] J;
 	Scanner sc = new Scanner(System.in);
 	while(true){
-	    n = sc.nextLong();
+	    n = sc.nextInt();
 	    if ( n == 0 ) break;
-	    tcase++;
+	    P = new long[n];
+	    J = new long[n];
 	    totalp = 0;
 	    for ( int i = 0; i < n; i++ ) {
 		P[i] = sc.nextLong();
@@ -23,13 +22,12 @@ class Main{
 	    }
 	    
 	    long maxv = 0;
-	    sort(J, J+(n-1));
-	    reverse(J, J+(n-1));
+	    Arrays.sort(J);
 	    totalj = 0;
-	    for ( long j = 0, t = n; t >= 1; t--, j++ ){
+	    for ( int j = 0, t = n; t >= 1; t--, j++ ){
 		long v = t*(totalj + totalp);
-		totalj += J[j];
-		maxv = max(v, maxv);
+		totalj += J[n-1-j];
+		maxv = Math.max(v, maxv);
 	    }
 	    System.out.println(maxv);
 	}
