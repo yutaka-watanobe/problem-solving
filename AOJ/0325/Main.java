@@ -3,46 +3,28 @@ import java.util.*;
 class Main{
 
     boolean check(){
+	int N = 6;
 	Scanner sc = new Scanner(System.in);
-	Pair[] D = new Pair[6];
-
-	for ( int i = 0; i < 6; i++ ) {
-	    D[i] = new Pair(0, 0);
-	    D[i].first = sc.nextInt();
-	    D[i].second = sc.nextInt();
-	    if ( D[i].first > D[i].second) {
-		int tmp = D[i].first;
-		D[i].first = D[i].second;
-		D[i].second = tmp;
-	    }
+	int[] D = new int[N];
+	int M = 10000;
+	int h, w;
+	for ( int i = 0; i < N; i++ ) {
+	    h = sc.nextInt();
+	    w = sc.nextInt();
+	    // sortが使えるように長方形を整数であらわす
+	    D[i] = M * Math.min(h, w) + Math.max(h, w);
 	}
-	Arrays.sort(D, new Comparator<Pair>(){
-		public int compare(Pair a, Pair b){
-		    if ( a.first == b.first ) return a.second - b.second;
-		    return a.first - b.first;
-		}
-	    });
-	for ( int i = 0; i < 6; i+=2){
-	    if ( D[i].first == D[i+1].first && D[i].second == D[i+1].second ) D[i/2] = D[i];
-	    else return false;
+	Arrays.sort(D);
+	for ( int i = 0; i < N; i += 2){
+	    if ( D[i] != D[i+1] ) return false;
 	}
 	
-	return D[0].first == D[1].first && D[0].second == D[2].first && D[1].second == D[2].second;
+	return D[0]/M == D[2]/M && D[0]%M == D[4]/M && D[2]%M == D[4]%M;
     }
     
     void solve(){
 	if ( check() ) System.out.println("yes");
 	else System.out.println("no");
-    }
-    
-    class Pair{
-	public int first;
-	public int second;
-	
-	Pair (int first, int second) {
-	    this.first = first;
-	    this.second = second;
-	}
     }
     
     public static void main(String[] args){ new Main().solve(); }
