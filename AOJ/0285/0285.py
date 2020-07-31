@@ -1,4 +1,6 @@
-def parse(j, y, path, J, Y):
+J,Y = map(int, input().split())
+
+def parse(j, y, path):
     if j == J and y == Y:
         print(path)
         return
@@ -7,9 +9,8 @@ def parse(j, y, path, J, Y):
 
     if  j > J or y > Y:
         return
-    
-    parse(j+1, y, path + "A", J, Y)
-    parse(j, y+1, path + "B", J, Y) 
 
-J,Y = map(int, input().split())
-parse(0, 0, "", J, Y)
+    parse(j+1, y, path + "A")
+    parse(j, y+1, path + "B")
+
+parse(0, 0, "")
