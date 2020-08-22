@@ -15,8 +15,7 @@ int check(){
   }
   
   for ( int i = 0; i < 12; i += 4)
-    for ( int j = 0; j < 3; j++ )
-      if ( e[i+j] != e[i+j+1] ) return 0;
+    if ( e[i] != e[i+3] ) return 0;
   return 1;
 }
 
