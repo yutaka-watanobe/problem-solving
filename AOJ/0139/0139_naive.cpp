@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-#include<regex>
 
 using namespace std;
 
@@ -27,17 +26,12 @@ bool isB( string str, int curr ){
 }
 
 int main(){
-  const wchar_t* A = L">'(=+)#\\1~$";
-  const wchar_t* B = L">\^(Q=)+~~$";  
-  int tcase; cin >> tcase;
-  for ( int i = 0; i < tcase; i++ ) {
-    string snake; cin >> snake;
-    if ( isA(snake, 2) ) cout << "A" << endl;
-    else if ( isB(snake, 2) ) cout << "B" << endl;
-    else cout << "NA" << endl;
-  }
-  return 0;
+    int tcase; cin >> tcase;
+    for ( int i = 0; i < tcase; i++ ) {
+	string snake; cin >> snake;
+	if ( isA(snake, 2) ) cout << "A" << endl;
+	else if ( isB(snake, 2) ) cout << "B" << endl;
+	else cout << "NA" << endl;
+    }
+    return 0;
 }
-
-
-
