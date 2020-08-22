@@ -1,25 +1,22 @@
 #include<iostream>
 #include<string>
-#include<algorithm>
 using namespace std;
 
-void solve(string line){
-    char buffer[2100];
-    int p = 1025;
-    int l = p, r = p;
-    buffer[p] = line[0];
-    for ( int i = 3; i < line.size(); i+=3 ){
-	if ( line[i-1] == '>' ) p++;
-	else p--;
-	buffer[p] = line[i];
-	l = min(l, p); r = max(r, p);
-    }
-    for ( int i = l; i <= r; i++ ) cout << buffer[i];
-    cout << endl;
-}
-
-main(){
+int main(){
     int tcase; cin >> tcase;
-    string line;
-    for ( int i = 0; i < tcase; i++ ) { cin >> line; solve(line); }
+    for ( int t = 0; t < tcase; t++ ) {
+      string line; cin >> line;
+      bool vis[26] ={};
+      string buffer;
+      buffer += line[0];
+      vis[line[0]-'a'] = true;
+      for (int i = 3; i < line.size(); i += 3){
+	if (vis[line[i]-'a']) continue;
+	if ( line[i-1] =='>' ) buffer += line[i];
+	else buffer = line[i] + buffer;
+	vis[line[i]-'a'] = true;
+      }
+      cout << buffer << endl;
+    }
+    return 0;
 }
