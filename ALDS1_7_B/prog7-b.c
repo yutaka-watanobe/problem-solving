@@ -1,0 +1,140 @@
+#include <stdio.h>
+#include <stdlib.h>
+int node;
+
+typedef struct Trees{
+  char *word;
+  int node_id;    //number of node in this line
+  int left;
+  int right;
+  int father;
+  int degree;
+  int sibling;
+  int height;
+  int depth;
+}Tree;
+
+void CreateBiTree(Tree*,int,int,int);
+void find_father(Tree*,int);
+void find_degree(Tree*,int);
+void find_sibling(Tree*,int);
+void attribute_judgement(Tree *);
+void depth(int,int,Tree*);
+int height(int,int*,Tree*);
+
+int max(int a,int b)
+{
+  if(a>b)return a;
+  else return b;
+}
+int main()
+{
+  int i,a,b,c;
+  scanf("%d",&node);
+  Tree tree[node];
+
+  int root=-1,h[node];
+  //CreateBiTree(&Tree);
+  for(i=0;i<node;i++)
+    {
+      scanf("%d %d %d",&a,&b,&c);
+      CreateBiTree(&tree[a],a,b,c);
+    }
+  find_father(tree,node);
+
+  if(node>1) find_sibling(tree,node);
+  find_degree(tree,node);
+  //depth(node,tree,0,dep);
+  for(i=0;i<node;i++) if(tree[i].father==-1)root=i;
+  depth(root,0,tree);
+  height(root,h,tree);
+
+
+
+  attribute_judgement(tree);
+  for(i=0;i<node;i++)
+    {
+
+      printf("node %d: parent = %d, sibling = %d, degree = %d, depth = %d, height = %d, %s\n", tree[i].node_id, tree[i].father, tree[i].sibling, tree[i].degree, tree[i].depth, h[i], tree[i].word);
+
+    }
+  return 0;
+}
+
+void CreateBiTree(Tree *t,int a,int left,int right)
+{
+  t->node_id=a;
+  t->left=left;
+  t->right=right;
+  t->father=-1;
+  t->sibling=-1;
+  t->degree=0;
+}
+void find_father(Tree *tree,int node)
+{
+  int i,j;
+  for(i=0;i<node;i++)
+    {
+      for(j=0;j<node;j++)
+	{
+	  if(tree[i].node_id==tree[j].left)
+	    tree[i].father=tree[j].node_id;
+	  else if(tree[i].node_id==tree[j].right)
+	    tree[i].father=tree[j].node_id;
+	}
+    }
+}
+void find_degree(Tree *tree,int node)
+{
+  int i;
+  for(i=0;i<node;i++)
+    {
+      if(tree[i].left>=0)
+	tree[i].degree++;
+      if(tree[i].right>=0)
+	tree[i].degree++;
+    }
+}
+void find_sibling(Tree *tree,int node)
+{
+  int i;
+  for(i=0;i<node;i++)
+    {
+      if ( tree[i].father == -1 ) continue;
+      if(tree[i].node_id==tree[tree[i].father].left)
+	tree[i].sibling=tree[tree[i].father].right;
+      else if(tree[i].node_id==tree[tree[i].father].right)
+	tree[i].sibling=tree[tree[i].father].left;
+    }
+}
+void attribute_judgement(Tree *tree)
+{
+  int i;
+  for(i=0;i<node;i++)
+    {
+      if(tree[i].father==-1) tree[i].word="root";
+      else if(tree[i].left==-1 && tree[i].right==-1) tree[i].word="leaf";
+      else tree[i].word="internal node";
+    }
+}
+
+
+void depth(int u,int d,Tree *tree)
+{
+  if(u==-1)return;
+  tree[u].depth=d;
+  depth(tree[u].left,d+1,tree);
+  depth(tree[u].right,d+1,tree);
+}
+
+int height(int u,int h[],Tree*tree)
+{
+  int left=0,right=0;
+  if(tree[u].left!=-1){
+    left=height(tree[u].left,h,tree)+1;
+  }
+  if(tree[u].right!=-1){
+    right=height(tree[u].right,h,tree)+1;
+  }
+  return h[u]=max(left,right);
+}
