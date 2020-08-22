@@ -1,12 +1,11 @@
-# AOJ からの暫定模範解答
-# !! 変更する必要あり!!!
-
-I=input
-for _ in [0]*int(I()):
-    t=I()
-    a=t[0]
-    for x in range(1,len(t),3):
-        if t[x+2] in a:continue
-        if t[x]=='-':a+=t[x+2]
-        else:a= t[x+2]+a
-    print(a)
+n = int(input())
+for _ in range(n):
+    s = input()
+    form = s[0]
+    for i in range(3, len(s), 3):
+        if s[i] in form: continue
+        if s[i - 1] == '>':
+            form += s[i]
+        else:
+            form = s[i] + form
+    print(form)

@@ -3,20 +3,17 @@
 using namespace std;
 
 int main(){
-    int tcase; cin >> tcase;
-    for ( int t = 0; t < tcase; t++ ) {
-      string line; cin >> line;
-      bool vis[26] ={};
-      string buffer;
-      buffer += line[0];
-      vis[line[0]-'a'] = true;
-      for (int i = 3; i < line.size(); i += 3){
-	if (vis[line[i]-'a']) continue;
-	if ( line[i-1] =='>' ) buffer += line[i];
-	else buffer = line[i] + buffer;
-	vis[line[i]-'a'] = true;
-      }
-      cout << buffer << endl;
+  int n; cin >> n;
+  for ( int t = 0; t < n; t++ ) {
+    string s; cin >> s; // 巡回記録
+    string form;        // 列車の編成
+    form += s[0];
+    for (int i = 3; i < s.size(); i += 3){
+      if ( form.find(s[i]) != string::npos ) continue;
+      if ( s[i-1] =='>' ) form += s[i];
+      else form = s[i] + form;
     }
-    return 0;
+    cout << form << endl;
+  }
+  return 0;
 }
