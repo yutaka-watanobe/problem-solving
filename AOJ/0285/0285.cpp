@@ -2,21 +2,21 @@
 #include<string>
 using namespace std;
 
-int J, Y;
+int j, y;
 
-void parse(int j, int y, string p){
-  if ( j == J && y == Y ){
-    cout << p << endl; return;
-  } else if ( j == 5 && y <= 3 || y == 5 && j <= 3){
+void parse(int a, int b, string path){
+  if ( a == j && b == y ){
+    cout << path << endl; return;
+  } else if ( a == 5 && b <= 3 || b == 5 && a <= 3){
     return;
   }
-  if ( j > J || y > Y ) return;
-  parse(j+1, y, p + "A"); 
-  parse(j, y+1, p + "B"); 
+  if ( a > j || b > y ) return;
+  parse(a + 1, b, path + "A"); 
+  parse(a, b + 1, path + "B"); 
 
 }
 
 main(){
-  cin >> J >> Y;
+  cin >> j >> y;
   parse(0, 0, "");
 }

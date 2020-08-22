@@ -1,24 +1,24 @@
 #include<stdio.h>
 
-int J, Y;
-char pass[64];
+int j, y;
 
-void parse(int pos, int j, int y){
-  if ( j == J && y == Y ){
-    pass[pos] = '\0';
-    printf("%s\n", pass); return;
-  } else if ( j == 5 && y <= 3 || y == 5 && j <= 3){
+void parse(int a, int b, char* path){
+  if ( a == j && b == y ){
+    path[a + b] = '\0';
+    printf("%s\n", path); return;
+  } else if ( a == 5 && b <= 3 || b == 5 && a <= 3){
     return;
   }
-  if ( j > J || y > Y ) return;
-  pass[pos] = 'A';
-  parse(pos+1, j+1, y);
-  pass[pos] = 'B';
-  parse(pos+1, j, y+1);
+  if ( a > j || b > y ) return;
+  path[a + b] = 'A';
+  parse(a + 1, b, path);
+  path[a + b] = 'B';
+  parse(a, b + 1, path);
 }
 
 int main(){
-  scanf("%d %d", &J, &Y);
-  parse(0, 0, 0);
+  char path[64];
+  scanf("%d %d", &j, &y);
+  parse(0, 0, path);
   return 0;
 }
