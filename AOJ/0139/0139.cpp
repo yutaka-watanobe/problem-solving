@@ -4,36 +4,14 @@
 
 using namespace std;
 
-int count( string str, string t, int &curr ){
-    int cnt = 0;
-    for( ; curr + t.size() - 1 < str.size(); cnt++, curr += t.size() ){
-	if( str.substr(curr, t.size()) != t ) break;
-    }
-    return cnt;
-}
-
-bool isA( string str, int curr ){
-    if ( str.substr(0, curr) != ">'" ) return false;
-    int cnt = count(str, "=", curr);
-    if ( cnt < 1 || str[curr++] != '#' ) return false;
-    if ( cnt != count(str, "=", curr) ) return false;
-    return ( curr == str.size()-1 && str[curr] == '~');
-}
-
-bool isB( string str, int curr ){
-    if ( str.substr(0, curr) != ">^" ) return false;
-    int cnt = count(str, "Q=", curr);
-    return ( cnt && curr == str.size()-2 && str.substr(str.size()-2, 2) == "~~");
-}
-
 int main(){
-  const wchar_t* A = L">'(=+)#\\1~$";
-  const wchar_t* B = L">\^(Q=)+~~$";  
-  int tcase; cin >> tcase;
-  for ( int i = 0; i < tcase; i++ ) {
+  string A = ">'(=+)#\\1~$";
+  string B = ">\\^(Q=)+~~$";
+  int n; cin >> n;
+  for ( int i = 0; i < n; i++ ) {
     string snake; cin >> snake;
-    if ( isA(snake, 2) ) cout << "A" << endl;
-    else if ( isB(snake, 2) ) cout << "B" << endl;
+    if( regex_search(snake, regex(A)) ) cout << "A" << endl;
+    else if( regex_search(snake, regex(B)) ) cout << "B" << endl;
     else cout << "NA" << endl;
   }
   return 0;
