@@ -3,14 +3,11 @@ diff = 0
 
 def update(i, v):
   global diff
-  d1 = 0
-  d2 = 0
-  if A[i-1] > A[i]: d1 += 1
-  if A[i] > A[i+1]: d1 += 1
+  if A[i-1] > A[i]: diff -= 1
+  if A[i] > A[i+1]: diff -= 1
   A[i] = v
-  if A[i-1] > A[i]: d2 += 1
-  if A[i] > A[i+1]: d2 += 1
-  diff += (d2 - d1)
+  if A[i-1] > A[i]: diff += 1
+  if A[i] > A[i+1]: diff += 1
 
 def solve():
     global diff

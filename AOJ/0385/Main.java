@@ -6,13 +6,11 @@ class Main{
     Scanner sc;
     
     void update(int i, int v){
-	int d1 = 0, d2 = 0;
-	if ( A[i-1] > A[i] ) d1++;
-	if ( A[i] > A[i+1] ) d1++;
+	if ( A[i-1] > A[i] ) diff--;
+	if ( A[i] > A[i+1] ) diff--;
 	A[i] = v;
-	if ( A[i-1] > A[i] ) d2++;
-	if ( A[i] > A[i+1] ) d2++;
-	diff += (d2 - d1);
+	if ( A[i-1] > A[i] ) diff++;
+	if ( A[i] > A[i+1] ) diff++;
     }
     
     void activate(){
@@ -28,9 +26,9 @@ class Main{
     int solve(){
 	int a, b, q, v1, v2;
 	diff = 0;
-	for ( int i = 1; i <= N; i++ ) {
+	for ( int i = 1; i <= N; i++ ) 
 	    if ( A[i-1] > A[i] ) diff++;
-	}
+
 	if ( diff == 0 ) return 0;
 	q = sc.nextInt();
 	for ( int i = 1; i <= q; i++ ){
