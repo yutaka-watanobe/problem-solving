@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 int main(){
-  int W;
+  int W, B;
   scanf(“%d”, &W);
-  printf(“%d\n”, W * 32);
+  B = W * 32;
+  printf(“%d\n”, B);
   return 0;
 }

@@ -1,2 +1,3 @@
 W = int(input())
-print(W * 32)
+B = W * 32
+print(B)

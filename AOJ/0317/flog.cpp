@@ -2,9 +2,8 @@
 using namespace std;
 
 int main(){
-  int W, B;
-  cin >> W;
-  B = W * 32;
-  cout << B << endl;
+  int D,L;
+  cin >> D >> L;
+  cout << D / L + D % L << endl;
   return 0;
 }
