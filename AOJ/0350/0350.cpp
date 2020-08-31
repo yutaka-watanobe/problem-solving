@@ -14,28 +14,22 @@ int print(int x, int y){
   cout << x/g << "/" << y/g << endl;
 }
 
-main(){
+int main(){
   string in; cin >> in;
   int o, p, l, r, d;
-  p = -1;
   string all, sub;
-  for ( int i = 0; i < in.size(); i++ ){
-    if ( in[i] == '.' ){
-      o = i;
-    } else if ( in[i] == '(' ) {
-      p = i;
-      sub = all;
-    } else if ( in[i] == ')' ) {
-    } else {
-      all += in[i];
-    }
-  }
+  o = in.find('.');
+  p = in.find('(');
   d = in.size() - o - 1;
-  l = p - o - 1;
-  if ( p == -1 ){
+  if ( p == string::npos ){
+    all = in.substr(0, o) + in.substr(o + 1, in.size() - o);
     print(atoi(all.c_str()), pow(10, d));
-  }else {
-    d -= 2; // for ()
-    print(atoi(all.c_str()) - atoi(sub.c_str()), pow(10, d) - pow(10, l) );
+  } else {
+    sub = in.substr(0, o) + in.substr(o + 1, p - o - 1);
+    all = sub + in.substr(p + 1, in.size() - p - 2);
+    l = p - o - 1;
+    d -= 2;
+    print(atoi(all.c_str()) - atoi(sub.c_str()), pow(10, d) - pow(10, l));
   }
+
 }
