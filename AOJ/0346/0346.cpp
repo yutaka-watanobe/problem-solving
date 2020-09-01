@@ -1,17 +1,23 @@
 #include<iostream>
-#include<algorithm>
 using namespace std;
-int e[12];
+static const int N = 12;
+int e[N];
 
 bool check(){
-  sort(e, e + 12);
-  for ( int i = 0; i < 12; i += 4)
+  for ( int i = 0; i < N - 1; i++ ){
+    int minj = i;
+    for ( int j = i; j < N; j++ )
+      if ( e[j] < e[minj] ) minj = j;
+    swap(e[minj], e[i]);
+  }
+  
+  for ( int i = 0; i < N; i += 4)
     if ( e[i] != e[i+3] ) return false;
   return true;
 }
 
-main(){
-  for ( int i = 0; i < 12; i++ ) cin >> e[i];
-  if ( check() ) cout << "yes" << endl;
-  else cout << "no" << endl;
+int main(){
+  for ( int i = 0; i < N; i++ ) cin >> e[i];
+  cout << (check() ? "yes" : "no") << endl;
+  return 0;
 }
