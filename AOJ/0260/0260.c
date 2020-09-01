@@ -9,7 +9,7 @@ void merge(long long *J, int l, int m, int r){
   i = l;
   j = r - 1;
   for ( k = l; k < r; k++ ){
-    if ( T[i] >= T[j] ) J[k] = T[i++];
+    if ( T[i] <= T[j] ) J[k] = T[i++];
     else J[k] = T[j--];
   }
 }
@@ -36,15 +36,17 @@ int main(){
     }
     for ( int i = 0; i < n-1; i++ ) scanf("%lld", &J[i]);
 
-    mergeSort(J, 0, (n-1));
+    mergeSort(J, 0, (n-1)); /* ジョイントを長さの昇順に整列 */
+    J[n-1] = 0;             /* 0 本使う場合 */
     
     maxv = 0;
     totalj = 0;
-    for ( int j = 0, t = n; t >= 1; t--, j++ ){
-      long long v = t*(totalj + totalp);
-      totalj += J[j];
+    for ( int k = 0; k <= n - 1; k++ ){
+      totalj += J[n - 1 - k]; /* 長いものから選んでいく*/
+      long long v = (n - k) * (totalj + totalp);
       maxv = v > maxv ? v : maxv;
     }
+
     printf("%lld\n", maxv);
   }
   

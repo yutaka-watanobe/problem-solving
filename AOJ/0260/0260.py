@@ -6,7 +6,7 @@ def merge(J, l, m, r):
     i = l
     j = r - 1
     for k in range(l, r):
-        if  T[i] >= T[j]: J[k] = T[i]; i += 1
+        if  T[i] <= T[j]: J[k] = T[i]; i += 1
         else: J[k] = T[j]; j -= 1
 
 def mergeSort(J, l, r):
@@ -27,15 +27,12 @@ while True:
     J = list(map(int, input().split()))
 
     maxv = 0
-    J.sort(reverse=True)
+    J.sort()
     J.append(0); 
     totalj = 0
-    t = n; j = 0
-    while t >= 1:
-        v = t*(totalj + totalp)
-        totalj += J[j]
-        maxv = max(v, maxv)
-        t -= 1; j += 1
+    for k in range(0, n):
+        totalj += J[n - 1 - k]
+        maxv = max((n - k) * (totalj + totalp), maxv)
 
     print(maxv)
 

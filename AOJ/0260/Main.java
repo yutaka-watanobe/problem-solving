@@ -2,15 +2,15 @@ import java.util.*;
 
 class Main{
     static final int MAX = 65000;
+    long[] T;
     void merge(long[] J, int l, int m, int r){
-	long[] T = new long[MAX];
 	int i, j, k;
 	for ( i = l; i < m; i++ ) T[i] = J[i];
 	for ( i = m; i < r; i++ ) T[(r-1)-(i-m)] = J[i];
 	i = l;
 	j = r - 1;
 	for ( k = l; k < r; k++ ){
-	    if ( T[i] >= T[j] ) J[k] = T[i++];
+	    if ( T[i] <= T[j] ) J[k] = T[i++];
 	    else J[k] = T[j--];
 	}
     }
@@ -33,6 +33,7 @@ class Main{
 	    if ( n == 0 ) break;
 	    P = new long[n];
 	    J = new long[n];
+	    T = new long[n];
 	    totalp = 0;
 	    for ( int i = 0; i < n; i++ ) {
 		P[i] = sc.nextLong();
@@ -41,13 +42,12 @@ class Main{
 	    for ( int i = 0; i < n-1; i++ ) J[i] = sc.nextLong();
 
 	    mergeSort(J, 0, n-1);  	    //Arrays.sort(J);
-
+	    J[n - 1] = 0;
 	    long maxv = 0;
 	    totalj = 0;
-	    for ( int j = 0, t = n; t >= 1; t--, j++ ){
-		long v = t*(totalj + totalp);
-		totalj += J[j];
-		maxv = Math.max(v, maxv);
+	    for ( int k = 0; k <= n - 1; k++ ){
+		totalj += J[n - 1 - k];
+		maxv = Math.max((n - k) * (totalj + totalp), maxv);
 	    }
 	    System.out.println(maxv);
 	}
