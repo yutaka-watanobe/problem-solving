@@ -17,9 +17,8 @@ def solve():
     if diff == 0: return 0
     q = int(input())
     for i in range(1, q+1):
-        a,b = map(int, input().split())
-        v1 = A[a]
-        v2 = A[b]
+        a, b = map(int, input().split())
+        v1,v2 = A[a], A[b]
         update(a, v2)
         update(b, v1)
         if diff == 0:  return i
