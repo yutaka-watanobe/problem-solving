@@ -13,7 +13,7 @@ class Main{
 	if ( A[i] > A[i+1] ) diff++;
     }
     
-    void activate(){
+    void solve(){
 	sc = new Scanner(System.in);
 	N = sc.nextInt();
 	A = new int[N+2];
@@ -44,6 +44,6 @@ class Main{
 	return -1;
     }
 
-    public static void main(String[] args){ new Main().activate(); }
+    public static void main(String[] args){ new Main().solve(); }
 }
 
