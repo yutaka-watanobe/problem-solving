@@ -1,33 +1,45 @@
 import java.util.*;
 
 class Main{
-
-    boolean check(){
-	int N = 6;
-	Scanner sc = new Scanner(System.in);
-	int[] D = new int[N];
-	int M = 10000;
-	int h, w;
-	for ( int i = 0; i < N; i++ ) {
-	    h = sc.nextInt();
-	    w = sc.nextInt();
-	    // sortが使えるように長方形を整数であらわす
-	    D[i] = M * Math.min(h, w) + Math.max(h, w);
+    class Rect{
+	public int h, w;
+	Rect (int h, int w) {
+	    this.h = Math.min(h, w);
+	    this.w = Math.max(h, w);
 	}
-	Arrays.sort(D);
-	for ( int i = 0; i < N; i += 2){
-	    if ( D[i] != D[i+1] ) return false;
+    }
+    
+    static final int N = 6;
+    
+    boolean check(){
+	Scanner sc = new Scanner(System.in);
+	Rect[] D = new Rect[N];
+
+	for ( int i = 0; i < N; i++ ) {
+	    D[i] = new Rect(sc.nextInt(), sc.nextInt());
+	}
+
+	/* bubble sort */	
+	for ( int i = 0; i < N-2; i++ ){
+	    for ( int j = N-2; j >= i; j-- ){
+		if ( D[j].h > D[j+1].h ||
+		     D[j].h == D[j+1].h && D[j].w > D[j+1].w ){
+		    Rect tmp = D[j]; D[j] = D[j+1]; D[j+1] = tmp;
+		}
+	    }
 	}
 	
-	return D[0]/M == D[2]/M && D[0]%M == D[4]/M && D[2]%M == D[4]%M;
+	for ( int i = 0; i < N; i+=2){
+	    if ( D[i].h == D[i+1].h && D[i].w == D[i+1].w ) D[i/2] = D[i];
+	    else return false;
+	}
+	
+	return D[0].h == D[1].h && D[0].w == D[2].h && D[1].w == D[2].w;
     }
     
     void solve(){
-	if ( check() ) System.out.println("yes");
-	else System.out.println("no");
+	System.out.println(check() == true ? "yes" : "no");
     }
     
     public static void main(String[] args){ new Main().solve(); }
 }
-
-
