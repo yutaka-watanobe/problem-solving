@@ -25,8 +25,7 @@ int main(){
       p = i;
       strncpy(sub, all, all_i);
       sub[all_i] = '\0';
-    } else if ( in[i] == ')' ) {
-    } else {
+    } else if ( in[i] != ')' ) {
       all[all_i++] = in[i];
     }
   }

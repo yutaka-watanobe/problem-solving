@@ -39,7 +39,7 @@ main(){
     }
     for ( int i = 0; i < n-1; i++ ) cin >> J[i];
 
-    sort(J, J+(n-1));
+    mergeSort(J, 0, n-1);
     J[n - 1] = 0;
     
     llong maxv = 0;
