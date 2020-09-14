@@ -3,34 +3,30 @@
 #include<algorithm>
 using namespace std;
 
-int compute(string num){
-  if ( num[0] == num[1] && num[1] == num[2] && num[2] == num[3] ) return -1;
-
+void solve(string N){
+  if ( N[0] == N[1] && N[1] == N[2] && N[2] == N[3] ) {
+    cout << "NA" << endl; return;
+  }
   int cnt = 0;
   string L, S;
-  while(1){
-    if ( num == "6174" ) break;
-    L = S = num;
+  for(; N != "6174"; cnt++ ){
+    L = S = N;
     sort(L.begin(), L.end());
     reverse(L.begin(), L.end());
     sort(S.begin(), S.end());
-    int x = atoi(L.c_str()) - atoi(S.c_str());
-    num[0] = '0' + x/1000; x %= 1000;
-    num[1] = '0' + x/100; x %= 100;
-    num[2] = '0' + x/10; x %= 10;
-    num[3] = '0' + x;
-    cnt++;
+    int x = stoi(L.c_str()) - stoi(S.c_str());
+    N = to_string(x);
+    while( N.size() < 4 ) N = '0' + N;
   }
-  return cnt;
+  cout << cnt << endl;
 }
 
-main(){
-  string num;
+int main(){
+  string N;
   while(1){
-    cin >> num;
-    if ( num == "0000" ) break;
-    int a = compute(num);
-    if ( a < 0 ) cout << "NA" << endl;
-    else cout << a << endl;
+    cin >> N;
+    if ( N == "0000" ) break;
+    solve(N);
   }
+  return 0;
 }
