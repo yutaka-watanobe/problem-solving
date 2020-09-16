@@ -14,8 +14,8 @@ void solve(string N){
     sort(L.begin(), L.end());
     reverse(L.begin(), L.end());
     sort(S.begin(), S.end());
-    int x = stoi(L.c_str()) - stoi(S.c_str());
-    N = to_string(x);
+    int num = stoi(L.c_str()) - stoi(S.c_str());
+    N = to_string(num);
     while( N.size() < 4 ) N = '0' + N;
   }
   cout << cnt << endl;

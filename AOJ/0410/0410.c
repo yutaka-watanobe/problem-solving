@@ -1,39 +1,28 @@
 #include<stdio.h>
 typedef unsigned long long ull;
 int N, A[20], cnt;
-int S[20]; // select?
+int selected[20];
 
-ull gcd(ull x, ull y){
-  ull r, t;
-  if ( x < y ) { t = x; x = y; y = t; }
-  while( y > 0 ){
-    r = x % y;
-    x = y;
-    y = r;
-  }
-  return x;
-}
-ull lcm(ull x, ull y){
-  return x/gcd(x, y)*y;
-}
+ull gcd(ull x, ull y){ return y ? gcd(y, x % y) : x; }
+ull lcm(ull x, ull y){ return x / gcd(x, y)*y; }
   
 void rec(int p, ull LCM, int sum){
   int ok;
   if ( p == N ){
     ok = (sum > 0); // 一人以上いる
     for ( int i = 0; i < N; i++ ){
-      if ( LCM >= A[i] && LCM % A[i] == 0 ){
-        if ( S[i] == 0 ) ok = 0; //　選ばれていない人の周期
-      }
+      //　選ばれていない人の周期
+      if ( LCM >= A[i] && LCM % A[i] == 0 && selected[i] == 0 ) ok = 0; 
     }
     if ( ok ) cnt++;
-    return;
+  } else {
+    selected[p] = 1;
+    rec(p+1, lcm(LCM, A[p]), sum + 1);
+    selected[p] = 0;
+    rec(p+1, LCM, sum);
   }
-  S[p] = 1;
-  rec(p+1, lcm(LCM, A[p]), sum+1);
-  S[p] = 0;
-  rec(p+1, LCM, sum);
 }
+
 int main(){
   int i;
   scanf("%d", &N);

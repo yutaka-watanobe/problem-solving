@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string>
 #include<cstring>
-#include<cstdlib>
 #include<cmath>
 using namespace std;
 
@@ -23,13 +22,13 @@ int main(){
   d = in.size() - o - 1;
   if ( p == string::npos ){
     all = in.substr(0, o) + in.substr(o + 1, in.size() - o);
-    print(atoi(all.c_str()), pow(10, d));
+    print(stoi(all.c_str()), pow(10, d));
   } else {
     sub = in.substr(0, o) + in.substr(o + 1, p - o - 1);
     all = sub + in.substr(p + 1, in.size() - p - 2);
     l = p - o - 1;
     d -= 2;
-    print(atoi(all.c_str()) - atoi(sub.c_str()), pow(10, d) - pow(10, l));
+    print(stoi(all.c_str()) - stoi(sub.c_str()), pow(10, d) - pow(10, l));
   }
 
 }

@@ -1,10 +1,10 @@
 import math
-S = [0]*20
 A = [0]*20
+selected = [0]*20
 cnt = 0
 
 def lcm(x, y):
-    return x // math.gcd(x, y)*y
+    return x // math.gcd(x, y) * y
 
 def rec(p, LCM, sum):
     global cnt
@@ -12,14 +12,14 @@ def rec(p, LCM, sum):
         ok = (sum > 0)
         for i in range(N):
             if  LCM >= A[i] and LCM % A[i] == 0:
-                if S[i] == False: ok = False
+                if selected[i] == False: ok = False
         if ok:
             cnt += 1
         return
 
-    S[p] = True
+    selected[p] = True
     rec(p+1, lcm(LCM, A[p]), sum+1)
-    S[p] = False
+    selected[p] = False
     rec(p+1, LCM, sum)
 
 N = int(input())

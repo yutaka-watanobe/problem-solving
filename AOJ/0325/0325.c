@@ -1,12 +1,12 @@
 #include<stdio.h>
 #define N 6
 
-typedef struct R{
+struct Rect{
   int h, w;
-} Rect;
+} ;
 
 int solve(){
-  Rect D[N];
+  struct Rect D[N], tmp;
   for ( int i = 0; i < N; i++ ) {
     scanf("%d %d", &D[i].h, &D[i].w);
     if ( D[i].h > D[i].w) {
@@ -19,7 +19,7 @@ int solve(){
     for ( int j = N-2; j >= i; j-- ){
       if ( D[j].h > D[j+1].h ||
 	   D[j].h == D[j+1].h && D[j].w > D[j+1].w ){
-	Rect tmp = D[j]; D[j] = D[j+1]; D[j+1] = tmp;
+	   tmp = D[j]; D[j] = D[j+1]; D[j+1] = tmp;
       }
     }
   }
