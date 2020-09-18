@@ -5,15 +5,15 @@ int min(int a, int b){ return a < b ? a : b; }
 
 int main() {
   int N, p[MAX], r[MAX], i, j, x;
-  int ans = (1 << 29);
+  int ans = MAX * 3;
   scanf("%d", &N);
-  for( i = 0; i < N; i++ ) scanf("%d", &p[i]);
+  for ( i = 0; i < N; i++ ) scanf("%d", &p[i]);
   
-  for( j = 0; j <= p[0]; j++ ) {
+  for ( j = 0; j <= p[0]; j++ ) {
     x = j;
-    for( i = 0; i < N; i++ ) r[i] = p[i];
+    for ( i = 0; i < N; i++ ) r[i] = p[i];
     r[0] -= j;
-    for( i = 0; i < N - 1; i++) {
+    for ( i = 0; i < N - 1; i++) {
       int y = max(0, r[i]);
       r[i] -= y;
       r[i + 1] -= y;
@@ -23,6 +23,5 @@ int main() {
   }
 
   printf("%d\n", ans);
-  
   return 0;
 }

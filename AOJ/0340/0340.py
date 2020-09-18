@@ -2,7 +2,7 @@ import copy
 N = int(input())
 p = list(map(int, input().split()))
 
-ans = (1 << 29)
+ans = N * 3
 for j in range(0, p[0] + 1):
     x = j
     r = copy.copy(p)

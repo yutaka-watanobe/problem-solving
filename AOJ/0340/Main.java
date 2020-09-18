@@ -6,13 +6,13 @@ class Main{
     int N = sc.nextInt();
     int[] p = new int[N];
     int[] r = new int[N];
-    int ans = (1<<29);
-    for(int i = 0; i < N; i++ ) p[i] = sc.nextInt();
-    for(int j = 0; j <= p[0]; j++) {
+    int ans = N * 3;
+    for ( int i = 0; i < N; i++ ) p[i] = sc.nextInt();
+    for ( int j = 0; j <= p[0]; j++ ) {
       int x = j;
-      for(int i = 0; i < N; i++) r[i] = p[i];
+      for ( int i = 0; i < N; i++ ) r[i] = p[i];
       r[0] -= j;
-      for(int i = 0; i < N - 1; i++) {
+      for ( int i = 0; i < N - 1; i++ ) {
         int y = Math.max(0, r[i]);
         r[i] -= y;
         r[i + 1] -= y;
