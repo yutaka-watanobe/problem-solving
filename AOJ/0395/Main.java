@@ -1,36 +1,46 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
 class Main{
-    int[] A, W;
-    int N, a, w;
-    List<Integer> R, L;
+  static final int N_MAX = 10;
+  int N, a[], w[], ans;
+  int table[];    // 座席表
+  boolean sat[];  // 座ったかどうか
 
-    int solve(){
-	if ( R.size() == 0 || L.size() == 0 ) return 0;
-	Collections.sort(R);
-	Collections.sort(L);
-	return R.get(0) + L.get(0);
+  void rec(int p){
+    if ( p == N ){
+      int sum = 0;
+      for ( int i = 0; i < N; i++ ){
+        if ( a[table[i]] == 0 && a[table[(i - 1 + N) % N]] == 1 ||
+             a[table[i]] == 1 && a[table[(i + 1) % N]] == 0 )
+          sum += w[table[i]];
+      }
+      ans = Math.min(sum, ans);
+      return;
     }
 
-    void init() {
-	A = new int[10];
-	W = new int[10];
-	R = new ArrayList<Integer>();
-	L = new ArrayList<Integer>();
-	Scanner sc = new Scanner(System.in);
-	N = sc.nextInt();
-
-	for ( int i = 0; i < N; i++ ) A[i] = sc.nextInt();
-	for ( int i = 0; i < N; i++ ) W[i] = sc.nextInt();
-	for ( int i = 0; i < N; i++ ){
-	    if ( A[i] == 0 ) R.add(W[i]);
-	    if ( A[i] == 1 ) L.add(W[i]);
-	}
-	System.out.println(solve());
+    for ( int i = 0; i < N; i++ ){
+      if ( sat[i] ) continue;
+      sat[i] = true;
+      table[p] = i;
+      rec(p+1);
+      sat[i] = false;
     }
+  }
 
-    public static void main(String[] a){ new Main().init(); }
+  void solve(){
+    Scanner sc = new Scanner(System.in);
+    N = sc.nextInt();
+    a = new int[N];
+    w = new int[N];
+    table = new int[N];
+    sat = new boolean[N];
+    for ( int i = 0; i < N; i++ ) a[i] = sc.nextInt();
+    for ( int i = 0; i < N; i++ ) w[i] = sc.nextInt();
+    ans = 1000 * N;
+    rec(0);
+    System.out.println(ans);
+  }
 
+  public static void main(String[] args) { new Main().solve(); }
 }
 
