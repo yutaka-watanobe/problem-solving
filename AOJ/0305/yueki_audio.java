@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 class Main {
   int calcID(int r, int t) { return r + 5 * t; }
@@ -6,7 +6,7 @@ class Main {
   void solve(){
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
-    for ( int i = 0; i < n; ++i ) {
+    for ( int i = 0; i < n; i++ ) {
       int r = sc.nextInt();
       int t = sc.nextInt();
       boolean onR = r % 100 == 0;

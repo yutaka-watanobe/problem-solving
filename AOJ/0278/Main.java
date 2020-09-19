@@ -5,7 +5,7 @@ class Main{
     Scanner sc = new Scanner(System.in);
     int N, x, y, b, p;
     N = sc.nextInt();
-    for ( int i = 0; i < N; ++i ) {
+    for ( int i = 0; i < N; i++ ) {
       x = sc.nextInt();
       y = sc.nextInt();
       b = sc.nextInt();

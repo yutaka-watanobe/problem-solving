@@ -6,7 +6,7 @@ int calcID(int r, int t) { return r + 5 * t; }
 int main() {
   int n, r, t;
   cin >> n;
-  for ( int i = 0; i < n; ++i ) {
+  for ( int i = 0; i < n; i++ ) {
     cin >> r >> t;
     bool onR = r % 100 == 0;
     bool onT = t % 30 == 0;

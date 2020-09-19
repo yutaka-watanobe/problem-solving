@@ -1,4 +1,4 @@
-def calcID( r, t ) :
+def calcID(r, t) :
     return r + 5 * t
 
 n = int(input())
@@ -6,8 +6,8 @@ for i in range(n):
     r,t = map(int, input().split())
     onR = r % 100 == 0
     onT = t % 30 == 0
-    r = int(r / 100)
-    t = int(t / 30)
+    r = r // 100
+    t = t // 30
     if onR and onT : print(calcID(r, t))
     elif onR : print('{0} {1}'.format(calcID(r, t), calcID(r, t + 1)))
     elif onT : print('{0} {1}'.format(calcID(r, t), calcID(r + 1, t)))

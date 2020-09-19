@@ -7,4 +7,4 @@ while True:
     for c in p:
         if cur == -1: break
         cur = G[cur][int(c)]
-    print("Yes" if cur == 5 else "No" ) # B市か判定
+    print("Yes" if cur == 5 else "No") # B市か判定

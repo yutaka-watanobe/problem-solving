@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 int G[][2] = {{1, 2}, {-1, 3}, {1, -1}, {4, 5}, {5, 2}, {2, 1}}; // 地図

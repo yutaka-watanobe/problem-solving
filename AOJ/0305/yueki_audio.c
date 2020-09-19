@@ -5,7 +5,7 @@ int calcID(int r, int t) { return r + 5 * t; }
 int main() {
   int i, n, r, t, onR, onT;
   scanf("%d", &n);
-  for ( i = 0; i < n; ++i ) {
+  for ( i = 0; i < n; i++ ) {
     scanf("%d %d", &r, &t);
     onR = r % 100 == 0;
     onT = t % 30 == 0;
