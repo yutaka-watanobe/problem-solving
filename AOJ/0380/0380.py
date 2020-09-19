@@ -1,2 +1,2 @@
 F = int(input())
-print((F-30)//2)
+print((F - 30) // 2)
