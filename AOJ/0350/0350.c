@@ -3,13 +3,11 @@
 #include<string.h>
 #include<math.h>
 
-int gcd(int x, int y){
-  return y ? gcd(y, x%y) : x;
-}
+int gcd(int x, int y){ return y ? gcd(y, x % y) : x; }
 
 int print(int x, int y){
   int g = gcd(x, y);
-  printf("%d/%d\n", x/g, y/g);
+  printf("%d/%d\n", x / g, y / g);
 }
 
 int main(){

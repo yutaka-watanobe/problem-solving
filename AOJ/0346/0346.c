@@ -3,9 +3,10 @@
 int e[N];
 
 int check(){
+  /* 選択ソート */
   for ( int i = 0; i < N - 1; i++ ){
     int minj = i;
-    for ( int j = i; j < N; j++ )
+    for ( int j = i + 1; j < N; j++ )
       if ( e[j] < e[minj] ) minj = j;
     int t = e[minj];
     e[minj] = e[i];
@@ -13,7 +14,7 @@ int check(){
   }
   
   for ( int i = 0; i < N; i += 4)
-    if ( e[i] != e[i+3] ) return 0;
+    if ( e[i] != e[i + 3] ) return 0;
   return 1;
 }
 

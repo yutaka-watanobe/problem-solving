@@ -2,7 +2,7 @@
 
 int j, y;
 
-void parse( int a, int b, char* path ){
+void parse(int a, int b, char* path){
   if ( a == j && b == y ){
     path[a + b] = '\0';
     printf("%s\n", path); return;

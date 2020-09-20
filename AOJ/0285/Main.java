@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main{
   Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class Main{
     parse(0, 0, "");
   }
 
-  void parse( int a, int b, String path ){
+  void parse(int a, int b, String path){
     if ( a == j && b == y ){
       System.out.println(path);
       return;

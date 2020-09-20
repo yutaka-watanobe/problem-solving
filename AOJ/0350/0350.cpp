@@ -1,12 +1,8 @@
 #include<iostream>
-#include<string>
-#include<cstring>
 #include<cmath>
 using namespace std;
 
-int gcd(int x, int y){
-  return y ? gcd(y, x%y) : x;
-}
+int gcd(int x, int y){ return y ? gcd(y, x%y) : x; }
 
 int print(int x, int y){
   int g = gcd(x, y);

@@ -26,7 +26,7 @@ main(){
     int maxv = 0;
     int cur = m;
     while(cur){
-      int p = cur%q;
+      int p = cur % q;
       maxv = max(maxv, p);
       if ( cur - p < 0 ) break;
       cur = L[cur - p];

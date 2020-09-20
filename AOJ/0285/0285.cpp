@@ -1,10 +1,9 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 int j, y;
 
-void parse( int a, int b, string path ){
+void parse(int a, int b, string path){
   if ( a == j && b == y ){
     cout << path << endl; return;
   } else if ( a == 5 && b <= 3 || b == 5 && a <= 3 ){

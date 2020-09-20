@@ -1,9 +1,9 @@
 def gcd(x, y):
-    return gcd(y, x%y) if y else x
+    return gcd(y, x % y) if y else x
 
 def printV(x, y):
     g = gcd(x, y)
-    print(str(x//g) + "/" +  str(y//g))
+    print(str(x // g) + "/" +  str(y // g))
 
 S = input()
 o = S.find('.')
