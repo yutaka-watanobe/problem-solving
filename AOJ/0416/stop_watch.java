@@ -6,7 +6,8 @@ class Main {
     int a = sc.nextInt();
     int t = sc.nextInt();
     int r = sc.nextInt();
-    System.out.println((1.0 * t / a) * r);
+    double elapse = (1.0 * t / a) * r; // 経過時間
+    System.out.println(elapse);
   }
 
   public static void main(String[] a) {new Main().solve(); }
