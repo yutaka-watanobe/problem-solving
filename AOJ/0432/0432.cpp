@@ -1,23 +1,22 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int N;
-string G[1000], T[1000];
+vector<string> G;
 
 void rotate(){
+  vector<string> T = G;
   for ( int i = 0; i < N; i++ )
     for ( int j = 0; j < N; j++ )
-      T[j][N-i-1] = G[i][j];
-  for ( int i = 0; i < N; i++ ) G[i] = T[i];
+      G[j][N-i-1] = T[i][j];
 }
 
 int main(){
   int Q;
   int cnt = 4 * 100000;
   cin >> N;
-  for ( int i = 0; i < N; i++ ) {
-    cin >> G[i];
-    T[i] = G[i];
-  }
+  G.resize(N);
+  for ( int i = 0; i < N; i++ ) cin >> G[i];
   cin >> Q;
   for ( int i = 0; i < Q; i++ ){
     int q; cin >> q; cnt += q;

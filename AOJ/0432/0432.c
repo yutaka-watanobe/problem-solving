@@ -5,10 +5,10 @@ char G[1000][1001], T[1000][1001];
 
 void rotate(){
   int i, j;
+  for ( i = 0; i < N; i++ ) strcpy(T[i], G[i]);
   for ( i = 0; i < N; i++ )
     for ( j = 0; j < N; j++ )
-      T[j][N-i-1] = G[i][j];
-  for ( i = 0; i < N; i++ ) strcpy(G[i], T[i]);
+      G[j][N-i-1] = T[i][j];
 }
 
 int main(){

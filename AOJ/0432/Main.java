@@ -7,10 +7,10 @@ class Main{
     void rotate(){
 	for ( int i = 0; i < N; i++ )
 	    for ( int j = 0; j < N; j++ )
-		T[j][N-i-1] = G[i][j];
+		T[i][j] = G[i][j];
 	for ( int i = 0; i < N; i++ )
 	    for ( int j = 0; j < N; j++ )
-		G[i][j] = T[i][j];
+		G[j][N-i-1] = T[i][j];
 
     }
     
