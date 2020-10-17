@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<string.h>
+
 int N;
-char G[1000][1001], T[1000][1001];
+char G[1000][1001];
 
 void rotate(){
   int i, j;
+  char T[1000][1001];
   for ( i = 0; i < N; i++ ) strcpy(T[i], G[i]);
   for ( i = 0; i < N; i++ )
     for ( j = 0; j < N; j++ )
@@ -15,10 +17,7 @@ int main(){
   int Q, i, q;
   int cnt = 4 * 100000;
   scanf("%d", &N);
-  for ( i = 0; i < N; i++ ) {
-    scanf("%s", G[i]);
-    strcpy(T[i], G[i]);
-  }
+  for ( i = 0; i < N; i++ ) scanf("%s", G[i]);
   scanf("%d", &Q);
   for ( i = 0; i < Q; i++ ){
     scanf("%d", &q);
