@@ -1,2 +1,2 @@
 La, Lo = map(int, input().split())
-print((a + b) // 2)
+print(La // 3600, Lo // 3600)
