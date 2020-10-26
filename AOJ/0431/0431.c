@@ -6,8 +6,10 @@ int main(){
   scanf("%d", &N);
   for ( i = 0; i < N; i++ ) scanf("%d", &A[i]);
   for ( i = N - 1; i >= 0; i-- ){
-    if ( A[i] > maxr ) cnt++;
-    maxr = ( A[i] > maxr ? A[i] : maxr);
+    if ( A[i] > maxr ) {
+      cnt++;
+      maxr = A[i];
+    }
   }
   printf("%d\n", cnt);
   return 0;
