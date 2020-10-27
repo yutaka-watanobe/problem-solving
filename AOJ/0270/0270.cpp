@@ -9,7 +9,6 @@ main(){
   int N, Q, q, x;
 
   cin >> N >> Q;
-
   for ( int i = 0; i < N; i++ ) {
     cin >> x;
     T[x] = true;
@@ -33,4 +32,6 @@ main(){
     }
     cout << maxv << endl;
   }
+
+  return 0;
 }

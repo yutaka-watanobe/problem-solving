@@ -19,8 +19,8 @@ void solve(char *N){
   for( cnt = 0; strncmp(N, "6174", 4) != 0; cnt++ ){
     strncpy(L, N, 4);
     strncpy(S, N, 4);
-    qsort(L, 4, 1, descend);//降順ソート
-    qsort(S, 4, 1, ascend); //昇順ソート
+    qsort(L, 4, 1, descend); /* 降順にソート*/
+    qsort(S, 4, 1, ascend);  /* 昇順にソート*/
     num = strtol(L, NULL, 10) - strtol(S, NULL, 10);
     sprintf(N, "%04d", num);
   }

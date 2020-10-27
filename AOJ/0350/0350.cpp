@@ -23,7 +23,7 @@ int main(){
     sub = in.substr(0, o) + in.substr(o + 1, p - o - 1);
     all = sub + in.substr(p + 1, in.size() - p - 2);
     l = p - o - 1;
-    d -= 2;
+    d -= 2; // ()の分を引く
     print(stoi(all.c_str()) - stoi(sub.c_str()), pow(10, d) - pow(10, l));
   }
 

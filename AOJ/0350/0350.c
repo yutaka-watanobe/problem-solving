@@ -34,7 +34,7 @@ int main(){
   if ( p == -1 ){
     print(atoi(all), pow(10, d));
   }else {
-    d -= 2; // for ()
+    d -= 2; /* ()の分を引く */
     print(atoi(all) - atoi(sub), pow(10, d) - pow(10, l) );
   }
   return 0;

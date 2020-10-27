@@ -7,7 +7,6 @@ for v in C: T[v] = 1
 
 L = [0]*(M)
 m = 0
-
 for i in range(M):
     L[i] = m
     if T[i] : m = i

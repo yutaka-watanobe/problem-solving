@@ -24,7 +24,7 @@ class Main{
       sub = in.substring(0, o) + in.substring(o + 1, p);
       all = sub + in.substring(p + 1, in.length() - 1);
       l = p - o - 1;
-      d -= 2; // ()
+      d -= 2; // ()の分を引く
       print(Integer.parseInt(all)- Integer.parseInt(sub),
 	    (int)Math.pow(10, d) - (int)Math.pow(10, l) );
     }

@@ -11,9 +11,9 @@ void solve(string N){
   string L, S;
   for(; N != "6174"; cnt++ ){
     L = S = N;
-    sort(L.begin(), L.end());
-    reverse(L.begin(), L.end());
-    sort(S.begin(), S.end());
+    sort(L.begin(), L.end());    // 昇順にソート
+    reverse(L.begin(), L.end()); // 逆順にして降順にソート
+    sort(S.begin(), S.end());    // 昇順にソート
     int num = stoi(L.c_str()) - stoi(S.c_str());
     N = to_string(num);
     while( N.size() < 4 ) N = '0' + N;

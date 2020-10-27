@@ -17,5 +17,5 @@ else:
     sub = S[0:o] + S[o + 1:p]
     all = sub + S[p + 1:len(S) - 1]
     l = p - o - 1
-    d -= 2 # for ()
+    d -= 2 # ()の分を引く
     printV(int(all) - int(sub), 10**d - 10**l)

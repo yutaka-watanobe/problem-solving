@@ -7,7 +7,6 @@ int main(){
   int N, Q, q, x, i, m, maxv, cur, p;
 
   scanf("%d %d", &N, &Q);
-
   for ( i = 0; i < N; i++ ) {
     scanf("%d", &x);
     T[x] = 1;

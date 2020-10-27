@@ -1,6 +1,14 @@
-import java.util.*;
+import java.util.Scanner;
 
 class Main{
+    long getY(long x){
+	long y = 0;
+	while(x > 0){
+	    y += x%10;
+	    x /= 10;
+	}
+	return y;
+    }
 
     void solve(){
 	long a, n, m;
@@ -12,21 +20,11 @@ class Main{
 	for ( int y = 1; y <= 72; y++ ){
 	    long x = 1;
 	    for ( int t = 1; t <= n; t++ ){
-		x *= (y+a);
+		x *= (y + a);
 	    }
-	    if (x <= m && val(x) == y) cnt++;
+	    if (x <= m && getY(x) == y) cnt++;
 	}
-
 	System.out.println(cnt);
-    }
-
-    long val(long x){
-	long  sum = 0;
-	while(x > 0){
-	    sum += x%10;
-	    x /= 10;
-	}
-	return sum;
     }
 
     public static void main(String[] args){ new Main().solve(); }

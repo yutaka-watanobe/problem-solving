@@ -10,9 +10,9 @@ class Main{
     int N, Q, q, x;
     T = new boolean[MAX + 1];
     L = new int[MAX + 1];
+
     N = sc.nextInt();
     Q = sc.nextInt();
-	
     for ( int i = 0; i < N; i++ ) {
       x = sc.nextInt();
       T[x] = true;
