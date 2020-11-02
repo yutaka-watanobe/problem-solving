@@ -22,7 +22,7 @@ class Main{
       if ( sat[i] ) continue;
       sat[i] = true;
       table[p] = i;
-      rec(p+1);
+      rec(p + 1);
       sat[i] = false;
     }
   }

@@ -1,6 +1,6 @@
 #include<stdio.h>
-
-int calcID(int r, int t) { return r + 5 * t; }
+/* 円弧と線分の番号から観測点の番号へ変換する */
+int calcID(int r, int t) { return r + 5 * t; } 
 
 int main() {
   int i, n, r, t, onR, onT;

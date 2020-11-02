@@ -1,3 +1,4 @@
+# 円弧と線分の番号から観測点の番号へ変換する
 def calcID(r, t) :
     return r + 5 * t
 

@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 class Main{
-  int gcd(int x, int y){ return y > 0 ? gcd(y, x%y) : x; }
+  int gcd(int x, int y){ return y > 0 ? gcd(y, x % y) : x; }
 
   void print(int x, int y){
     int g = gcd(x, y);
-    System.out.println(x/g + "/" + y/g);
+    System.out.println(x / g + "/" + y / g);
   }
     
   void solve(){

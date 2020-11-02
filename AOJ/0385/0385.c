@@ -1,40 +1,30 @@
-/*
-ボゾソートをシミュレーションする解法では、O(NQ)となり制限時間内に解くことは難しい。
-毎回、ソートされているかの判定を行う必要はなく、隣り合う要素の大小関係について、順番が妥\\
-当でないものの個数（これをdiffとする）をキープしておけばよい。
-変更が行われた要素の前後の要素それぞれについて、大小関係の変化を調べ、diffを調整する。dif\
-fが０になったとき、ソート済みと判断できる。
-
-両端に番兵を置くとことで、境界の判定を楽に書くことができる。
-*/
-
 #include <stdio.h>
 #define INF 2000000000
 int N, A[300002], diff;
 
 void update(int i, int v){
-  if ( A[i-1] > A[i] ) diff--;
-  if ( A[i] > A[i+1] ) diff--;
+  if ( A[i - 1] > A[i] ) diff--;
+  if ( A[i] > A[i + 1] ) diff--;
   A[i] = v;
-  if ( A[i-1] > A[i] ) diff++;
-  if ( A[i] > A[i+1] ) diff++;
+  if ( A[i - 1] > A[i] ) diff++;
+  if ( A[i] > A[i + 1] ) diff++;
 }
 
-int solve(){
-  int a, b, q, v1, v2, i;
+int sort(){
+  int Q, x, y, v1, v2, i;
   diff = 0;
   for ( i = 1; i <= N; i++ ) 
-    if ( A[i-1] > A[i] ) diff++;
+    if ( A[i - 1] > A[i] ) diff++;
 
   if ( diff == 0 ) return 0;
 
-  scanf("%d", &q);
-  for ( i = 1; i <= q; i++ ){
-    scanf("%d %d", &a, &b);
-    v1 = A[a];
-    v2 = A[b];
-    update(a, v2);
-    update(b, v1);
+  scanf("%d", &Q);
+  for ( i = 1; i <= Q; i++ ){
+    scanf("%d %d", &x, &y);
+    v1 = A[x];
+    v2 = A[y];
+    update(x, v2);
+    update(y, v1);
     if ( diff == 0 ) return i;
   }
 
@@ -46,8 +36,8 @@ int main() {
   scanf("%d", &N);
   for ( i = 1; i <= N; i++ ) scanf("%d", &A[i]);
   A[0] = -INF;
-  A[N+1] = INF;
-  printf("%d\n", solve());
+  A[N + 1] = INF;
+  printf("%d\n", sort());
   return 0;
 }
 

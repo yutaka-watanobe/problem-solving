@@ -5,8 +5,8 @@ class Main{
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
     for ( int t = 0; t < n; t++ ) {
-      String s = sc.next();
-      String form = "";         
+      String s = sc.next(); // 巡回記録
+      String form = "";     // 列車の編成
       form += s.charAt(0);
       for ( int i = 3; i < s.length(); i += 3 ){
         if ( form.indexOf(s.charAt(i)) != -1 ) continue;

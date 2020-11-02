@@ -2,11 +2,11 @@
 #include<cmath>
 using namespace std;
 
-int gcd(int x, int y){ return y ? gcd(y, x%y) : x; }
+int gcd(int x, int y){ return y ? gcd(y, x % y) : x; }
 
 int print(int x, int y){
   int g = gcd(x, y);
-  cout << x/g << "/" << y/g << endl;
+  cout << x / g << "/" << y / g << endl;
 }
 
 int main(){

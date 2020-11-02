@@ -1,8 +1,8 @@
 N = int(input())
 a = list(map(int, input().split()))
 w = list(map(int, input().split()))
-table = [0] * N
-sat = [False] * N
+table = [0] * N   # 座席表
+sat = [False] * N # 座ったかどうか
 ans = 1000 * N;
 
 def rec(p):
@@ -20,7 +20,7 @@ def rec(p):
         if sat[i]: continue
         sat[i] = True
         table[p] = i
-        rec(p+1)
+        rec(p + 1)
         sat[i] = False
 
 rec(0)

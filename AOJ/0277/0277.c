@@ -6,7 +6,7 @@ int main(){
 
   for ( i = 0; i < 4; i++ ){
     scanf("%d %d", &t, &n);
-    printf("%d\n", V[t]*n);
+    printf("%d\n", V[t] * n);
   }
 
   return 0;

@@ -1,8 +1,8 @@
-N,C = map(int, input().split())
-p = list(map(int, input().split()))
-v = 0
-for i in p:
-    v += i
-ans = v//(N+1)
-if v % (N+1) > 0: ans += 1
+N, C = map(int, input().split())
+P = list(map(int, input().split()))
+sum = 0
+for p in P:
+    sum += p
+ans = sum // (N + 1)
+if v % (N + 1) > 0: ans += 1
 print(ans)

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class Main {
+  // 円弧と線分の番号から観測点の番号へ変換する
   int calcID(int r, int t) { return r + 5 * t; }
     
   void solve(){

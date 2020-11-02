@@ -8,7 +8,7 @@ void rec(int p){
   int sum, i;
   if ( p == N ){
     sum = 0;
-    for (  i = 0; i < N; i++ ){
+    for ( i = 0; i < N; i++ ){
       if ( a[table[i]] == 0 && a[table[(i - 1 + N) % N]] == 1 ||
 	   a[table[i]] == 1 && a[table[(i + 1) % N]] == 0 )
 	sum += w[table[i]];
@@ -20,7 +20,7 @@ void rec(int p){
     if ( sat[i] ) continue;
     sat[i] = 1;
     table[p] = i;
-    rec(p+1);
+    rec(p + 1);
     sat[i] = 0;
   }
 }

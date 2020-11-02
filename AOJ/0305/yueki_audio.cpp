@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// 円弧と線分の番号から観測点の番号へ変換する
 int calcID(int r, int t) { return r + 5 * t; }
 
 int main() {

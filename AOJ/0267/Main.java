@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+class Main {
+  static final int MAX_CNT = 10000;
+  
+  void solve(){
+    Scanner sc = new Scanner(System.in);
+    while ( true ) {
+      int N = sc.nextInt();
+      if ( N == 0 ) break;
+      ArrayList<Integer> b = new ArrayList<Integer>();
+      for ( int i = 0; i < N; ++i ) {
+        int v = sc.nextInt();
+        b.add(v);
+      }
+
+      int cnt = 0;
+      while ( cnt <= MAX_CNT ) {
+        // 三角形になっているかを判定する
+        boolean isTriangle = true; 
+        if ( b.get(0) != 1 ) isTriangle = false;
+        for ( int i = 1; i < b.size(); i++ ) {
+          if ( b.get(i) != b.get(i - 1) + 1 ) {
+            isTriangle = false;
+            break;
+          }
+        }
+        if ( isTriangle ) break;
+        // ブロックの数が１より多い列で新しい列を作る
+        ArrayList<Integer> tmp = new ArrayList<Integer>(); 
+        for ( int num : b ) 
+          if ( num > 1 ) b_tmp.add(num - 1);
+        tmp.add(b.size());
+        b = tmp;
+
+        ++cnt;
+      }
+	    
+      if ( cnt > MAX_CNT ) System.out.println(-1);
+      else System.out.println(cnt);
+    }
+  }
+
+  public static void main(String[] args) { new Main().solve(); }
+}
