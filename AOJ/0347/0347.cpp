@@ -2,26 +2,28 @@
 #include<algorithm>
 using namespace std;
 
-main(){
-  int n, S[1000];
-  scanf("%d", &n);
-  for ( int i = 0; i < n; i++ ) scanf("%d", &S[i]);
+int main(){
+  int N, A[1000];
+  scanf("%d", &N);
+  for ( int i = 0; i < N; i++ ) scanf("%d", &A[i]);
 
   double res = 0.0;
-  sort(S, S + n);
+  sort(A, A + N);
 
-  for ( int d = 0; d < n-1; d++ ){
-    int c = d+1;
-    int a = n-1;
-    int b = n-2;
-    if ( d == n-3 ){
-      b = d-1;
-    } else if ( d == n-2 ){
-      a = d-2;
-      b = d-1;
+  for ( int p4 = 0; p4 < N - 1; p4++ ){
+    int p3 = p4 + 1;
+    int p1 = N - 1;
+    int p2 = N - 2;
+    if ( p4 == N - 3 ){
+      p2 = p4 - 1;
+    } else if ( p4 == N - 2 ){
+      p1 = p4 - 2;
+      p2 = p4 - 1;
     }
-    res = max(res, 1.0*(S[a]+S[b])/(S[c]-S[d]));
+    res = max(res, 1.0 *
+	      (A[p1] + A[p2]) / (A[p3] - A[p4]));
   }
 
   printf("%.8lf\n", res);
+  return 0;
 }

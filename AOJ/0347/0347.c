@@ -1,6 +1,8 @@
 #include<stdio.h>
 
-double max(double a, double b){ return a > b ? a : b; }
+double max(double a, double b){
+  return a > b ? a : b;
+}
 
 void bubbleSort(int n, int S[]){
   int i, j, t;
@@ -12,27 +14,27 @@ void bubbleSort(int n, int S[]){
 }
 
 int main(){
-  int n, i, S[1000], a, b, c, d;
+  int N, i, A[1000], p1, p2, p3, p4;
   double res = 0.0;
-  scanf("%d", &n);
-  for ( i = 0; i < n; i++ ) scanf("%d", &S[i]);
+  scanf("%d", &N);
+  for ( i = 0; i < N; i++ ) scanf("%d", &A[i]);
 
-  bubbleSort(n, S);
+  bubbleSort(N, A);
 
-  for ( d = 0; d < n-1; d++ ){
-    c = d+1;
-    a = n-1;
-    b = n-2;
-    if ( d == n-3 ){
-      b = d-1;
-    } else if ( d == n-2 ){
-      a = d-2;
-      b = d-1;
+  for ( p4 = 0; p4 < N - 1; p4++ ){
+    p3 = p4 + 1;
+    p1 = N - 1;
+    p2 = N - 2;
+    if ( p4 == N - 3 ){
+      p2 = p4 - 1;
+    } else if ( p4 == N - 2 ){
+      p1 = p4 - 2;
+      p2 = p4 - 1;
     }
-    res = max(res, 1.0*(S[a]+S[b])/(S[c]-S[d]));
+    res = max(res, 1.0 *
+	      (A[p1] + A[p2]) / (A[p3] - A[p4]));
   }
 
   printf("%.8lf\n", res);
-
   return 0;
 }
