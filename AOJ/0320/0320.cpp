@@ -3,7 +3,7 @@ using namespace std;
 char G[1000][1000];
 int N;
 
-int next(int i){ return ((N-i-1)+N)%N;}
+int next(int i){ return ((N - i - 1) + N) % N; }
 
 bool getState(int i, int j){
   return  G[i][j] == G[i][next(j)] &&
@@ -13,8 +13,8 @@ bool getState(int i, int j){
 
 int getInit(){
   int dcnt = 0;
-  for ( int i = 0; i < N/2; i++ )
-    for ( int j = 0; j < N/2; j++ )
+  for ( int i = 0; i < N / 2; i++ )
+    for ( int j = 0; j < N / 2; j++ )
       if (!getState(i, j)) dcnt++;
   return dcnt;
 }
@@ -32,7 +32,7 @@ int main(){
     for ( int j = 0; j < k; j++ ){
       cin >> r >> c; r--; c--;
       bool pre = getState(r, c);
-      G[r][c] = G[r][c]=='1'?'0':'1';
+      G[r][c] = G[r][c]=='1' ? '0' : '1';
       bool post = getState(r, c);
       if ( !pre && post ) dcnt--;
       else if ( pre && !post ) dcnt++;

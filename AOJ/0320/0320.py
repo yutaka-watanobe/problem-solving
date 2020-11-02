@@ -1,18 +1,19 @@
 def next(N, i):
-    return ((N-i-1)+N)%N
+    return ((N - i - 1) + N) % N
 
 def getState(N, G, i, j):
-    return  G[i][j] == G[i][next(N, j)] and  G[i][j] == G[next(N, i)][j] and G[i][j] == G[next(N, i)][next(N, j)]
+    return  G[i][j] == G[i][next(N, j)] and \
+        G[i][j] == G[next(N, i)][j] and \
+        G[i][j] == G[next(N, i)][next(N, j)]
 
 def getInit(N, G):
     dcnt = 0
-    for i in range(N//2):
-        for j in range(N//2):
+    for i in range(N // 2):
+        for j in range(N // 2):
             if not getState(N, G, i, j): dcnt += 1
     return dcnt
 
 C, N = map(int, input().split())
-#G = [[0]*N]*N
 G = [['N' for _ in range(N)] for _ in range(N)]
 for i in range(N):
     str = input()

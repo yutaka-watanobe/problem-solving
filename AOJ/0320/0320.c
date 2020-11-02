@@ -3,7 +3,7 @@
 char G[1000][1000];
 int N;
 
-int next(int i){ return ((N-i-1)+N)%N;}
+int next(int i){ return ((N - i - 1) + N) % N;}
 
 int getState(int i, int j){
   return  G[i][j] == G[i][next(j)] &&
@@ -13,8 +13,8 @@ int getState(int i, int j){
 
 int getInit(){
   int i, j, dcnt = 0;
-  for ( i = 0; i < N/2; i++ )
-    for ( j = 0; j < N/2; j++ )
+  for ( i = 0; i < N / 2; i++ )
+    for ( j = 0; j < N / 2; j++ )
       if (!getState(i, j)) dcnt++;
   return dcnt;
 }
@@ -31,12 +31,12 @@ int main(){
   
   dcnt = getInit();
   if (dcnt == 0 ) ans++;
-  for ( i = 0; i < C-1; i++ ){
+  for ( i = 0; i < C - 1; i++ ){
     scanf("%d", &k);
     for (  j = 0; j < k; j++ ){
       scanf("%d %d", &r, &c); r--; c--;
       pre = getState(r, c);
-      G[r][c] = G[r][c]=='1'?'0':'1';
+      G[r][c] = G[r][c]=='1' ? '0' : '1';
       post = getState(r, c);
       if ( !pre && post ) dcnt--;
       else if ( pre && !post ) dcnt++;
