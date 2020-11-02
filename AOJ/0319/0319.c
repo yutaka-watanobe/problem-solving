@@ -1,20 +1,24 @@
 #include<stdio.h>
 
-int n,a,t[102];
-
 int main(){
-  int i;
-  scanf("%d", &n);
+  int N, i, j, tmp, ans; 
+  int p[101];
+  scanf("%d", &N);
+  for ( i = 0; i < N; i++ ) scanf("%d", &p[i]);
 
-  for(i = 0; i < n; i++){
-    scanf("%d", &a);
-    t[a]++;
+  /* バブルソート（降順） */
+  for ( i = 0; i < N - 2; i++ )
+    for ( j = N - 2; j >= i; j-- )
+      if ( p[j] < p[j + 1] ){
+	tmp = p[j]; p[j] = p[j + 1]; p[j + 1] = tmp;
+      }
+  
+  ans = 0;
+  for ( i = 0; i < N; i++ ){
+    if ( p[i] >= i + 1 ) ans = i + 1;
   }
-  for(i = 100; i > 0; i--){
-    t[i] += t[i+1];
-    if(t[i] >= i){
-      printf("%d\n", i);
-      return 0;
-    }
-  }
+
+  printf("%d\n", ans);
+  return 0;
 }
+

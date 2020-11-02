@@ -4,17 +4,16 @@
 using namespace std;
 
 int main(){
-  int n, s; cin >> n;
-  vector<int> S;
-  for ( int i = 0; i < n; i++ ){
-    cin >> s;
-    S.push_back(s);
-  }
-  sort(S.begin(), S.end());
-  reverse(S.begin(), S.end());
+  int N; cin >> N;
+  int p[101];
+  for ( int i = 0; i < N; i++ ) cin >> p[i];
+
+  sort(p, p + N);
+  reverse(p, p + N);
+  
   int ans = 0;
-  for ( int i = 0; i < S.size(); i++ ){
-    if ( S[i] >= i+1 ) ans = i+1;
+  for ( int i = 0; i < N; i++ ){
+    if ( p[i] >= i + 1 ) ans = i + 1;
   }
 
   cout << ans << endl;
