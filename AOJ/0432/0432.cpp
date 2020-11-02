@@ -13,18 +13,18 @@ void rotate(){
 }
 
 int main(){
-  int Q;
   int cnt = 4 * 100000;
   cin >> N;
   G.resize(N);
   for ( int i = 0; i < N; i++ ) cin >> G[i];
-  cin >> Q;
+  int Q; cin >> Q;
   for ( int i = 0; i < Q; i++ ){
     int q; cin >> q; cnt += q;
   }
   cnt %= 4;
   for ( int i = 0; i < cnt; i++ ) rotate();
-  for ( int i = 0; i < N; i++ ) cout << G[i] << endl;
+  for ( int i = 0; i < N; i++ )
+    cout << G[i] << endl;
   
   return 0;
 }

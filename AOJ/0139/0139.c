@@ -2,21 +2,25 @@
 #include<string.h>
 
 int isA(char *s){
-  if ( s[0] != '>' || s[1] != '\'' || s[strlen(s)-1] != '~' ) return 0;
-  int c = -1;
-  for ( int i = 2; i < strlen(s); i++ ) if ( s[i] == '#' ) { c = i; break; }
+  int i, c = -1, len = strlen(s);
+  if ( s[0] != '>' || s[1] != '\'' ||
+       s[len - 1] != '~' ) return 0;
+  for ( i = 2; i < len; i++ )
+    if ( s[i] == '#' ) { c = i; break; }
   if ( c == -1 ) return 0;
-  if ( c - 2 != strlen(s) - 1 - (c+1) ) return 0;
-  for (int i = 2; i < c; i++ ) if ( s[i] != '=' || s[c+i-1] != '=' ) return 0;
-  return strlen(s) > 4;
+  if ( c - 2 != len - 1 - (c + 1) ) return 0;
+  for ( i = 2; i < c; i++ )
+    if ( s[i] != '=' || s[c + i - 1] != '=' ) return 0;
+  return len > 4;
 }
 
 int isB(char *s){
+  int i, len = strlen(s);
   if ( s[0] != '>' || s[1] != '^' ||
-       s[strlen(s)-2] != '~' || s[strlen(s)-1] != '~' ) return 0;
-  for (int i = 2; i <= strlen(s) - 4; i += 2 )
-    if ( s[i] != 'Q' || s[i+1] != '=' ) return 0;
-  return strlen(s) > 4;
+       s[len - 2] != '~' || s[len - 1] != '~' ) return 0;
+  for ( i = 2; i <= len - 4; i += 2 )
+    if ( s[i] != 'Q' || s[i + 1] != '=' ) return 0;
+  return len > 4;
 }
 
 int main(){
