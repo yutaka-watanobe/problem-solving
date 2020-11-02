@@ -7,5 +7,7 @@ class Main{
     System.out.println((F - 30) / 2);
   }
 
-  public static void main(String[] args){ new Main().solve(); }
+  public static void main(String[] args){
+    new Main().solve();
+  }
 }

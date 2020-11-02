@@ -13,11 +13,9 @@ int getState(int i, int j){
 
 int getInit(){
   int i, j, dcnt = 0;
-  for ( i = 0; i < N/2; i++ ){
-    for ( j = 0; j < N/2; j++ ){
+  for ( i = 0; i < N/2; i++ )
+    for ( j = 0; j < N/2; j++ )
       if (!getState(i, j)) dcnt++;
-    }
-  }
   return dcnt;
 }
 
@@ -28,9 +26,7 @@ int main(){
 
   for ( i = 0; i < N; i++ ){
     scanf("%s", str);
-    for ( j = 0; j < N; j++ ){
-      G[i][j] = str[j];
-    }
+    for ( j = 0; j < N; j++ ) G[i][j] = str[j];
   }
   
   dcnt = getInit();

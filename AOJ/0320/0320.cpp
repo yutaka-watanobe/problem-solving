@@ -13,22 +13,17 @@ bool getState(int i, int j){
 
 int getInit(){
   int dcnt = 0;
-  for ( int i = 0; i < N/2; i++ ){
-    for ( int j = 0; j < N/2; j++ ){
+  for ( int i = 0; i < N/2; i++ )
+    for ( int j = 0; j < N/2; j++ )
       if (!getState(i, j)) dcnt++;
-    }
-  }
   return dcnt;
 }
 
 int main(){
   int C, dcnt, ans = 0;
   cin >> C >> N;
-  for ( int i = 0; i < N; i++ ){
-    for ( int j = 0; j < N; j++ ){
-      cin >> G[i][j];
-    }
-  }
+  for ( int i = 0; i < N; i++ )
+    for ( int j = 0; j < N; j++ )  cin >> G[i][j];
   
   dcnt = getInit();
   if (dcnt == 0 ) ans++;

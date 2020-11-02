@@ -1,9 +1,9 @@
 N = int(input())
-A = list(map(int, input().split()))
+r = list(map(int, input().split())) # N 個の円盤の半径を記録するリスト
 maxr = 0
 cnt = 0
-for i in range(N-1, -1, -1):
-    if A[i] > maxr:
+for i in range(N - 1, -1, -1):
+    if r[i] > maxr:
         cnt += 1
-        maxr = A[i]
+        maxr = r[i]
 print(cnt)

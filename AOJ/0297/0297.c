@@ -3,9 +3,9 @@
 int main(){
   int i, N, K, P;
   scanf("%d", &N);
-  for ( int i = 0; i < N; i++ ){
+  for ( i = 0; i < N; i++ ){    /* N 回繰り返す */
     scanf("%d %d", &K, &P);
-    printf("%d\n", (K-1)%P + 1);
+    printf("%d\n", (K - 1) % P + 1);
   }
   return 0;
 }

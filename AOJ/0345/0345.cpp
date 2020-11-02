@@ -2,12 +2,11 @@
 using namespace std;
 
 main(){
-  int a, b, c, d;
-  cin >> a >> b >> c >> d;
-  if ( a == b && c == d ||
-       a == c && b == d ||
-       a == d && b == c ) cout << "yes" << endl;
-  else cout << "no" << endl;
-
+  int e1, e2, e3, e4;
+  cin >> e1 >> e2 >> e3 >> e4;
+  if ( e1 == e2 && e3 == e4 || e1 == e3 && e2 == e4 || e1 == e4 && e2 == e3 )
+    cout << "yes" << endl;
+  else
+    cout << "no" << endl;
   return 0;
 }

@@ -1,5 +1,5 @@
-a, b, c, d = map(int, input().split())
-if a == b and c == d or a == c and b == d or a == d and b == c:
+e1, e2, e3, e4 = map(int, input().split())
+if e1 == e2 and e3 == e4 or e1 == e3 and e2 == e4 or e1 == e4 and e2 == e3:
     print("yes")
 else:
     print("no")

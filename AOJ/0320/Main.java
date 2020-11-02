@@ -15,23 +15,17 @@ class Main{
     
     int getInit(){
 	int i, j, dcnt = 0;
-	for ( i = 0; i < N/2; i++ ){
-	    for ( j = 0; j < N/2; j++ ){
+	for ( i = 0; i < N/2; i++ )
+	    for ( j = 0; j < N/2; j++ )
 		if (!getState(i, j)) dcnt++;
-	    }
-	}
 	return dcnt;
     }
     
     void solve(){
 	Scanner sc = new Scanner(System.in);
-	int dcnt;
-	int ans = 0;
-	int C = sc.nextInt();
+	int dcnt, ans = 0, C = sc.nextInt();
 	N = sc.nextInt();
-
 	G = new char[N][N];
-	
 	for ( int i = 0; i < N; i++ ){
 	    String str = sc.next();
 	    for ( int j = 0; j < N; j++ ){

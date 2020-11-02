@@ -8,5 +8,7 @@ class Main{
     System.out.println((B + A - 1) / A);
   }
 
-  public static void main(String[] a){ new Main().solve(); }
+  public static void main(String[] a){
+    new Main().solve();
+  }
 }
