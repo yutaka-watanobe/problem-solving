@@ -1,7 +1,8 @@
 N = int(input())
 p = list(map(int, input().split()))
-
-for i in range(100, 0, -1):
-    if i <= len([x for x in p if i <= x]):
-        print(i)
-        break
+p = sorted(p)
+p.reverse()
+ans = 0
+for i in range(0, N):
+    if p[i] >= i + 1: ans = i + 1
+print(ans)
