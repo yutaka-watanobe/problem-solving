@@ -3,25 +3,25 @@
 using namespace std;
 
 int main(){
-  int N, A[1000];
+  int N, a[1000];
   scanf("%d", &N);
-  for ( int i = 0; i < N; i++ ) scanf("%d", &A[i]);
+  for ( int i = 0; i < N; i++ ) scanf("%d", &a[i]);
 
   double res = 0.0;
-  sort(A, A + N);
+  sort(a, a + N);
 
-  for ( int p4 = 0; p4 < N - 1; p4++ ){
-    int p3 = p4 + 1;
-    int p1 = N - 1;
-    int p2 = N - 2;
-    if ( p4 == N - 3 ){
-      p2 = p4 - 1;
-    } else if ( p4 == N - 2 ){
-      p1 = p4 - 2;
-      p2 = p4 - 1;
+  for ( int D = 0; D < N - 1; D++ ){
+    int C = D + 1;
+    int A = N - 1;
+    int B = N - 2;
+    if ( D == N - 3 ){
+      B = D - 1;
+    } else if ( D == N - 2 ){
+      A = D - 2;
+      B = D - 1;
     }
     res = max(res, 1.0 *
-	      (A[p1] + A[p2]) / (A[p3] - A[p4]));
+	      (a[A] + a[B]) / (a[C] - a[D]));
   }
 
   printf("%.8lf\n", res);

@@ -10,6 +10,7 @@ int gcd(int a, int b){
 int main(){
   int W, H, C;
   cin >> W >> H >> C;
-  cout << (W / gcd(W, H)) * (H / gcd(W, H)) * C << endl;
+  cout << (W / gcd(W, H)) * (H / gcd(W, H)) * C;
+  cout << endl;
   return 0;
 }

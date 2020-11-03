@@ -8,6 +8,7 @@ int gcd(int a, int b){
 int main(){
   int W, H, C;
   scanf("%d %d %d", &W, &H, &C);
-  printf("%d'n", (W / gcd(W, H)) * (H / gcd(W, H)) * C);
+  printf("%d\n",
+	 (W / gcd(W, H)) * (H / gcd(W, H)) * C);
   return 0;
 }
