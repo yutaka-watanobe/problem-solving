@@ -12,4 +12,5 @@ for i in range(n):
     if onR and onT : print(calcID(r, t))
     elif onR : print('{0} {1}'.format(calcID(r, t), calcID(r, t + 1)))
     elif onT : print('{0} {1}'.format(calcID(r, t), calcID(r + 1, t)))
-    else : print('{0} {1} {2} {3}'.format(calcID(r, t), calcID(r + 1, t), calcID(r, t + 1), calcID(r + 1, t + 1)))
+    else : print('{0} {1} {2} {3}'.format(calcID(r, t), calcID(r + 1, t), \
+                                          calcID(r, t + 1), calcID(r + 1, t + 1)))
