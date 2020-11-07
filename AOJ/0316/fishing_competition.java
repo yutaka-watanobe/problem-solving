@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Main {
   int getScore(int iwa, int yam,
-		 int a, int b, int c, int d) {
+	       int a, int b, int c, int d) {
     return iwa * a + yam * b +
 	(iwa / 10) * c + (yam / 20) * d;  
   }
@@ -14,8 +14,8 @@ class Main {
     int a = sc.nextInt(),  b = sc.nextInt();
     int c = sc.nextInt(),  d = sc.nextInt();
 
-    int hiro = getScore(h1, h2);
-    int ken = getScore(k1, k2);
+    int hiro = getScore(h1, h2, a, b, c, d);
+    int ken = getScore(k1, k2, a, b, c, d);
 	
     if      ( hiro > ken )
       System.out.println("hiroshi");

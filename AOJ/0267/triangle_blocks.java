@@ -1,18 +1,15 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
+import java.util.ArrayList;
 
 class Main {
-
   static final int MAX_CNT = 10000;
   
   void solve(){
     Scanner sc = new Scanner(System.in);
 	
     while ( true ) {
-
       int N = sc.nextInt();
       if ( N == 0 ) break;
-
       ArrayList<Integer> b = new ArrayList<Integer>();
       for ( int i = 0; i < N; ++i ) {
         int v = sc.nextInt();
@@ -21,7 +18,6 @@ class Main {
 
       int cnt = 0;
       while ( cnt <= MAX_CNT ) {
-
         //三角形になっているか
         boolean tri_num = true;
         if ( b.get(0) != 1 ) tri_num = false;
@@ -48,5 +44,5 @@ class Main {
     }
   }
 
-  public static void main(String[] a) { new Main().solve(); }
+  public static void main(String[] args) { new Main().solve(); }
 }

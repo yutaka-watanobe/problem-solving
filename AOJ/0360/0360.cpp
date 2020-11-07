@@ -7,7 +7,7 @@ bool overlap(int a, int b, int c, int d){
   return true;
 }
 
-main(){
+int main(){
   int a, b, s, f, n;
   cin >> a >> b >> n;
   for ( int i = 0; i < n; i++ ){

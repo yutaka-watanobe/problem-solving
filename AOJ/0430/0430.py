@@ -3,7 +3,7 @@ X = list(map(int, input().split()))
 x = X[0]
 R = x
 L = x
-for i in range(1, N):
+for i in range(1, N + 1):
     R = max(R, X[i])
     L = min(L, X[i])
 minv = min(R - x, x - L)

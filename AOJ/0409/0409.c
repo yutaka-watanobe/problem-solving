@@ -1,8 +1,7 @@
 #include<stdio.h>
-
 typedef long long ll;
 
-ll search(ll x, ll y){
+int search(ll x, ll y){
   ll x_min = 0;
   ll y_min = 0;
   ll x_max = 0;
@@ -24,7 +23,7 @@ ll search(ll x, ll y){
 
 int main(){
   ll x, y;
-  scanf("%d %d", &x, &y);
-  printf("%ld\n", search(x, y));
+  scanf("%ld %ld", &x, &y);
+  printf("%d\n", search(x, y));
   return 0;
 }

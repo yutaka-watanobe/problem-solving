@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-main(){
+int main(){
   int H, W;
   char c;
   cin >> W >> H >> c;
