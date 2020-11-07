@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 int j, y;
+char path[64];
 
-void parse(int a, int b, char* path){
+void parse(int a, int b){
   if ( a == j && b == y ){
     path[a + b] = '\0';
     printf("%s\n", path); return;
@@ -11,14 +12,13 @@ void parse(int a, int b, char* path){
   }
   if ( a > j || b > y ) return;
   path[a + b] = 'A';
-  parse(a + 1, b, path);
+  parse(a + 1, b);
   path[a + b] = 'B';
-  parse(a, b + 1, path);
+  parse(a, b + 1);
 }
 
 int main(){
-  char path[64];
   scanf("%d %d", &j, &y);
-  parse(0, 0, path);
+  parse(0, 0);
   return 0;
 }

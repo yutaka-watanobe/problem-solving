@@ -7,5 +7,5 @@ if y1 > y2 or (y1 == y2 and (m1 > m2 or ( m1 == m2 and d1 > d2 ))):
     d1, d2 = d2, d1
 ans = y2 - y1
 if m1 < m2 or (m1 == m2 and d1 < d2): ans += 1
-print(y2 - y1)
+print(ans)
 
