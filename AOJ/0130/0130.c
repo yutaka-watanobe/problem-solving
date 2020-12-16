@@ -1,20 +1,20 @@
 #include<stdio.h>
+#include<string.h>
 
 int main(){
-  int n; scanf("%d", &n);
-  for ( int t = 0; t < n; t++ ) {
-    char s[1025]; scanf("%s", s); /* 巡回記録*/
-    char form[51];                /* 列車の編成 */
-    int p = 25, l = p, r = p;
-    form[p] = s[0];
-    for ( int i = 3; s[i - 2]; i += 3 ){
-      if ( s[i - 1] == '>' ) p++; else p--;
-      form[p] = s[i];
-      if ( p < l ) l = p;
-      if ( p > r ) r = p;
+  int n, t, i; scanf("%d", &n);
+  char s[1025];            /* 巡回記録 最大1024文字*/
+  char form[27], tmp[27];  /* 列車の編成 最大26両*/
+  for ( t = 0; t < n; t++ ) {
+    scanf("%s", s);
+    form[0] = s[0]; form[1] = '\0'; /* 始点の車両 */
+    for ( i = 3; i < strlen(s); i += 3 ){
+      if ( strchr(form, (int)s[i]) != NULL ) continue;
+      if ( s[i - 1] == '>' ) snprintf(tmp, 27, "%s%c", form, s[i]);
+      else snprintf(tmp, 27, "%c%s", s[i], form);
+      strcpy(form, tmp);
     }
-    for ( int i = l; i <= r; i++ ) printf("%c", form[i]);
-    printf("\n");
+    printf("%s\n", form);
   }
   return 0;
 }

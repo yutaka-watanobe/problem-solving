@@ -30,11 +30,10 @@ class Main{
     }
 	
     for ( int i = 0; i < N; i += 2){
-      if ( D[i].h == D[i + 1].h && D[i].w == D[i + 1].w ) D[i / 2] = D[i];
-      else return false;
+      if ( D[i].h != D[i + 1].h || D[i].w != D[i + 1].w ) return false;
     }
 	
-    return D[0].h == D[1].h && D[0].w == D[2].h && D[1].w == D[2].w;
+    return D[0].h == D[2].h && D[0].w == D[4].h && D[2].w == D[4].w;
   }
     
   void solve(){

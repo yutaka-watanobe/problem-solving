@@ -7,6 +7,6 @@ int gcd(int x, int y){
 int main(){
   int x, y;
   scanf("%d %d", &x, &y);
-  printf("%d\n", (x + 1) + (y + 1) - (gcd(x, y) - 1) - 2);
+  printf("%d\n", x + y - gcd(x, y) + 1);
   return 0;
 }

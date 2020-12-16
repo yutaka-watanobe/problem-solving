@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  int N, p = 0;
+  int N, ans = 1;
   scanf("%d", &N);
 
-  while ( N > 1 ) {
-    N >>= 1;
-    ++p;
+  while ( ans <= N ) {
+    ans *= 2;
   }
 
-  printf("%d\n", 1 << p);
+  printf("%d\n", ans / 2);
   return 0;
 }

@@ -1,5 +1,5 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 
 class Main {
   void solve(){
@@ -18,10 +18,10 @@ class Main {
       while ( !N.equals("6174") ) {
         char[] L = N.toCharArray();
         char[] S = N.toCharArray();
-        Arrays.sort( L );                          // 昇順にソート
+        Arrays.sort(L);                          // 昇順にソート
         char tmp = L[0]; L[0] = L[3]; L[3] = tmp;  // 逆順にして降順にソート
         tmp = L[1]; L[1] = L[2]; L[2] = tmp;       // 
-        Arrays.sort( S );                          // 昇順にソート
+        Arrays.sort(S);                          // 昇順にソート
         int num = Integer.parseInt( new String(L) ) - Integer.parseInt( new String(S) );
         N = Integer.toString(num);
         while( N.length() < 4 ) N = '0' + N;
@@ -31,5 +31,5 @@ class Main {
     }
   }
     
-  public static void main(String[] a) { new Main().solve(); }
+  public static void main(String[] args) { new Main().solve(); }
 }

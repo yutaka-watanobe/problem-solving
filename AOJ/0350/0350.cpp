@@ -4,7 +4,7 @@ using namespace std;
 
 int gcd(int x, int y){ return y ? gcd(y, x % y) : x; }
 
-int print(int x, int y){
+void print(int x, int y){
   int g = gcd(x, y);
   cout << x / g << "/" << y / g << endl;
 }
@@ -26,5 +26,5 @@ int main(){
     d -= 2; // ()の分を引く
     print(stoi(all.c_str()) - stoi(sub.c_str()), pow(10, d) - pow(10, l));
   }
-
+  return 0;
 }

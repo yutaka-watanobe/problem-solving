@@ -1,6 +1,5 @@
 N = int(input())
-p = 0
-while N > 1 :
-    N = N >> 1
-    p = p + 1
-print(1 << p)
+ans = 1
+while ans <= N:
+    ans *= 2
+print(ans // 2)

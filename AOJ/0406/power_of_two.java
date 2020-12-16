@@ -3,14 +3,13 @@ import java.util.Scanner;
 class Main {
   void solve(){
     Scanner sc = new Scanner(System.in);
-    int p = 0, N = sc.nextInt();
+    int ans = 1, N = sc.nextInt();
 
-    while ( N > 1 ) {
-      N >>= 1;
-      ++p;
+    while ( ans <= N ) {
+      ans *= 2;
     }
 
-    System.out.println(1 << p);
+    System.out.println(ans / 2);
   }
 
   public static void main(String[] args) { new Main().solve(); }

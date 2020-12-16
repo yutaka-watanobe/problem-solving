@@ -5,7 +5,7 @@
 
 int gcd(int x, int y){ return y ? gcd(y, x % y) : x; }
 
-int print(int x, int y){
+void print(int x, int y){
   int g = gcd(x, y);
   printf("%d/%d\n", x / g, y / g);
 }

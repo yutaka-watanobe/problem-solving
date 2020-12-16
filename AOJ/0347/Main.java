@@ -18,7 +18,7 @@ class Main{
       int B = N - 2;
       if ( D == N - 3 ){
 	B = D - 1;
-      } else if ( C == N - 2 ){
+      } else if ( D == N - 2 ){
 	A = D - 2;
 	B = D - 1;
       }

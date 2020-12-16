@@ -5,7 +5,7 @@ static const int MAX = 300000;
 bool T[MAX+1];
 int L[MAX+1];
 
-main(){
+int main(){
   int N, Q, q, x;
 
   cin >> N >> Q;

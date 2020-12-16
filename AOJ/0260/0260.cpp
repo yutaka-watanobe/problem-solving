@@ -25,7 +25,7 @@ void mergeSort(long long *J, int l, int r){
   merge(J, l, m, r);
 }
 
-main(){
+int main(){
   llong n, totalp, totalj;
   llong P[MAX], J[MAX];
 

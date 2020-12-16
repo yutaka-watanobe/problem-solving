@@ -2,14 +2,13 @@
 using namespace std;
 
 int main() {
-  int N, p = 0;
+  int N, ans = 1;
   cin >> N;
 
-  while ( N > 1 ) {
-    N >>= 1;
-    ++p;
+  while ( ans <= N ) {
+    ans *= 2;
   }
 
-  cout << (1 << p) << endl;
+  cout << ans / 2 << endl;
   return 0;
 }

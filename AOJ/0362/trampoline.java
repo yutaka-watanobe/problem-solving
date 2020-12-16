@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
 class Main {
   int N = 0;
@@ -17,7 +19,7 @@ class Main {
   void solve(){
     Scanner sc = new Scanner(System.in);
     N = sc.nextInt();
-    for ( int i = 0; i < n; i++ ) d.add(sc.nextInt());
+    for ( int i = 0; i < N; i++ ) d.add(sc.nextInt());
 	    
     if ( !isReachable() ) {
       System.out.println("no");
