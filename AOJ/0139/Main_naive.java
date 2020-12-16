@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Main{
   boolean isA(String s){
-    if ( s.substring(0, 2) != ">'" ||
+    if ( !s.substring(0, 2).equals(">'") ||
 	 s.charAt(s.length() - 1) != '~' )
       return false;
     int c = s.indexOf('#');
@@ -17,11 +17,11 @@ class Main{
   }
 
   boolean isB(String s){
-    if ( s.substring(0, 2) != ">^" ||
-	 s.substring(s.length()-2, s.length()) != "~~" )
+    if ( !s.substring(0, 2).equals(">^") ||
+	 !s.substring(s.length() - 2, s.length()).equals("~~") )
 	return false;
     for (int i = 2; i <= s.length() - 4; i += 2 )
-      if ( s.substring(i, i + 2) != "Q=" )
+      if ( !s.substring(i, i + 2).equals("Q=") )
 	return false;
     return s.length() > 4;
   }

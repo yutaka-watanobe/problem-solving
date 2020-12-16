@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 static const int N_MAX = 10;
 int N, a[N_MAX], w[N_MAX], ans;

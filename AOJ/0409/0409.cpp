@@ -3,7 +3,7 @@
 using namespace std;
 typedef long long ll;
 
-ll search(ll x, ll y){
+int search(ll x, ll y){
   ll x_min = 0;
   ll y_min = 0;
   ll x_max = 0;

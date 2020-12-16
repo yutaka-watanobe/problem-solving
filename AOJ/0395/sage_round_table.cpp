@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 static const int INF = 100000;
 
